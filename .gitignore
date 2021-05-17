@@ -106,3 +106,9 @@ venv.bak/
 *.gz
 Untitled.ipynb
 Testing notebook.ipynb
+
+# Original
+cifar10_data/*
+cifar100_data/*
+train_result/*
+wandb/*
