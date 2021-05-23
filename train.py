@@ -346,9 +346,10 @@ def main():
 
     random_seed(args.seed, args.rank)
 
+    is_resume = True if args.resume else False
     if args.log_wandb and args.local_rank == 0:
         if has_wandb:
-            wandb.init(project="pytorch-image-models", name=args.experiment, config=args)
+            wandb.init(project="pytorch-image-models", name=args.experiment, id=args.experiment, resume=is_resume, config=args)
         else:
             _logger.warning("You've requested to log metrics to wandb but package not found. "
                             "Metrics not being logged to wandb, try `pip install wandb`")
