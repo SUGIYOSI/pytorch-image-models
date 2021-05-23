@@ -9,12 +9,15 @@ source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh
 module load cuda/11.0.194 cudnn/8.1
 
+echo '--Start--'
+echo `date`
+
 export NUM_PROC=4
 python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/originalimages \
     --model vit_deit_tiny_patch16_224 \
     --opt adamw \
     --batch-size 256 \
-    --epochs 300 \
+    --epochs 22 \
     --cooldown-epochs 0 \
     --lr 0.001 \
     --sched cosine \
@@ -30,4 +33,8 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/t
     --log-wandb \
     --output train_result \
     --experiment PreTraining_vit_deit_tiny_patch16_224_1k \
+    --id_wandb PreTraining_vit_deit_tiny_patch16_224_1k \
     -j 4
+
+echo '--End--'
+echo `date`

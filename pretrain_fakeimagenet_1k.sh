@@ -1,18 +1,23 @@
 #!/bin/bash
-#YBATCH -r am_8
-#SBATCH -N 1
-#SBATCH -J vit_pretraining_fake
-#SBATCH --output output/%j.out
+#$ -cwd
+#$ -l f_node=1
+#$ -l h_rt=24:00:00
+#$ -j y
+#$ -o output/o.$JOB_ID
 
+source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh
-module load openmpi/3.1.6 cuda/11.1 cudnn/cuda-11.1/8.0
+module load cuda/11.0.194 cudnn/8.1
 
-export NUM_PROC=8
-python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /mnt/nfs/datasets/FakeImageNet1k_v1 \
-    --model vit_deit_base_patch16_224 \
+echo '--Start--'
+echo `date`
+
+export NUM_PROC=4
+python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v1 \
+    --model vit_deit_tiny_patch16_224 \
     --opt adamw \
-    --batch-size 128 \
-    --epochs 300 \
+    --batch-size 256 \
+    --epochs 22 \
     --cooldown-epochs 0 \
     --lr 0.001 \
     --sched cosine \
@@ -27,5 +32,9 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /mnt/nfs/
     --reprob 0.25 \
     --log-wandb \
     --output train_result \
-    --experiment PreTraining_vit_deit_base_patch16_224_fake_1k \
-    -j 8
+    --experiment PreTraining_vit_deit_tiny_patch16_224_fake_1k \
+    --id_wandb PreTraining_vit_deit_tiny_patch16_224_fake_1k_v1 \
+    -j 4
+
+echo '--End--'
+echo `date`

@@ -284,6 +284,10 @@ parser.add_argument('--torchscript', dest='torchscript', action='store_true',
                     help='convert model torchscript for inference')
 parser.add_argument('--log-wandb', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
+parser.add_argument('--id-wandb', action='store_true', default=False,
+                    help='log training and validation metrics to wandb')
+parser.add_argument('--id_wandb', default='', type=str, metavar='NAME',
+                    help='id for wandb')
 
 parser.add_argument('--pause', type=int, default=None,
                     help='pause training at the epoch')
@@ -349,7 +353,7 @@ def main():
     is_resume = True if args.resume else False
     if args.log_wandb and args.local_rank == 0:
         if has_wandb:
-            wandb.init(project="pytorch-image-models", name=args.experiment, id=args.experiment, resume=is_resume, config=args)
+            wandb.init(project="pytorch-image-models", name=args.experiment, id=args.id_wandb, resume=is_resume, config=args)
         else:
             _logger.warning("You've requested to log metrics to wandb but package not found. "
                             "Metrics not being logged to wandb, try `pip install wandb`")
