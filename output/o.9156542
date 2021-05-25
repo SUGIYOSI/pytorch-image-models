@@ -1,0 +1,164 @@
+--Start--
+Tue May 25 14:02:35 JST 2021
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 3
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+wandb: Currently logged in as: gyama_x (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.30 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/last.pth.tar'
+wandb: Tracking run with wandb version 0.10.27
+wandb: Resuming run PreTraining_vit_deit_tiny_patch16_224_1k
+wandb: ⭐️ View project at https://wandb.ai/gyama_x/pytorch-image-models
+wandb: 🚀 View run at https://wandb.ai/gyama_x/pytorch-image-models/runs/PreTraining_vit_deit_tiny_patch16_224_1k
+wandb: Run data is saved locally in /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210525_140351-PreTraining_vit_deit_tiny_patch16_224_1k
+wandb: Run `wandb offline` to turn off syncing.
+
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/last.pth.tar'
+Model vit_deit_tiny_patch16_224 created, param count:5717416
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.485, 0.456, 0.406)
+	std: (0.229, 0.224, 0.225)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Restoring model state from checkpoint...
+Restoring optimizer state from checkpoint...
+Loaded checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/last.pth.tar' (epoch 43)
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 66
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Train: 44 [   0/1251 (  0%)]  Loss:  5.062360 (5.0624)  Time: 15.719s,   65.14/s  (15.719s,   65.14/s)  LR: 2.575e-04  Data: 14.392 (14.392)
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Train: 44 [  50/1251 (  4%)]  Loss:  5.156003 (5.1092)  Time: 0.585s, 1750.05/s  (2.666s,  384.03/s)  LR: 2.575e-04  Data: 0.018 (2.065)
+Train: 44 [ 100/1251 (  8%)]  Loss:  5.036415 (5.0849)  Time: 0.586s, 1748.69/s  (2.555s,  400.80/s)  LR: 2.575e-04  Data: 0.018 (1.957)
+Train: 44 [ 150/1251 ( 12%)]  Loss:  4.781427 (5.0091)  Time: 0.587s, 1745.90/s  (2.482s,  412.62/s)  LR: 2.575e-04  Data: 0.018 (1.890)
+Train: 44 [ 200/1251 ( 16%)]  Loss:  4.773507 (4.9619)  Time: 0.584s, 1752.39/s  (2.466s,  415.17/s)  LR: 2.575e-04  Data: 0.018 (1.876)
+Train: 44 [ 250/1251 ( 20%)]  Loss:  4.593274 (4.9005)  Time: 0.584s, 1752.06/s  (2.461s,  416.14/s)  LR: 2.575e-04  Data: 0.017 (1.866)
+Train: 44 [ 300/1251 ( 24%)]  Loss:  5.312532 (4.9594)  Time: 2.053s,  498.69/s  (2.467s,  415.04/s)  LR: 2.575e-04  Data: 1.467 (1.866)
+Train: 44 [ 350/1251 ( 28%)]  Loss:  4.691674 (4.9259)  Time: 0.588s, 1742.72/s  (2.458s,  416.67/s)  LR: 2.575e-04  Data: 0.018 (1.855)
+Train: 44 [ 400/1251 ( 32%)]  Loss:  5.246621 (4.9615)  Time: 1.423s,  719.59/s  (2.456s,  416.94/s)  LR: 2.575e-04  Data: 0.861 (1.851)
+Train: 44 [ 450/1251 ( 36%)]  Loss:  4.700695 (4.9355)  Time: 0.581s, 1762.07/s  (2.461s,  416.07/s)  LR: 2.575e-04  Data: 0.018 (1.858)
+Train: 44 [ 500/1251 ( 40%)]  Loss:  4.861745 (4.9288)  Time: 0.707s, 1448.34/s  (2.443s,  419.13/s)  LR: 2.575e-04  Data: 0.121 (1.842)
+Train: 44 [ 550/1251 ( 44%)]  Loss:  4.890690 (4.9256)  Time: 0.585s, 1750.70/s  (2.435s,  420.55/s)  LR: 2.575e-04  Data: 0.019 (1.833)
+Train: 44 [ 600/1251 ( 48%)]  Loss:  5.626120 (4.9795)  Time: 0.583s, 1756.90/s  (2.423s,  422.70/s)  LR: 2.575e-04  Data: 0.019 (1.821)
+Train: 44 [ 650/1251 ( 52%)]  Loss:  4.912246 (4.9747)  Time: 0.586s, 1747.07/s  (2.441s,  419.51/s)  LR: 2.575e-04  Data: 0.021 (1.839)
+Train: 44 [ 700/1251 ( 56%)]  Loss:  5.049616 (4.9797)  Time: 0.585s, 1750.65/s  (2.464s,  415.57/s)  LR: 2.575e-04  Data: 0.019 (1.864)
+Train: 44 [ 750/1251 ( 60%)]  Loss:  5.477682 (5.0108)  Time: 0.591s, 1734.10/s  (2.480s,  412.87/s)  LR: 2.575e-04  Data: 0.017 (1.879)
+Train: 44 [ 800/1251 ( 64%)]  Loss:  4.832680 (5.0003)  Time: 0.584s, 1753.98/s  (2.497s,  410.09/s)  LR: 2.575e-04  Data: 0.019 (1.896)
+Train: 44 [ 850/1251 ( 68%)]  Loss:  4.941282 (4.9970)  Time: 0.586s, 1748.64/s  (2.502s,  409.32/s)  LR: 2.575e-04  Data: 0.021 (1.900)
+Train: 44 [ 900/1251 ( 72%)]  Loss:  5.176835 (5.0065)  Time: 0.583s, 1757.18/s  (2.505s,  408.74/s)  LR: 2.575e-04  Data: 0.017 (1.903)
+Train: 44 [ 950/1251 ( 76%)]  Loss:  4.775415 (4.9949)  Time: 0.585s, 1749.96/s  (2.508s,  408.33/s)  LR: 2.575e-04  Data: 0.019 (1.905)
+Train: 44 [1000/1251 ( 80%)]  Loss:  4.441989 (4.9686)  Time: 0.584s, 1752.88/s  (2.529s,  404.92/s)  LR: 2.575e-04  Data: 0.017 (1.924)
+Train: 44 [1050/1251 ( 84%)]  Loss:  4.936141 (4.9671)  Time: 0.585s, 1751.71/s  (2.542s,  402.90/s)  LR: 2.575e-04  Data: 0.018 (1.936)
+Train: 44 [1100/1251 ( 88%)]  Loss:  4.850382 (4.9621)  Time: 0.584s, 1753.42/s  (2.550s,  401.57/s)  LR: 2.575e-04  Data: 0.018 (1.944)
+Train: 44 [1150/1251 ( 92%)]  Loss:  4.469527 (4.9415)  Time: 0.586s, 1746.04/s  (2.552s,  401.28/s)  LR: 2.575e-04  Data: 0.021 (1.946)
+Train: 44 [1200/1251 ( 96%)]  Loss:  4.637610 (4.9294)  Time: 0.587s, 1743.80/s  (2.553s,  401.14/s)  LR: 2.575e-04  Data: 0.023 (1.948)
+Train: 44 [1250/1251 (100%)]  Loss:  4.928927 (4.9294)  Time: 0.564s, 1814.98/s  (2.552s,  401.19/s)  LR: 2.575e-04  Data: 0.000 (1.948)
+Test: [   0/48]  Time: 17.281 (17.281)  Loss:  1.5801 (1.5801)  Acc@1: 67.5781 (67.5781)  Acc@5: 87.2070 (87.2070)
+Test: [  48/48]  Time: 0.893 (3.998)  Loss:  1.4767 (2.5169)  Acc@1: 70.6368 (46.7420)  Acc@5: 85.7311 (71.8340)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_1k/checkpoint-44.pth.tar', 46.74200004394531)
+
+Train: 45 [   0/1251 (  0%)]  Loss:  4.907287 (4.9073)  Time: 10.579s,   96.80/s  (10.579s,   96.80/s)  LR: 2.374e-04  Data: 8.976 (8.976)
+Train: 45 [  50/1251 (  4%)]  Loss:  4.785699 (4.8465)  Time: 0.585s, 1749.36/s  (2.719s,  376.67/s)  LR: 2.374e-04  Data: 0.019 (2.101)
+Train: 45 [ 100/1251 (  8%)]  Loss:  5.161829 (4.9516)  Time: 0.587s, 1742.99/s  (2.670s,  383.59/s)  LR: 2.374e-04  Data: 0.019 (2.053)
+Train: 45 [ 150/1251 ( 12%)]  Loss:  4.757421 (4.9031)  Time: 0.583s, 1755.81/s  (2.644s,  387.33/s)  LR: 2.374e-04  Data: 0.019 (2.039)
+Train: 45 [ 200/1251 ( 16%)]  Loss:  4.785922 (4.8796)  Time: 0.583s, 1755.27/s  (2.658s,  385.25/s)  LR: 2.374e-04  Data: 0.018 (2.058)
+Train: 45 [ 250/1251 ( 20%)]  Loss:  4.453467 (4.8086)  Time: 0.585s, 1750.46/s  (2.619s,  390.97/s)  LR: 2.374e-04  Data: 0.019 (2.020)
+Train: 45 [ 300/1251 ( 24%)]  Loss:  5.502117 (4.9077)  Time: 0.583s, 1754.93/s  (2.600s,  393.85/s)  LR: 2.374e-04  Data: 0.016 (2.002)
+Train: 45 [ 350/1251 ( 28%)]  Loss:  4.663207 (4.8771)  Time: 0.583s, 1756.35/s  (2.621s,  390.68/s)  LR: 2.374e-04  Data: 0.019 (2.025)
+Train: 45 [ 400/1251 ( 32%)]  Loss:  4.861551 (4.8754)  Time: 0.583s, 1754.96/s  (2.648s,  386.65/s)  LR: 2.374e-04  Data: 0.017 (2.052)
+Train: 45 [ 450/1251 ( 36%)]  Loss:  5.330579 (4.9209)  Time: 0.583s, 1756.36/s  (2.641s,  387.73/s)  LR: 2.374e-04  Data: 0.019 (2.045)
+Train: 45 [ 500/1251 ( 40%)]  Loss:  4.555853 (4.8877)  Time: 0.583s, 1757.46/s  (2.647s,  386.81/s)  LR: 2.374e-04  Data: 0.018 (2.052)
+Train: 45 [ 550/1251 ( 44%)]  Loss:  5.171235 (4.9113)  Time: 0.582s, 1758.94/s  (2.637s,  388.34/s)  LR: 2.374e-04  Data: 0.018 (2.042)
+Train: 45 [ 600/1251 ( 48%)]  Loss:  5.179822 (4.9320)  Time: 0.584s, 1751.95/s  (2.643s,  387.40/s)  LR: 2.374e-04  Data: 0.019 (2.049)
+Train: 45 [ 650/1251 ( 52%)]  Loss:  5.242611 (4.9542)  Time: 0.583s, 1757.55/s  (2.647s,  386.81/s)  LR: 2.374e-04  Data: 0.019 (2.054)
+Train: 45 [ 700/1251 ( 56%)]  Loss:  4.843215 (4.9468)  Time: 2.592s,  394.99/s  (2.667s,  384.02/s)  LR: 2.374e-04  Data: 2.010 (2.073)
+Train: 45 [ 750/1251 ( 60%)]  Loss:  5.244059 (4.9654)  Time: 0.585s, 1750.66/s  (2.662s,  384.75/s)  LR: 2.374e-04  Data: 0.022 (2.066)
+Train: 45 [ 800/1251 ( 64%)]  Loss:  5.533178 (4.9988)  Time: 4.153s,  246.57/s  (2.663s,  384.56/s)  LR: 2.374e-04  Data: 3.584 (2.065)
+Train: 45 [ 850/1251 ( 68%)]  Loss:  4.868904 (4.9916)  Time: 0.583s, 1755.96/s  (2.659s,  385.06/s)  LR: 2.374e-04  Data: 0.018 (2.059)
+Train: 45 [ 900/1251 ( 72%)]  Loss:  5.011888 (4.9926)  Time: 10.271s,   99.70/s  (2.673s,  383.02/s)  LR: 2.374e-04  Data: 9.489 (2.074)
+Train: 45 [ 950/1251 ( 76%)]  Loss:  4.893653 (4.9877)  Time: 0.588s, 1741.44/s  (2.681s,  382.00/s)  LR: 2.374e-04  Data: 0.016 (2.079)
+Train: 45 [1000/1251 ( 80%)]  Loss:  5.020877 (4.9893)  Time: 2.116s,  484.02/s  (2.712s,  377.55/s)  LR: 2.374e-04  Data: 1.424 (2.109)
+Train: 45 [1050/1251 ( 84%)]  Loss:  5.262827 (5.0017)  Time: 0.588s, 1742.59/s  (2.740s,  373.72/s)  LR: 2.374e-04  Data: 0.021 (2.135)
+Train: 45 [1100/1251 ( 88%)]  Loss:  5.327787 (5.0159)  Time: 1.862s,  549.82/s  (2.761s,  370.89/s)  LR: 2.374e-04  Data: 0.549 (2.155)
+Train: 45 [1150/1251 ( 92%)]  Loss:  5.457394 (5.0343)  Time: 0.725s, 1412.94/s  (2.778s,  368.64/s)  LR: 2.374e-04  Data: 0.138 (2.172)
+Train: 45 [1200/1251 ( 96%)]  Loss:  5.131446 (5.0382)  Time: 4.014s,  255.08/s  (2.782s,  368.06/s)  LR: 2.374e-04  Data: 3.452 (2.175)
+Train: 45 [1250/1251 (100%)]  Loss:  5.063688 (5.0391)  Time: 0.567s, 1807.59/s  (2.790s,  367.01/s)  LR: 2.374e-04  Data: 0.000 (2.182)
+Test: [   0/48]  Time: 27.278 (27.278)  Loss:  1.5219 (1.5219)  Acc@1: 69.3359 (69.3359)  Acc@5: 88.1836 (88.1836)
+Test: [  48/48]  Time: 0.148 (4.718)  Loss:  1.4849 (2.4905)  Acc@1: 70.4009 (47.2860)  Acc@5: 85.2594 (72.2180)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_1k/checkpoint-45.pth.tar', 47.28600007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_1k/checkpoint-44.pth.tar', 46.74200004394531)
+
+Train: 46 [   0/1251 (  0%)]  Loss:  5.092406 (5.0924)  Time: 13.658s,   74.97/s  (13.658s,   74.97/s)  LR: 2.179e-04  Data: 12.941 (12.941)
+Train: 46 [  50/1251 (  4%)]  Loss:  4.623028 (4.8577)  Time: 0.585s, 1751.36/s  (2.806s,  364.97/s)  LR: 2.179e-04  Data: 0.018 (2.222)
+Train: 46 [ 100/1251 (  8%)]  Loss:  4.773140 (4.8295)  Time: 0.586s, 1748.86/s  (2.712s,  377.63/s)  LR: 2.179e-04  Data: 0.023 (2.124)
+Train: 46 [ 150/1251 ( 12%)]  Loss:  5.279785 (4.9421)  Time: 0.584s, 1752.01/s  (2.639s,  387.96/s)  LR: 2.179e-04  Data: 0.019 (2.047)
+Train: 46 [ 200/1251 ( 16%)]  Loss:  5.252491 (5.0042)  Time: 0.586s, 1747.73/s  (2.623s,  390.43/s)  LR: 2.179e-04  Data: 0.024 (2.030)
+Train: 46 [ 250/1251 ( 20%)]  Loss:  5.321568 (5.0571)  Time: 0.585s, 1750.94/s  (2.576s,  397.56/s)  LR: 2.179e-04  Data: 0.019 (1.986)
+Train: 46 [ 300/1251 ( 24%)]  Loss:  5.147095 (5.0699)  Time: 0.588s, 1742.82/s  (2.642s,  387.65/s)  LR: 2.179e-04  Data: 0.020 (2.049)
+Train: 46 [ 350/1251 ( 28%)]  Loss:  5.064907 (5.0693)  Time: 0.585s, 1751.75/s  (2.627s,  389.77/s)  LR: 2.179e-04  Data: 0.020 (2.036)
+Train: 46 [ 400/1251 ( 32%)]  Loss:  4.984016 (5.0598)  Time: 1.506s,  680.13/s  (2.636s,  388.52/s)  LR: 2.179e-04  Data: 0.922 (2.041)
+Train: 46 [ 450/1251 ( 36%)]  Loss:  5.121010 (5.0659)  Time: 0.585s, 1751.83/s  (2.623s,  390.41/s)  LR: 2.179e-04  Data: 0.019 (2.030)
+Train: 46 [ 500/1251 ( 40%)]  Loss:  4.788913 (5.0408)  Time: 0.586s, 1747.23/s  (2.629s,  389.57/s)  LR: 2.179e-04  Data: 0.019 (2.037)
+Train: 46 [ 550/1251 ( 44%)]  Loss:  4.665959 (5.0095)  Time: 0.583s, 1756.62/s  (2.612s,  392.06/s)  LR: 2.179e-04  Data: 0.019 (2.020)
+Train: 46 [ 600/1251 ( 48%)]  Loss:  4.769195 (4.9910)  Time: 0.587s, 1744.68/s  (2.613s,  391.93/s)  LR: 2.179e-04  Data: 0.020 (2.021)
+Train: 46 [ 650/1251 ( 52%)]  Loss:  4.486353 (4.9550)  Time: 0.584s, 1754.88/s  (2.644s,  387.27/s)  LR: 2.179e-04  Data: 0.018 (2.052)
+Train: 46 [ 700/1251 ( 56%)]  Loss:  4.745313 (4.9410)  Time: 0.586s, 1748.56/s  (2.660s,  385.02/s)  LR: 2.179e-04  Data: 0.021 (2.068)
+Train: 46 [ 750/1251 ( 60%)]  Loss:  5.315337 (4.9644)  Time: 0.583s, 1755.35/s  (2.655s,  385.65/s)  LR: 2.179e-04  Data: 0.018 (2.062)
+Train: 46 [ 800/1251 ( 64%)]  Loss:  4.889386 (4.9600)  Time: 0.586s, 1748.89/s  (2.654s,  385.76/s)  LR: 2.179e-04  Data: 0.021 (2.061)
+Train: 46 [ 850/1251 ( 68%)]  Loss:  4.163027 (4.9157)  Time: 0.587s, 1744.20/s  (2.648s,  386.75/s)  LR: 2.179e-04  Data: 0.019 (2.053)
+Train: 46 [ 900/1251 ( 72%)]  Loss:  5.175829 (4.9294)  Time: 5.050s,  202.79/s  (2.646s,  386.93/s)  LR: 2.179e-04  Data: 4.395 (2.050)
+Train: 46 [ 950/1251 ( 76%)]  Loss:  5.273998 (4.9466)  Time: 0.586s, 1748.89/s  (2.652s,  386.16/s)  LR: 2.179e-04  Data: 0.020 (2.054)

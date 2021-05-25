@@ -1,8 +1,9 @@
 #!/bin/bash
 #$ -cwd
+#$ -l f_node=1
 #$ -l h_rt=167:00:00
 #$ -j y
-#$ -o output/o.$JOB_ID
+#$ -o output/o.originalimagenet_1k__v2
 
 source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh
@@ -31,8 +32,8 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/t
     --reprob 0.25 \
     --log-wandb \
     --output train_result \
-    --experiment PreTraining_vit_deit_tiny_patch16_224_1k_v2 \
-    --id_wandb PreTraining_vit_deit_tiny_patch16_224_1k_v2 \
+    --experiment PreTraining_vit_deit_tiny_patch16_224_1k__v2 \
+    --id_wandb PreTraining_vit_deit_tiny_patch16_224_1k__v2 \
     -j 4
 
 echo '--End--'
