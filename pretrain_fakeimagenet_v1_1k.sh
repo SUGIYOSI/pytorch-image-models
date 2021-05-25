@@ -14,10 +14,12 @@ echo `date`
 
 export NUM_PROC=4
 python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v1 \
+    --resume /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_1k/last.pth.tar \
+    --initial-checkpoint /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_1k/last.pth.tar \
     --model vit_deit_tiny_patch16_224 \
     --opt adamw \
     --batch-size 256 \
-    --epochs 22 \
+    --epochs 44 \
     --cooldown-epochs 0 \
     --lr 0.001 \
     --sched cosine \

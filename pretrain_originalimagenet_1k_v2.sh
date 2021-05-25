@@ -1,7 +1,6 @@
 #!/bin/bash
 #$ -cwd
-#$ -l f_node=1
-#$ -l h_rt=24:00:00
+#$ -l h_rt=167:00:00
 #$ -j y
 #$ -o output/o.$JOB_ID
 
@@ -17,7 +16,7 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/t
     --model vit_deit_tiny_patch16_224 \
     --opt adamw \
     --batch-size 256 \
-    --epochs 22 \
+    --epochs 300 \
     --cooldown-epochs 0 \
     --lr 0.001 \
     --sched cosine \
@@ -32,8 +31,8 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/t
     --reprob 0.25 \
     --log-wandb \
     --output train_result \
-    --experiment PreTraining_vit_deit_tiny_patch16_224_1k \
-    --id_wandb PreTraining_vit_deit_tiny_patch16_224_1k \
+    --experiment PreTraining_vit_deit_tiny_patch16_224_1k_v2 \
+    --id_wandb PreTraining_vit_deit_tiny_patch16_224_1k_v2 \
     -j 4
 
 echo '--End--'
