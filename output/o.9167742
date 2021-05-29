@@ -1,0 +1,77 @@
+--Start--
+Sat May 29 12:02:51 JST 2021
+Added key: store_based_barrier_key:1 to store for rank: 3
+Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 0
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+wandb: Currently logged in as: gyama_x (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.31 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+wandb: Tracking run with wandb version 0.10.27
+wandb: Resuming run PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+wandb: ⭐️ View project at https://wandb.ai/gyama_x/pytorch-image-models
+wandb: 🚀 View run at https://wandb.ai/gyama_x/pytorch-image-models/runs/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+wandb: Run data is saved locally in /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210529_120403-PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+wandb: Run `wandb offline` to turn off syncing.
+
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Model vit_deit_tiny_patch16_224 created, param count:5717416
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.485, 0.456, 0.406)
+	std: (0.229, 0.224, 0.225)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Restoring model state from checkpoint...
+Restoring optimizer state from checkpoint...
+Loaded checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar' (epoch 87)
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 100
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(

@@ -19,7 +19,7 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/t
     --model vit_deit_tiny_patch16_224 \
     --opt adamw \
     --batch-size 256 \
-    --epochs 44 \
+    --epochs 100 \
     --cooldown-epochs 0 \
     --lr 0.001 \
     --sched cosine \

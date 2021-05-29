@@ -1,0 +1,80 @@
+--Start--
+Fri May 28 14:50:17 JST 2021
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 3
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+wandb: Currently logged in as: gyama_x (use `wandb login --relogin` to force relogin)
+Traceback (most recent call last):
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 741, in init
+    wi.setup(kwargs)
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 163, in setup
+    settings._apply_init(kwargs)
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_settings.py", line 1075, in _apply_init
+    resume_run_id = json.load(f)["run_id"]
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+wandb: ERROR Abnormal program exit
+Traceback (most recent call last):
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 741, in init
+    wi.setup(kwargs)
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 163, in setup
+    settings._apply_init(kwargs)
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_settings.py", line 1075, in _apply_init
+    resume_run_id = json.load(f)["run_id"]
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "train.py", line 822, in <module>
+    main()
+  File "train.py", line 356, in main
+    wandb.init(project="pytorch-image-models", name=args.experiment, id=args.id_wandb, resume=is_resume, config=args)
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 781, in init
+    six.raise_from(Exception("problem"), error_seen)
+  File "<string>", line 3, in raise_from
+Exception: problem
+Traceback (most recent call last):
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/2/21M31163/.pyenv/versions/3.8.6/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/python', '-u', 'train.py', '--local_rank=3', '/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2', '--model', 'vit_deit_tiny_patch16_224', '--resume', '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar', '--initial-checkpoint', '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar', '--opt', 'adamw', '--batch-size', '256', '--epochs', '88', '--cooldown-epochs', '0', '--lr', '0.001', '--sched', 'cosine', '--warmup-epochs', '5', '--weight-decay', '0.05', '--smoothing', '0.1', '--drop-path', '0.1', '--aa', 'rand-m9-mstd0.5-inc1', '--repeated-aug', '--mixup', '0.8', '--cutmix', '1.0', '--reprob', '0.25', '--log-wandb', '--output', 'train_result', '--experiment', 'PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k', '--id_wandb', 'PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k', '-j', '4']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 22897
+Killing subprocess 22898
+Killing subprocess 22899
+Killing subprocess 22900
+--End--
+Fri May 28 14:51:23 JST 2021
