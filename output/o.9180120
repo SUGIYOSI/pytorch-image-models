@@ -1,0 +1,852 @@
+--Start--
+Tue Jun 1 22:33:19 JST 2021
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 3
+Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 2
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+wandb: Currently logged in as: gyama_x (use `wandb login --relogin` to force relogin)
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+wandb: wandb version 0.10.31 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.10.27
+wandb: Resuming run PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+wandb: ⭐️ View project at https://wandb.ai/gyama_x/pytorch-image-models
+wandb: 🚀 View run at https://wandb.ai/gyama_x/pytorch-image-models/runs/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+wandb: Run data is saved locally in /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210601_223424-PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+wandb: Run `wandb offline` to turn off syncing.
+
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar'
+Model vit_deit_tiny_patch16_224 created, param count:5717416
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.485, 0.456, 0.406)
+	std: (0.229, 0.224, 0.225)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Restoring model state from checkpoint...
+Restoring optimizer state from checkpoint...
+Loaded checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/last.pth.tar' (epoch 121)
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 144
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Train: 122 [   0/927 (  0%)]  Loss:  4.961567 (4.9616)  Time: 13.133s,   77.97/s  (13.133s,   77.97/s)  LR: 6.593e-05  Data: 10.881 (10.881)
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Train: 122 [  50/927 (  5%)]  Loss:  5.132967 (5.0473)  Time: 0.586s, 1746.09/s  (2.060s,  497.06/s)  LR: 6.593e-05  Data: 0.018 (1.442)
+Train: 122 [ 100/927 ( 11%)]  Loss:  5.053746 (5.0494)  Time: 0.587s, 1743.16/s  (1.958s,  523.00/s)  LR: 6.593e-05  Data: 0.021 (1.357)
+Train: 122 [ 150/927 ( 16%)]  Loss:  4.341738 (4.8725)  Time: 0.585s, 1751.44/s  (1.980s,  517.21/s)  LR: 6.593e-05  Data: 0.018 (1.384)
+Train: 122 [ 200/927 ( 22%)]  Loss:  4.543437 (4.8067)  Time: 0.585s, 1749.15/s  (2.000s,  511.89/s)  LR: 6.593e-05  Data: 0.021 (1.407)
+Train: 122 [ 250/927 ( 27%)]  Loss:  4.258844 (4.7154)  Time: 0.587s, 1743.26/s  (2.025s,  505.63/s)  LR: 6.593e-05  Data: 0.018 (1.430)
+Train: 122 [ 300/927 ( 32%)]  Loss:  5.163728 (4.7794)  Time: 0.586s, 1745.98/s  (2.119s,  483.32/s)  LR: 6.593e-05  Data: 0.021 (1.526)
+Train: 122 [ 350/927 ( 38%)]  Loss:  4.288810 (4.7181)  Time: 0.788s, 1299.17/s  (2.114s,  484.44/s)  LR: 6.593e-05  Data: 0.140 (1.522)
+Train: 122 [ 400/927 ( 43%)]  Loss:  5.059858 (4.7561)  Time: 0.583s, 1756.21/s  (2.149s,  476.52/s)  LR: 6.593e-05  Data: 0.018 (1.557)
+Train: 122 [ 450/927 ( 49%)]  Loss:  4.637973 (4.7443)  Time: 0.927s, 1105.20/s  (2.177s,  470.35/s)  LR: 6.593e-05  Data: 0.329 (1.585)
+Train: 122 [ 500/927 ( 54%)]  Loss:  4.519590 (4.7238)  Time: 0.587s, 1745.48/s  (2.200s,  465.40/s)  LR: 6.593e-05  Data: 0.021 (1.608)
+Train: 122 [ 550/927 ( 59%)]  Loss:  4.795086 (4.7298)  Time: 0.585s, 1749.95/s  (2.197s,  466.11/s)  LR: 6.593e-05  Data: 0.018 (1.604)
+Train: 122 [ 600/927 ( 65%)]  Loss:  5.648999 (4.8005)  Time: 0.585s, 1749.42/s  (2.196s,  466.40/s)  LR: 6.593e-05  Data: 0.018 (1.601)
+Train: 122 [ 650/927 ( 70%)]  Loss:  4.730021 (4.7955)  Time: 2.760s,  370.95/s  (2.189s,  467.86/s)  LR: 6.593e-05  Data: 2.165 (1.592)
+Train: 122 [ 700/927 ( 76%)]  Loss:  4.901282 (4.8025)  Time: 0.583s, 1755.16/s  (2.214s,  462.43/s)  LR: 6.593e-05  Data: 0.017 (1.619)
+Train: 122 [ 750/927 ( 81%)]  Loss:  5.474940 (4.8445)  Time: 1.616s,  633.53/s  (2.220s,  461.24/s)  LR: 6.593e-05  Data: 1.033 (1.624)
+Train: 122 [ 800/927 ( 86%)]  Loss:  4.694875 (4.8357)  Time: 0.584s, 1753.11/s  (2.229s,  459.47/s)  LR: 6.593e-05  Data: 0.018 (1.632)
+Train: 122 [ 850/927 ( 92%)]  Loss:  4.852368 (4.8367)  Time: 0.586s, 1748.71/s  (2.227s,  459.85/s)  LR: 6.593e-05  Data: 0.021 (1.631)
+Train: 122 [ 900/927 ( 97%)]  Loss:  5.375650 (4.8650)  Time: 0.585s, 1749.40/s  (2.232s,  458.77/s)  LR: 6.593e-05  Data: 0.018 (1.637)
+Train: 122 [ 926/927 (100%)]  Loss:  4.795523 (4.8616)  Time: 0.564s, 1814.20/s  (2.224s,  460.37/s)  LR: 6.593e-05  Data: 0.000 (1.628)
+Test: [   0/48]  Time: 13.818 (13.818)  Loss:  0.9426 (0.9426)  Acc@1: 83.9844 (83.9844)  Acc@5: 94.6289 (94.6289)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.462 (2.941)  Loss:  0.8298 (0.9471)  Acc@1: 85.8491 (83.8940)  Acc@5: 96.2264 (95.3500)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 123 [   0/927 (  0%)]  Loss:  4.842653 (4.8427)  Time: 9.371s,  109.27/s  (9.371s,  109.27/s)  LR: 6.105e-05  Data: 8.119 (8.119)
+Train: 123 [  50/927 (  5%)]  Loss:  4.728232 (4.7854)  Time: 0.586s, 1747.65/s  (1.894s,  540.67/s)  LR: 6.105e-05  Data: 0.018 (1.293)
+Train: 123 [ 100/927 ( 11%)]  Loss:  4.153766 (4.5749)  Time: 0.587s, 1744.97/s  (2.066s,  495.62/s)  LR: 6.105e-05  Data: 0.020 (1.450)
+Train: 123 [ 150/927 ( 16%)]  Loss:  5.221587 (4.7366)  Time: 0.589s, 1739.73/s  (2.069s,  494.82/s)  LR: 6.105e-05  Data: 0.023 (1.462)
+Train: 123 [ 200/927 ( 22%)]  Loss:  5.018450 (4.7929)  Time: 2.692s,  380.41/s  (2.133s,  480.02/s)  LR: 6.105e-05  Data: 2.090 (1.526)
+Train: 123 [ 250/927 ( 27%)]  Loss:  5.447390 (4.9020)  Time: 0.587s, 1745.27/s  (2.126s,  481.68/s)  LR: 6.105e-05  Data: 0.022 (1.519)
+Train: 123 [ 300/927 ( 32%)]  Loss:  3.706171 (4.7312)  Time: 0.851s, 1202.71/s  (2.131s,  480.59/s)  LR: 6.105e-05  Data: 0.285 (1.526)
+Train: 123 [ 350/927 ( 38%)]  Loss:  5.647118 (4.8457)  Time: 0.587s, 1744.30/s  (2.117s,  483.75/s)  LR: 6.105e-05  Data: 0.020 (1.515)
+Train: 123 [ 400/927 ( 43%)]  Loss:  4.969516 (4.8594)  Time: 0.584s, 1753.29/s  (2.113s,  484.66/s)  LR: 6.105e-05  Data: 0.019 (1.513)
+Train: 123 [ 450/927 ( 49%)]  Loss:  4.442214 (4.8177)  Time: 0.586s, 1746.40/s  (2.086s,  490.90/s)  LR: 6.105e-05  Data: 0.019 (1.488)
+Train: 123 [ 500/927 ( 54%)]  Loss:  4.784511 (4.8147)  Time: 0.582s, 1759.42/s  (2.077s,  493.01/s)  LR: 6.105e-05  Data: 0.018 (1.480)
+Train: 123 [ 550/927 ( 59%)]  Loss:  5.119345 (4.8401)  Time: 0.588s, 1741.95/s  (2.115s,  484.20/s)  LR: 6.105e-05  Data: 0.020 (1.519)
+Train: 123 [ 600/927 ( 65%)]  Loss:  5.248068 (4.8715)  Time: 0.858s, 1193.06/s  (2.143s,  477.91/s)  LR: 6.105e-05  Data: 0.194 (1.548)
+Train: 123 [ 650/927 ( 70%)]  Loss:  5.090823 (4.8871)  Time: 0.586s, 1747.40/s  (2.159s,  474.23/s)  LR: 6.105e-05  Data: 0.021 (1.564)
+Train: 123 [ 700/927 ( 76%)]  Loss:  4.256026 (4.8451)  Time: 0.848s, 1208.17/s  (2.170s,  471.98/s)  LR: 6.105e-05  Data: 0.140 (1.574)
+Train: 123 [ 750/927 ( 81%)]  Loss:  4.710658 (4.8367)  Time: 0.583s, 1756.21/s  (2.170s,  471.88/s)  LR: 6.105e-05  Data: 0.019 (1.574)
+Train: 123 [ 800/927 ( 86%)]  Loss:  5.033329 (4.8482)  Time: 0.856s, 1196.94/s  (2.173s,  471.17/s)  LR: 6.105e-05  Data: 0.291 (1.578)
+Train: 123 [ 850/927 ( 92%)]  Loss:  4.383406 (4.8224)  Time: 0.586s, 1747.26/s  (2.168s,  472.23/s)  LR: 6.105e-05  Data: 0.019 (1.573)
+Train: 123 [ 900/927 ( 97%)]  Loss:  5.213741 (4.8430)  Time: 0.585s, 1750.11/s  (2.170s,  471.95/s)  LR: 6.105e-05  Data: 0.020 (1.575)
+Train: 123 [ 926/927 (100%)]  Loss:  4.658334 (4.8338)  Time: 0.565s, 1813.11/s  (2.184s,  468.92/s)  LR: 6.105e-05  Data: 0.000 (1.590)
+Test: [   0/48]  Time: 14.043 (14.043)  Loss:  0.9317 (0.9317)  Acc@1: 83.9844 (83.9844)  Acc@5: 94.7266 (94.7266)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.149 (3.288)  Loss:  0.7876 (0.9383)  Acc@1: 87.1462 (84.0040)  Acc@5: 95.6368 (95.3800)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 124 [   0/927 (  0%)]  Loss:  4.592784 (4.5928)  Time: 9.119s,  112.29/s  (9.119s,  112.29/s)  LR: 5.638e-05  Data: 8.528 (8.528)
+Train: 124 [  50/927 (  5%)]  Loss:  5.010643 (4.8017)  Time: 0.583s, 1756.20/s  (2.326s,  440.24/s)  LR: 5.638e-05  Data: 0.019 (1.750)
+Train: 124 [ 100/927 ( 11%)]  Loss:  5.261143 (4.9549)  Time: 2.496s,  410.33/s  (2.300s,  445.19/s)  LR: 5.638e-05  Data: 1.923 (1.714)
+Train: 124 [ 150/927 ( 16%)]  Loss:  5.388171 (5.0632)  Time: 0.585s, 1750.90/s  (2.239s,  457.36/s)  LR: 5.638e-05  Data: 0.018 (1.649)
+Train: 124 [ 200/927 ( 22%)]  Loss:  4.685661 (4.9877)  Time: 4.301s,  238.09/s  (2.226s,  459.92/s)  LR: 5.638e-05  Data: 3.711 (1.631)
+Train: 124 [ 250/927 ( 27%)]  Loss:  4.653922 (4.9321)  Time: 0.584s, 1753.19/s  (2.198s,  465.87/s)  LR: 5.638e-05  Data: 0.019 (1.601)
+Train: 124 [ 300/927 ( 32%)]  Loss:  5.343791 (4.9909)  Time: 6.299s,  162.56/s  (2.200s,  465.43/s)  LR: 5.638e-05  Data: 5.735 (1.603)
+Train: 124 [ 350/927 ( 38%)]  Loss:  5.249049 (5.0231)  Time: 1.325s,  772.69/s  (2.246s,  456.02/s)  LR: 5.638e-05  Data: 0.758 (1.644)
+Train: 124 [ 400/927 ( 43%)]  Loss:  5.077083 (5.0291)  Time: 7.573s,  135.21/s  (2.263s,  452.57/s)  LR: 5.638e-05  Data: 6.884 (1.660)
+Train: 124 [ 450/927 ( 49%)]  Loss:  4.613921 (4.9876)  Time: 1.154s,  887.60/s  (2.259s,  453.40/s)  LR: 5.638e-05  Data: 0.561 (1.657)
+Train: 124 [ 500/927 ( 54%)]  Loss:  4.876369 (4.9775)  Time: 0.587s, 1745.41/s  (2.260s,  453.13/s)  LR: 5.638e-05  Data: 0.021 (1.657)
+Train: 124 [ 550/927 ( 59%)]  Loss:  5.209229 (4.9968)  Time: 1.080s,  948.32/s  (2.259s,  453.28/s)  LR: 5.638e-05  Data: 0.384 (1.656)
+Train: 124 [ 600/927 ( 65%)]  Loss:  5.171200 (5.0102)  Time: 0.586s, 1748.25/s  (2.272s,  450.65/s)  LR: 5.638e-05  Data: 0.019 (1.670)
+Train: 124 [ 650/927 ( 70%)]  Loss:  4.814480 (4.9962)  Time: 1.017s, 1006.76/s  (2.276s,  449.97/s)  LR: 5.638e-05  Data: 0.354 (1.674)
+Train: 124 [ 700/927 ( 76%)]  Loss:  4.311327 (4.9506)  Time: 0.585s, 1750.44/s  (2.292s,  446.74/s)  LR: 5.638e-05  Data: 0.018 (1.690)
+Train: 124 [ 750/927 ( 81%)]  Loss:  5.153250 (4.9633)  Time: 0.770s, 1329.17/s  (2.275s,  450.13/s)  LR: 5.638e-05  Data: 0.173 (1.672)
+Train: 124 [ 800/927 ( 86%)]  Loss:  5.093562 (4.9709)  Time: 0.588s, 1742.44/s  (2.279s,  449.35/s)  LR: 5.638e-05  Data: 0.020 (1.677)
+Train: 124 [ 850/927 ( 92%)]  Loss:  5.578623 (5.0047)  Time: 0.586s, 1746.12/s  (2.271s,  450.88/s)  LR: 5.638e-05  Data: 0.019 (1.670)
+Train: 124 [ 900/927 ( 97%)]  Loss:  5.302561 (5.0204)  Time: 0.585s, 1750.32/s  (2.274s,  450.33/s)  LR: 5.638e-05  Data: 0.018 (1.674)
+Train: 124 [ 926/927 (100%)]  Loss:  5.375903 (5.0381)  Time: 0.565s, 1813.82/s  (2.266s,  451.91/s)  LR: 5.638e-05  Data: 0.000 (1.666)
+Test: [   0/48]  Time: 12.731 (12.731)  Loss:  0.9293 (0.9293)  Acc@1: 83.4961 (83.4961)  Acc@5: 94.9219 (94.9219)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.057)  Loss:  0.7702 (0.9240)  Acc@1: 87.1462 (84.1100)  Acc@5: 96.6981 (95.4220)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 125 [   0/927 (  0%)]  Loss:  5.284046 (5.2840)  Time: 8.426s,  121.53/s  (8.426s,  121.53/s)  LR: 5.192e-05  Data: 7.775 (7.775)
+Train: 125 [  50/927 (  5%)]  Loss:  5.078650 (5.1813)  Time: 0.587s, 1744.46/s  (2.051s,  499.34/s)  LR: 5.192e-05  Data: 0.020 (1.450)
+Train: 125 [ 100/927 ( 11%)]  Loss:  5.241671 (5.2015)  Time: 0.588s, 1740.78/s  (2.021s,  506.62/s)  LR: 5.192e-05  Data: 0.019 (1.429)
+Train: 125 [ 150/927 ( 16%)]  Loss:  4.588309 (5.0482)  Time: 0.587s, 1744.58/s  (2.155s,  475.09/s)  LR: 5.192e-05  Data: 0.020 (1.561)
+Train: 125 [ 200/927 ( 22%)]  Loss:  5.525250 (5.1436)  Time: 0.590s, 1737.06/s  (2.197s,  466.01/s)  LR: 5.192e-05  Data: 0.021 (1.603)
+Train: 125 [ 250/927 ( 27%)]  Loss:  4.690101 (5.0680)  Time: 0.586s, 1746.44/s  (2.195s,  466.46/s)  LR: 5.192e-05  Data: 0.021 (1.597)
+Train: 125 [ 300/927 ( 32%)]  Loss:  4.787922 (5.0280)  Time: 2.172s,  471.41/s  (2.217s,  461.98/s)  LR: 5.192e-05  Data: 1.504 (1.617)
+Train: 125 [ 350/927 ( 38%)]  Loss:  5.011390 (5.0259)  Time: 0.583s, 1755.06/s  (2.215s,  462.25/s)  LR: 5.192e-05  Data: 0.019 (1.618)
+Train: 125 [ 400/927 ( 43%)]  Loss:  5.212494 (5.0466)  Time: 1.895s,  540.25/s  (2.224s,  460.47/s)  LR: 5.192e-05  Data: 1.317 (1.627)
+Train: 125 [ 450/927 ( 49%)]  Loss:  4.698185 (5.0118)  Time: 0.585s, 1750.27/s  (2.218s,  461.70/s)  LR: 5.192e-05  Data: 0.020 (1.621)
+Train: 125 [ 500/927 ( 54%)]  Loss:  4.404070 (4.9566)  Time: 0.586s, 1747.96/s  (2.222s,  460.93/s)  LR: 5.192e-05  Data: 0.019 (1.626)
+Train: 125 [ 550/927 ( 59%)]  Loss:  4.999455 (4.9601)  Time: 0.587s, 1745.38/s  (2.250s,  455.11/s)  LR: 5.192e-05  Data: 0.021 (1.655)
+Train: 125 [ 600/927 ( 65%)]  Loss:  4.831258 (4.9502)  Time: 0.591s, 1733.91/s  (2.273s,  450.42/s)  LR: 5.192e-05  Data: 0.019 (1.678)
+Train: 125 [ 650/927 ( 70%)]  Loss:  5.036188 (4.9564)  Time: 5.676s,  180.40/s  (2.278s,  449.43/s)  LR: 5.192e-05  Data: 5.020 (1.683)
+Train: 125 [ 700/927 ( 76%)]  Loss:  4.805138 (4.9463)  Time: 0.587s, 1744.18/s  (2.276s,  449.88/s)  LR: 5.192e-05  Data: 0.020 (1.681)
+Train: 125 [ 750/927 ( 81%)]  Loss:  4.737283 (4.9332)  Time: 4.403s,  232.58/s  (2.280s,  449.21/s)  LR: 5.192e-05  Data: 3.729 (1.684)
+Train: 125 [ 800/927 ( 86%)]  Loss:  4.480120 (4.9066)  Time: 0.588s, 1741.09/s  (2.277s,  449.62/s)  LR: 5.192e-05  Data: 0.019 (1.681)
+Train: 125 [ 850/927 ( 92%)]  Loss:  4.464419 (4.8820)  Time: 3.647s,  280.77/s  (2.273s,  450.57/s)  LR: 5.192e-05  Data: 2.949 (1.676)
+Train: 125 [ 900/927 ( 97%)]  Loss:  4.354062 (4.8542)  Time: 0.586s, 1748.77/s  (2.287s,  447.79/s)  LR: 5.192e-05  Data: 0.019 (1.689)
+Train: 125 [ 926/927 (100%)]  Loss:  4.570611 (4.8400)  Time: 0.565s, 1813.70/s  (2.291s,  446.94/s)  LR: 5.192e-05  Data: 0.000 (1.693)
+Test: [   0/48]  Time: 13.612 (13.612)  Loss:  0.9020 (0.9020)  Acc@1: 83.8867 (83.8867)  Acc@5: 95.4102 (95.4102)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.149 (3.550)  Loss:  0.7499 (0.8978)  Acc@1: 87.0283 (84.8200)  Acc@5: 96.6981 (95.7560)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 126 [   0/927 (  0%)]  Loss:  5.480059 (5.4801)  Time: 10.929s,   93.70/s  (10.929s,   93.70/s)  LR: 4.768e-05  Data: 10.136 (10.136)
+Train: 126 [  50/927 (  5%)]  Loss:  5.330563 (5.4053)  Time: 0.584s, 1753.77/s  (2.411s,  424.73/s)  LR: 4.768e-05  Data: 0.019 (1.826)
+Train: 126 [ 100/927 ( 11%)]  Loss:  4.935132 (5.2486)  Time: 0.720s, 1421.94/s  (2.376s,  430.95/s)  LR: 4.768e-05  Data: 0.045 (1.776)
+Train: 126 [ 150/927 ( 16%)]  Loss:  5.480880 (5.3067)  Time: 0.591s, 1732.04/s  (2.312s,  442.97/s)  LR: 4.768e-05  Data: 0.024 (1.715)
+Train: 126 [ 200/927 ( 22%)]  Loss:  5.066875 (5.2587)  Time: 0.837s, 1223.70/s  (2.303s,  444.59/s)  LR: 4.768e-05  Data: 0.272 (1.708)
+Train: 126 [ 250/927 ( 27%)]  Loss:  4.588617 (5.1470)  Time: 0.587s, 1745.87/s  (2.274s,  450.22/s)  LR: 4.768e-05  Data: 0.021 (1.678)
+Train: 126 [ 300/927 ( 32%)]  Loss:  4.240537 (5.0175)  Time: 0.590s, 1736.60/s  (2.320s,  441.39/s)  LR: 4.768e-05  Data: 0.021 (1.720)
+Train: 126 [ 350/927 ( 38%)]  Loss:  5.534487 (5.0821)  Time: 0.585s, 1750.24/s  (2.317s,  441.92/s)  LR: 4.768e-05  Data: 0.020 (1.714)
+Train: 126 [ 400/927 ( 43%)]  Loss:  4.868150 (5.0584)  Time: 4.012s,  255.24/s  (2.311s,  443.17/s)  LR: 4.768e-05  Data: 3.382 (1.706)
+Train: 126 [ 450/927 ( 49%)]  Loss:  4.268906 (4.9794)  Time: 0.585s, 1750.71/s  (2.296s,  446.08/s)  LR: 4.768e-05  Data: 0.018 (1.691)
+Train: 126 [ 500/927 ( 54%)]  Loss:  4.303632 (4.9180)  Time: 3.070s,  333.56/s  (2.302s,  444.85/s)  LR: 4.768e-05  Data: 2.506 (1.697)
+Train: 126 [ 550/927 ( 59%)]  Loss:  4.734113 (4.9027)  Time: 2.342s,  437.32/s  (2.314s,  442.48/s)  LR: 4.768e-05  Data: 1.777 (1.709)
+Train: 126 [ 600/927 ( 65%)]  Loss:  4.094332 (4.8405)  Time: 0.589s, 1738.46/s  (2.325s,  440.51/s)  LR: 4.768e-05  Data: 0.022 (1.717)
+Train: 126 [ 650/927 ( 70%)]  Loss:  5.398311 (4.8803)  Time: 0.587s, 1744.07/s  (2.306s,  443.99/s)  LR: 4.768e-05  Data: 0.020 (1.698)
+Train: 126 [ 700/927 ( 76%)]  Loss:  5.611420 (4.9291)  Time: 0.590s, 1736.55/s  (2.326s,  440.21/s)  LR: 4.768e-05  Data: 0.022 (1.719)
+Train: 126 [ 750/927 ( 81%)]  Loss:  5.236422 (4.9483)  Time: 0.590s, 1736.69/s  (2.329s,  439.66/s)  LR: 4.768e-05  Data: 0.018 (1.720)
+Train: 126 [ 800/927 ( 86%)]  Loss:  5.113381 (4.9580)  Time: 0.587s, 1744.25/s  (2.332s,  439.05/s)  LR: 4.768e-05  Data: 0.021 (1.724)
+Train: 126 [ 850/927 ( 92%)]  Loss:  4.340727 (4.9237)  Time: 0.585s, 1750.24/s  (2.331s,  439.31/s)  LR: 4.768e-05  Data: 0.018 (1.721)
+Train: 126 [ 900/927 ( 97%)]  Loss:  4.216125 (4.8865)  Time: 5.515s,  185.69/s  (2.332s,  439.13/s)  LR: 4.768e-05  Data: 4.949 (1.721)
+Train: 126 [ 926/927 (100%)]  Loss:  5.009640 (4.8926)  Time: 0.565s, 1812.14/s  (2.327s,  440.03/s)  LR: 4.768e-05  Data: 0.000 (1.716)
+Test: [   0/48]  Time: 13.237 (13.237)  Loss:  0.9158 (0.9158)  Acc@1: 84.7656 (84.7656)  Acc@5: 94.8242 (94.8242)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.215)  Loss:  0.7763 (0.9194)  Acc@1: 87.9717 (84.5480)  Acc@5: 95.8726 (95.6720)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 127 [   0/927 (  0%)]  Loss:  5.067890 (5.0679)  Time: 9.054s,  113.09/s  (9.054s,  113.09/s)  LR: 4.366e-05  Data: 8.474 (8.474)
+Train: 127 [  50/927 (  5%)]  Loss:  4.871113 (4.9695)  Time: 0.584s, 1754.64/s  (2.235s,  458.09/s)  LR: 4.366e-05  Data: 0.019 (1.650)
+Train: 127 [ 100/927 ( 11%)]  Loss:  4.802512 (4.9138)  Time: 0.585s, 1749.73/s  (2.388s,  428.80/s)  LR: 4.366e-05  Data: 0.020 (1.789)
+Train: 127 [ 150/927 ( 16%)]  Loss:  4.448888 (4.7976)  Time: 0.585s, 1751.92/s  (2.395s,  427.59/s)  LR: 4.366e-05  Data: 0.019 (1.797)
+Train: 127 [ 200/927 ( 22%)]  Loss:  4.676641 (4.7734)  Time: 0.583s, 1755.10/s  (2.401s,  426.45/s)  LR: 4.366e-05  Data: 0.019 (1.806)
+Train: 127 [ 250/927 ( 27%)]  Loss:  5.654071 (4.9202)  Time: 0.585s, 1751.71/s  (2.382s,  429.92/s)  LR: 4.366e-05  Data: 0.020 (1.787)
+Train: 127 [ 300/927 ( 32%)]  Loss:  4.638917 (4.8800)  Time: 0.587s, 1744.55/s  (2.377s,  430.79/s)  LR: 4.366e-05  Data: 0.017 (1.785)
+Train: 127 [ 350/927 ( 38%)]  Loss:  5.265471 (4.9282)  Time: 0.583s, 1757.25/s  (2.342s,  437.22/s)  LR: 4.366e-05  Data: 0.019 (1.752)
+Train: 127 [ 400/927 ( 43%)]  Loss:  4.327018 (4.8614)  Time: 0.588s, 1742.12/s  (2.329s,  439.62/s)  LR: 4.366e-05  Data: 0.021 (1.739)
+Train: 127 [ 450/927 ( 49%)]  Loss:  5.380243 (4.9133)  Time: 0.586s, 1746.56/s  (2.348s,  436.21/s)  LR: 4.366e-05  Data: 0.021 (1.757)
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+Train: 127 [ 500/927 ( 54%)]  Loss:  4.757569 (4.8991)  Time: 0.588s, 1741.00/s  (2.342s,  437.18/s)  LR: 4.366e-05  Data: 0.020 (1.752)
+Train: 127 [ 550/927 ( 59%)]  Loss:  5.038127 (4.9107)  Time: 0.584s, 1753.96/s  (2.352s,  435.46/s)  LR: 4.366e-05  Data: 0.018 (1.762)
+Train: 127 [ 600/927 ( 65%)]  Loss:  4.987659 (4.9166)  Time: 0.586s, 1748.19/s  (2.376s,  431.01/s)  LR: 4.366e-05  Data: 0.018 (1.787)
+Train: 127 [ 650/927 ( 70%)]  Loss:  5.356756 (4.9481)  Time: 0.585s, 1751.58/s  (2.369s,  432.23/s)  LR: 4.366e-05  Data: 0.020 (1.781)
+Train: 127 [ 700/927 ( 76%)]  Loss:  5.398566 (4.9781)  Time: 0.588s, 1740.18/s  (2.361s,  433.79/s)  LR: 4.366e-05  Data: 0.021 (1.773)
+Train: 127 [ 750/927 ( 81%)]  Loss:  4.950672 (4.9764)  Time: 0.587s, 1745.38/s  (2.344s,  436.95/s)  LR: 4.366e-05  Data: 0.018 (1.756)
+Train: 127 [ 800/927 ( 86%)]  Loss:  4.565504 (4.9522)  Time: 0.587s, 1743.67/s  (2.337s,  438.10/s)  LR: 4.366e-05  Data: 0.020 (1.750)
+Train: 127 [ 850/927 ( 92%)]  Loss:  5.041356 (4.9572)  Time: 0.587s, 1743.83/s  (2.346s,  436.44/s)  LR: 4.366e-05  Data: 0.022 (1.758)
+Train: 127 [ 900/927 ( 97%)]  Loss:  4.708271 (4.9441)  Time: 0.588s, 1742.34/s  (2.352s,  435.45/s)  LR: 4.366e-05  Data: 0.020 (1.764)
+Train: 127 [ 926/927 (100%)]  Loss:  5.347466 (4.9642)  Time: 0.568s, 1804.01/s  (2.347s,  436.30/s)  LR: 4.366e-05  Data: 0.000 (1.759)
+Test: [   0/48]  Time: 14.685 (14.685)  Loss:  0.8978 (0.8978)  Acc@1: 84.3750 (84.3750)  Acc@5: 95.1172 (95.1172)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.264)  Loss:  0.7725 (0.9070)  Acc@1: 87.6179 (84.7620)  Acc@5: 96.4623 (95.6500)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 128 [   0/927 (  0%)]  Loss:  5.407579 (5.4076)  Time: 9.727s,  105.27/s  (9.727s,  105.27/s)  LR: 3.985e-05  Data: 9.057 (9.057)
+Train: 128 [  50/927 (  5%)]  Loss:  4.796491 (5.1020)  Time: 0.586s, 1748.68/s  (2.291s,  447.04/s)  LR: 3.985e-05  Data: 0.022 (1.704)
+Train: 128 [ 100/927 ( 11%)]  Loss:  5.029989 (5.0780)  Time: 0.588s, 1742.80/s  (2.251s,  454.82/s)  LR: 3.985e-05  Data: 0.022 (1.663)
+Train: 128 [ 150/927 ( 16%)]  Loss:  3.730672 (4.7412)  Time: 0.586s, 1747.72/s  (2.173s,  471.26/s)  LR: 3.985e-05  Data: 0.022 (1.584)
+Train: 128 [ 200/927 ( 22%)]  Loss:  4.594065 (4.7118)  Time: 0.587s, 1744.23/s  (2.155s,  475.08/s)  LR: 3.985e-05  Data: 0.022 (1.567)
+Train: 128 [ 250/927 ( 27%)]  Loss:  4.741669 (4.7167)  Time: 0.589s, 1739.52/s  (2.222s,  460.86/s)  LR: 3.985e-05  Data: 0.021 (1.631)
+Train: 128 [ 300/927 ( 32%)]  Loss:  5.155800 (4.7795)  Time: 0.588s, 1741.83/s  (2.228s,  459.70/s)  LR: 3.985e-05  Data: 0.023 (1.636)
+Train: 128 [ 350/927 ( 38%)]  Loss:  4.775934 (4.7790)  Time: 0.585s, 1751.04/s  (2.237s,  457.69/s)  LR: 3.985e-05  Data: 0.018 (1.644)
+Train: 128 [ 400/927 ( 43%)]  Loss:  4.610394 (4.7603)  Time: 6.022s,  170.03/s  (2.258s,  453.55/s)  LR: 3.985e-05  Data: 5.426 (1.664)
+Train: 128 [ 450/927 ( 49%)]  Loss:  4.841407 (4.7684)  Time: 0.586s, 1746.39/s  (2.258s,  453.57/s)  LR: 3.985e-05  Data: 0.020 (1.660)
+Train: 128 [ 500/927 ( 54%)]  Loss:  4.743619 (4.7661)  Time: 5.271s,  194.26/s  (2.269s,  451.24/s)  LR: 3.985e-05  Data: 4.692 (1.672)
+Train: 128 [ 550/927 ( 59%)]  Loss:  5.006682 (4.7862)  Time: 0.587s, 1744.77/s  (2.268s,  451.48/s)  LR: 3.985e-05  Data: 0.019 (1.670)
+Train: 128 [ 600/927 ( 65%)]  Loss:  4.706555 (4.7801)  Time: 7.394s,  138.49/s  (2.301s,  445.09/s)  LR: 3.985e-05  Data: 6.830 (1.702)
+Train: 128 [ 650/927 ( 70%)]  Loss:  5.052830 (4.7995)  Time: 0.585s, 1750.56/s  (2.311s,  443.09/s)  LR: 3.985e-05  Data: 0.019 (1.712)
+Train: 128 [ 700/927 ( 76%)]  Loss:  4.489368 (4.7789)  Time: 4.494s,  227.85/s  (2.331s,  439.25/s)  LR: 3.985e-05  Data: 3.531 (1.733)
+Train: 128 [ 750/927 ( 81%)]  Loss:  5.142866 (4.8016)  Time: 0.588s, 1741.82/s  (2.331s,  439.32/s)  LR: 3.985e-05  Data: 0.018 (1.731)
+Train: 128 [ 800/927 ( 86%)]  Loss:  4.501740 (4.7840)  Time: 6.977s,  146.77/s  (2.336s,  438.29/s)  LR: 3.985e-05  Data: 6.262 (1.736)
+Train: 128 [ 850/927 ( 92%)]  Loss:  5.132654 (4.8034)  Time: 0.590s, 1736.82/s  (2.329s,  439.58/s)  LR: 3.985e-05  Data: 0.018 (1.730)
+Train: 128 [ 900/927 ( 97%)]  Loss:  4.951472 (4.8111)  Time: 6.960s,  147.13/s  (2.336s,  438.31/s)  LR: 3.985e-05  Data: 6.300 (1.736)
+Train: 128 [ 926/927 (100%)]  Loss:  4.812913 (4.8112)  Time: 0.565s, 1811.74/s  (2.333s,  438.93/s)  LR: 3.985e-05  Data: 0.000 (1.732)
+Test: [   0/48]  Time: 13.564 (13.564)  Loss:  0.8496 (0.8496)  Acc@1: 84.8633 (84.8633)  Acc@5: 95.6055 (95.6055)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.472)  Loss:  0.7202 (0.8531)  Acc@1: 89.1509 (85.7520)  Acc@5: 96.6981 (96.0900)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 129 [   0/927 (  0%)]  Loss:  4.848910 (4.8489)  Time: 10.359s,   98.85/s  (10.359s,   98.85/s)  LR: 3.627e-05  Data: 9.327 (9.327)
+Train: 129 [  50/927 (  5%)]  Loss:  5.338477 (5.0937)  Time: 0.584s, 1754.67/s  (2.323s,  440.76/s)  LR: 3.627e-05  Data: 0.018 (1.725)
+Train: 129 [ 100/927 ( 11%)]  Loss:  4.519430 (4.9023)  Time: 1.756s,  583.11/s  (2.351s,  435.52/s)  LR: 3.627e-05  Data: 1.138 (1.748)
+Train: 129 [ 150/927 ( 16%)]  Loss:  3.771760 (4.6196)  Time: 0.584s, 1753.46/s  (2.345s,  436.65/s)  LR: 3.627e-05  Data: 0.018 (1.743)
+Train: 129 [ 200/927 ( 22%)]  Loss:  4.004641 (4.4966)  Time: 6.608s,  154.95/s  (2.342s,  437.31/s)  LR: 3.627e-05  Data: 5.946 (1.742)
+Train: 129 [ 250/927 ( 27%)]  Loss:  4.444586 (4.4880)  Time: 0.587s, 1743.87/s  (2.312s,  442.82/s)  LR: 3.627e-05  Data: 0.023 (1.715)
+Train: 129 [ 300/927 ( 32%)]  Loss:  4.990067 (4.5597)  Time: 6.546s,  156.44/s  (2.304s,  444.46/s)  LR: 3.627e-05  Data: 5.765 (1.704)
+Train: 129 [ 350/927 ( 38%)]  Loss:  3.828691 (4.4683)  Time: 0.586s, 1748.76/s  (2.292s,  446.82/s)  LR: 3.627e-05  Data: 0.017 (1.692)
+Train: 129 [ 400/927 ( 43%)]  Loss:  4.682623 (4.4921)  Time: 6.719s,  152.41/s  (2.345s,  436.74/s)  LR: 3.627e-05  Data: 6.001 (1.746)
+Train: 129 [ 450/927 ( 49%)]  Loss:  4.605188 (4.5034)  Time: 0.585s, 1749.29/s  (2.356s,  434.60/s)  LR: 3.627e-05  Data: 0.020 (1.758)
+Train: 129 [ 500/927 ( 54%)]  Loss:  5.481089 (4.5923)  Time: 7.765s,  131.87/s  (2.370s,  432.04/s)  LR: 3.627e-05  Data: 7.084 (1.772)
+Train: 129 [ 550/927 ( 59%)]  Loss:  4.797610 (4.6094)  Time: 0.585s, 1751.59/s  (2.369s,  432.31/s)  LR: 3.627e-05  Data: 0.020 (1.772)
+Train: 129 [ 600/927 ( 65%)]  Loss:  5.306110 (4.6630)  Time: 5.400s,  189.62/s  (2.382s,  429.85/s)  LR: 3.627e-05  Data: 4.835 (1.786)
+Train: 129 [ 650/927 ( 70%)]  Loss:  4.941381 (4.6829)  Time: 0.590s, 1735.26/s  (2.376s,  431.02/s)  LR: 3.627e-05  Data: 0.023 (1.778)
+Train: 129 [ 700/927 ( 76%)]  Loss:  4.370008 (4.6620)  Time: 4.431s,  231.07/s  (2.353s,  435.21/s)  LR: 3.627e-05  Data: 3.853 (1.754)
+Train: 129 [ 750/927 ( 81%)]  Loss:  4.707383 (4.6649)  Time: 0.589s, 1739.40/s  (2.359s,  434.13/s)  LR: 3.627e-05  Data: 0.021 (1.756)
+Train: 129 [ 800/927 ( 86%)]  Loss:  4.926873 (4.6803)  Time: 7.843s,  130.56/s  (2.360s,  433.92/s)  LR: 3.627e-05  Data: 7.159 (1.757)
+Train: 129 [ 850/927 ( 92%)]  Loss:  5.217629 (4.7101)  Time: 0.589s, 1737.67/s  (2.367s,  432.64/s)  LR: 3.627e-05  Data: 0.022 (1.764)
+Train: 129 [ 900/927 ( 97%)]  Loss:  5.146043 (4.7331)  Time: 7.515s,  136.27/s  (2.376s,  430.95/s)  LR: 3.627e-05  Data: 6.896 (1.774)
+Train: 129 [ 926/927 (100%)]  Loss:  5.843180 (4.7886)  Time: 0.564s, 1814.74/s  (2.373s,  431.60/s)  LR: 3.627e-05  Data: 0.000 (1.770)
+Test: [   0/48]  Time: 13.813 (13.813)  Loss:  0.8552 (0.8552)  Acc@1: 85.6445 (85.6445)  Acc@5: 95.4102 (95.4102)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.149 (3.290)  Loss:  0.7551 (0.8760)  Acc@1: 87.8538 (85.3840)  Acc@5: 96.3443 (95.9140)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 130 [   0/927 (  0%)]  Loss:  5.180913 (5.1809)  Time: 9.096s,  112.58/s  (9.096s,  112.58/s)  LR: 3.291e-05  Data: 8.428 (8.428)
+Train: 130 [  50/927 (  5%)]  Loss:  4.620371 (4.9006)  Time: 1.779s,  575.57/s  (2.244s,  456.34/s)  LR: 3.291e-05  Data: 1.109 (1.652)
+Train: 130 [ 100/927 ( 11%)]  Loss:  4.148802 (4.6500)  Time: 0.586s, 1748.75/s  (2.228s,  459.68/s)  LR: 3.291e-05  Data: 0.021 (1.627)
+Train: 130 [ 150/927 ( 16%)]  Loss:  4.486305 (4.6091)  Time: 3.034s,  337.45/s  (2.355s,  434.75/s)  LR: 3.291e-05  Data: 2.444 (1.752)
+Train: 130 [ 200/927 ( 22%)]  Loss:  4.016102 (4.4905)  Time: 0.587s, 1744.66/s  (2.358s,  434.28/s)  LR: 3.291e-05  Data: 0.021 (1.750)
+Train: 130 [ 250/927 ( 27%)]  Loss:  5.833262 (4.7143)  Time: 4.411s,  232.13/s  (2.362s,  433.51/s)  LR: 3.291e-05  Data: 3.786 (1.756)
+Train: 130 [ 300/927 ( 32%)]  Loss:  4.671781 (4.7082)  Time: 0.588s, 1742.45/s  (2.346s,  436.41/s)  LR: 3.291e-05  Data: 0.019 (1.741)
+Train: 130 [ 350/927 ( 38%)]  Loss:  4.833054 (4.7238)  Time: 6.912s,  148.15/s  (2.348s,  436.10/s)  LR: 3.291e-05  Data: 6.348 (1.744)
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+Train: 130 [ 400/927 ( 43%)]  Loss:  5.234439 (4.7806)  Time: 0.587s, 1743.62/s  (2.321s,  441.22/s)  LR: 3.291e-05  Data: 0.023 (1.717)
+Train: 130 [ 450/927 ( 49%)]  Loss:  4.695825 (4.7721)  Time: 4.600s,  222.59/s  (2.313s,  442.75/s)  LR: 3.291e-05  Data: 3.948 (1.709)
+Train: 130 [ 500/927 ( 54%)]  Loss:  4.706627 (4.7661)  Time: 0.588s, 1740.38/s  (2.294s,  446.35/s)  LR: 3.291e-05  Data: 0.024 (1.690)
+Train: 130 [ 550/927 ( 59%)]  Loss:  4.769145 (4.7664)  Time: 4.924s,  207.94/s  (2.333s,  438.84/s)  LR: 3.291e-05  Data: 4.223 (1.725)
+Train: 130 [ 600/927 ( 65%)]  Loss:  5.360638 (4.8121)  Time: 2.282s,  448.82/s  (2.340s,  437.58/s)  LR: 3.291e-05  Data: 1.713 (1.732)
+Train: 130 [ 650/927 ( 70%)]  Loss:  5.481489 (4.8599)  Time: 0.587s, 1745.45/s  (2.346s,  436.47/s)  LR: 3.291e-05  Data: 0.022 (1.738)
+Train: 130 [ 700/927 ( 76%)]  Loss:  5.472763 (4.9008)  Time: 0.585s, 1751.59/s  (2.342s,  437.24/s)  LR: 3.291e-05  Data: 0.019 (1.734)
+Train: 130 [ 750/927 ( 81%)]  Loss:  4.545831 (4.8786)  Time: 0.601s, 1705.11/s  (2.342s,  437.22/s)  LR: 3.291e-05  Data: 0.024 (1.735)
+Train: 130 [ 800/927 ( 86%)]  Loss:  4.916346 (4.8808)  Time: 0.835s, 1226.27/s  (2.333s,  438.91/s)  LR: 3.291e-05  Data: 0.271 (1.726)
+Train: 130 [ 850/927 ( 92%)]  Loss:  5.409302 (4.9102)  Time: 2.017s,  507.61/s  (2.331s,  439.31/s)  LR: 3.291e-05  Data: 1.362 (1.723)
+Train: 130 [ 900/927 ( 97%)]  Loss:  4.652425 (4.8966)  Time: 0.587s, 1745.93/s  (2.343s,  437.04/s)  LR: 3.291e-05  Data: 0.022 (1.734)
+Train: 130 [ 926/927 (100%)]  Loss:  4.888808 (4.8962)  Time: 0.565s, 1811.30/s  (2.349s,  435.98/s)  LR: 3.291e-05  Data: 0.000 (1.740)
+Test: [   0/48]  Time: 12.229 (12.229)  Loss:  0.8703 (0.8703)  Acc@1: 85.0586 (85.0586)  Acc@5: 95.4102 (95.4102)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.342)  Loss:  0.7666 (0.8755)  Acc@1: 87.2641 (85.6320)  Acc@5: 96.4623 (96.0400)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 131 [   0/927 (  0%)]  Loss:  4.949932 (4.9499)  Time: 9.628s,  106.35/s  (9.628s,  106.35/s)  LR: 2.978e-05  Data: 9.009 (9.009)
+Train: 131 [  50/927 (  5%)]  Loss:  5.065707 (5.0078)  Time: 0.586s, 1745.97/s  (2.410s,  424.81/s)  LR: 2.978e-05  Data: 0.022 (1.837)
+Train: 131 [ 100/927 ( 11%)]  Loss:  4.943374 (4.9863)  Time: 0.588s, 1741.25/s  (2.364s,  433.24/s)  LR: 2.978e-05  Data: 0.024 (1.782)
+Train: 131 [ 150/927 ( 16%)]  Loss:  4.630573 (4.8974)  Time: 0.585s, 1750.80/s  (2.318s,  441.78/s)  LR: 2.978e-05  Data: 0.020 (1.730)
+Train: 131 [ 200/927 ( 22%)]  Loss:  5.047158 (4.9273)  Time: 2.940s,  348.35/s  (2.319s,  441.53/s)  LR: 2.978e-05  Data: 2.282 (1.728)
+Train: 131 [ 250/927 ( 27%)]  Loss:  5.228574 (4.9776)  Time: 0.588s, 1741.24/s  (2.290s,  447.08/s)  LR: 2.978e-05  Data: 0.023 (1.697)
+Train: 131 [ 300/927 ( 32%)]  Loss:  5.494874 (5.0515)  Time: 4.344s,  235.71/s  (2.346s,  436.46/s)  LR: 2.978e-05  Data: 3.779 (1.751)
+Train: 131 [ 350/927 ( 38%)]  Loss:  4.384495 (4.9681)  Time: 0.585s, 1751.48/s  (2.316s,  442.20/s)  LR: 2.978e-05  Data: 0.017 (1.719)
+Train: 131 [ 400/927 ( 43%)]  Loss:  4.629032 (4.9304)  Time: 2.670s,  383.58/s  (2.332s,  439.17/s)  LR: 2.978e-05  Data: 1.978 (1.732)
+Train: 131 [ 450/927 ( 49%)]  Loss:  4.487814 (4.8862)  Time: 0.587s, 1745.32/s  (2.329s,  439.75/s)  LR: 2.978e-05  Data: 0.021 (1.727)
+Train: 131 [ 500/927 ( 54%)]  Loss:  4.701566 (4.8694)  Time: 1.973s,  519.08/s  (2.328s,  439.86/s)  LR: 2.978e-05  Data: 1.316 (1.726)
+Train: 131 [ 550/927 ( 59%)]  Loss:  4.288221 (4.8209)  Time: 0.592s, 1731.02/s  (2.333s,  438.94/s)  LR: 2.978e-05  Data: 0.023 (1.731)
+Train: 131 [ 600/927 ( 65%)]  Loss:  4.648643 (4.8077)  Time: 4.489s,  228.11/s  (2.345s,  436.67/s)  LR: 2.978e-05  Data: 3.840 (1.744)
+Train: 131 [ 650/927 ( 70%)]  Loss:  4.457579 (4.7827)  Time: 0.589s, 1739.89/s  (2.336s,  438.40/s)  LR: 2.978e-05  Data: 0.024 (1.733)
+Train: 131 [ 700/927 ( 76%)]  Loss:  5.057196 (4.8010)  Time: 4.274s,  239.61/s  (2.363s,  433.38/s)  LR: 2.978e-05  Data: 3.697 (1.761)
+Train: 131 [ 750/927 ( 81%)]  Loss:  3.748979 (4.7352)  Time: 0.589s, 1739.55/s  (2.355s,  434.75/s)  LR: 2.978e-05  Data: 0.025 (1.754)
+Train: 131 [ 800/927 ( 86%)]  Loss:  4.998966 (4.7507)  Time: 4.654s,  220.03/s  (2.357s,  434.48/s)  LR: 2.978e-05  Data: 3.989 (1.755)
+Train: 131 [ 850/927 ( 92%)]  Loss:  3.961480 (4.7069)  Time: 0.591s, 1731.59/s  (2.350s,  435.68/s)  LR: 2.978e-05  Data: 0.024 (1.749)
+Train: 131 [ 900/927 ( 97%)]  Loss:  4.961294 (4.7203)  Time: 7.285s,  140.56/s  (2.354s,  435.05/s)  LR: 2.978e-05  Data: 6.704 (1.753)
+Train: 131 [ 926/927 (100%)]  Loss:  4.791230 (4.7238)  Time: 0.565s, 1812.08/s  (2.347s,  436.29/s)  LR: 2.978e-05  Data: 0.000 (1.747)
+Test: [   0/48]  Time: 13.183 (13.183)  Loss:  0.8381 (0.8381)  Acc@1: 84.6680 (84.6680)  Acc@5: 95.7031 (95.7031)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.149 (3.174)  Loss:  0.7187 (0.8444)  Acc@1: 88.3255 (86.0180)  Acc@5: 96.8160 (96.2120)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-122.pth.tar', 83.89400005859375)
+
+Train: 132 [   0/927 (  0%)]  Loss:  4.760021 (4.7600)  Time: 9.494s,  107.86/s  (9.494s,  107.86/s)  LR: 2.687e-05  Data: 8.608 (8.608)
+Train: 132 [  50/927 (  5%)]  Loss:  5.132236 (4.9461)  Time: 0.588s, 1742.28/s  (2.426s,  422.17/s)  LR: 2.687e-05  Data: 0.020 (1.826)
+Train: 132 [ 100/927 ( 11%)]  Loss:  4.456379 (4.7829)  Time: 0.586s, 1746.19/s  (2.441s,  419.52/s)  LR: 2.687e-05  Data: 0.021 (1.842)
+Train: 132 [ 150/927 ( 16%)]  Loss:  4.959346 (4.8270)  Time: 0.586s, 1748.66/s  (2.412s,  424.55/s)  LR: 2.687e-05  Data: 0.021 (1.813)
+Train: 132 [ 200/927 ( 22%)]  Loss:  4.461586 (4.7539)  Time: 0.593s, 1727.56/s  (2.373s,  431.46/s)  LR: 2.687e-05  Data: 0.023 (1.777)
+Train: 132 [ 250/927 ( 27%)]  Loss:  5.395427 (4.8608)  Time: 0.587s, 1745.77/s  (2.345s,  436.70/s)  LR: 2.687e-05  Data: 0.021 (1.747)
+Train: 132 [ 300/927 ( 32%)]  Loss:  4.803110 (4.8526)  Time: 0.587s, 1745.59/s  (2.337s,  438.23/s)  LR: 2.687e-05  Data: 0.022 (1.733)
+Train: 132 [ 350/927 ( 38%)]  Loss:  4.904111 (4.8590)  Time: 0.588s, 1740.10/s  (2.320s,  441.33/s)  LR: 2.687e-05  Data: 0.024 (1.717)
+Train: 132 [ 400/927 ( 43%)]  Loss:  4.600665 (4.8303)  Time: 0.585s, 1749.91/s  (2.313s,  442.78/s)  LR: 2.687e-05  Data: 0.021 (1.710)
+Train: 132 [ 450/927 ( 49%)]  Loss:  4.940128 (4.8413)  Time: 0.584s, 1754.12/s  (2.336s,  438.32/s)  LR: 2.687e-05  Data: 0.018 (1.734)
+Train: 132 [ 500/927 ( 54%)]  Loss:  4.143078 (4.7778)  Time: 0.584s, 1753.93/s  (2.353s,  435.18/s)  LR: 2.687e-05  Data: 0.018 (1.753)
+Train: 132 [ 550/927 ( 59%)]  Loss:  4.943747 (4.7917)  Time: 0.585s, 1749.51/s  (2.351s,  435.58/s)  LR: 2.687e-05  Data: 0.020 (1.751)
+Train: 132 [ 600/927 ( 65%)]  Loss:  5.081098 (4.8139)  Time: 1.173s,  873.09/s  (2.361s,  433.78/s)  LR: 2.687e-05  Data: 0.541 (1.760)
+Train: 132 [ 650/927 ( 70%)]  Loss:  4.666445 (4.8034)  Time: 0.585s, 1750.16/s  (2.358s,  434.33/s)  LR: 2.687e-05  Data: 0.021 (1.758)
+Train: 132 [ 700/927 ( 76%)]  Loss:  4.913655 (4.8107)  Time: 5.038s,  203.24/s  (2.361s,  433.74/s)  LR: 2.687e-05  Data: 4.385 (1.760)
+Train: 132 [ 750/927 ( 81%)]  Loss:  4.860304 (4.8138)  Time: 0.598s, 1713.42/s  (2.348s,  436.07/s)  LR: 2.687e-05  Data: 0.020 (1.747)
+Train: 132 [ 800/927 ( 86%)]  Loss:  5.040671 (4.8272)  Time: 5.563s,  184.08/s  (2.343s,  437.01/s)  LR: 2.687e-05  Data: 4.902 (1.741)
+Train: 132 [ 850/927 ( 92%)]  Loss:  4.525245 (4.8104)  Time: 0.586s, 1748.15/s  (2.358s,  434.36/s)  LR: 2.687e-05  Data: 0.019 (1.756)
+Train: 132 [ 900/927 ( 97%)]  Loss:  4.871591 (4.8136)  Time: 2.394s,  427.75/s  (2.363s,  433.39/s)  LR: 2.687e-05  Data: 1.759 (1.760)
+Train: 132 [ 926/927 (100%)]  Loss:  5.072577 (4.8266)  Time: 0.566s, 1810.16/s  (2.358s,  434.25/s)  LR: 2.687e-05  Data: 0.000 (1.756)
+Test: [   0/48]  Time: 13.713 (13.713)  Loss:  0.8342 (0.8342)  Acc@1: 86.1328 (86.1328)  Acc@5: 95.8008 (95.8008)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.334)  Loss:  0.7542 (0.8539)  Acc@1: 87.8538 (85.9960)  Acc@5: 96.8160 (96.2040)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-123.pth.tar', 84.00400010498046)
+
+Train: 133 [   0/927 (  0%)]  Loss:  5.108307 (5.1083)  Time: 9.751s,  105.02/s  (9.751s,  105.02/s)  LR: 2.419e-05  Data: 9.130 (9.130)
+Train: 133 [  50/927 (  5%)]  Loss:  4.816667 (4.9625)  Time: 0.586s, 1747.10/s  (2.270s,  451.07/s)  LR: 2.419e-05  Data: 0.021 (1.676)
+Train: 133 [ 100/927 ( 11%)]  Loss:  4.904814 (4.9433)  Time: 0.585s, 1749.94/s  (2.245s,  456.04/s)  LR: 2.419e-05  Data: 0.018 (1.655)
+Train: 133 [ 150/927 ( 16%)]  Loss:  4.825373 (4.9138)  Time: 0.586s, 1747.23/s  (2.192s,  467.17/s)  LR: 2.419e-05  Data: 0.022 (1.605)
+Train: 133 [ 200/927 ( 22%)]  Loss:  5.256712 (4.9824)  Time: 0.589s, 1737.43/s  (2.186s,  468.34/s)  LR: 2.419e-05  Data: 0.022 (1.597)
+Train: 133 [ 250/927 ( 27%)]  Loss:  4.795878 (4.9513)  Time: 1.152s,  889.03/s  (2.259s,  453.34/s)  LR: 2.419e-05  Data: 0.567 (1.661)
+Train: 133 [ 300/927 ( 32%)]  Loss:  4.779845 (4.9268)  Time: 0.594s, 1725.25/s  (2.273s,  450.48/s)  LR: 2.419e-05  Data: 0.026 (1.674)
+Train: 133 [ 350/927 ( 38%)]  Loss:  4.138802 (4.8283)  Time: 0.589s, 1738.38/s  (2.278s,  449.47/s)  LR: 2.419e-05  Data: 0.020 (1.680)
+Train: 133 [ 400/927 ( 43%)]  Loss:  4.493204 (4.7911)  Time: 0.585s, 1749.39/s  (2.294s,  446.48/s)  LR: 2.419e-05  Data: 0.021 (1.696)
+Train: 133 [ 450/927 ( 49%)]  Loss:  4.219264 (4.7339)  Time: 0.590s, 1735.93/s  (2.283s,  448.46/s)  LR: 2.419e-05  Data: 0.022 (1.687)
+Train: 133 [ 500/927 ( 54%)]  Loss:  4.776595 (4.7378)  Time: 0.587s, 1743.04/s  (2.284s,  448.39/s)  LR: 2.419e-05  Data: 0.022 (1.688)
+Train: 133 [ 550/927 ( 59%)]  Loss:  4.502763 (4.7182)  Time: 0.587s, 1745.61/s  (2.270s,  451.06/s)  LR: 2.419e-05  Data: 0.022 (1.675)
+Train: 133 [ 600/927 ( 65%)]  Loss:  5.021282 (4.7415)  Time: 0.589s, 1738.64/s  (2.305s,  444.31/s)  LR: 2.419e-05  Data: 0.018 (1.711)
+Train: 133 [ 650/927 ( 70%)]  Loss:  4.945574 (4.7561)  Time: 0.589s, 1737.96/s  (2.307s,  443.80/s)  LR: 2.419e-05  Data: 0.022 (1.714)
+Train: 133 [ 700/927 ( 76%)]  Loss:  5.456047 (4.8027)  Time: 0.590s, 1735.68/s  (2.325s,  440.39/s)  LR: 2.419e-05  Data: 0.020 (1.732)
+Train: 133 [ 750/927 ( 81%)]  Loss:  5.017303 (4.8162)  Time: 0.588s, 1742.56/s  (2.330s,  439.56/s)  LR: 2.419e-05  Data: 0.022 (1.736)
+Train: 133 [ 800/927 ( 86%)]  Loss:  5.093702 (4.8325)  Time: 0.589s, 1737.76/s  (2.340s,  437.67/s)  LR: 2.419e-05  Data: 0.024 (1.746)
+Train: 133 [ 850/927 ( 92%)]  Loss:  4.761895 (4.8286)  Time: 0.585s, 1750.77/s  (2.334s,  438.73/s)  LR: 2.419e-05  Data: 0.018 (1.739)
+Train: 133 [ 900/927 ( 97%)]  Loss:  4.310428 (4.8013)  Time: 2.626s,  389.87/s  (2.335s,  438.61/s)  LR: 2.419e-05  Data: 1.962 (1.740)
+Train: 133 [ 926/927 (100%)]  Loss:  5.553712 (4.8389)  Time: 0.565s, 1811.12/s  (2.329s,  439.61/s)  LR: 2.419e-05  Data: 0.000 (1.733)
+Test: [   0/48]  Time: 12.465 (12.465)  Loss:  0.8391 (0.8391)  Acc@1: 85.5469 (85.5469)  Acc@5: 96.1914 (96.1914)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.441)  Loss:  0.7242 (0.8559)  Acc@1: 88.6793 (85.9880)  Acc@5: 97.0519 (96.2400)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-124.pth.tar', 84.10999997558594)
+
+Train: 134 [   0/927 (  0%)]  Loss:  3.674099 (3.6741)  Time: 9.526s,  107.50/s  (9.526s,  107.50/s)  LR: 2.173e-05  Data: 8.753 (8.753)
+Train: 134 [  50/927 (  5%)]  Loss:  5.389002 (4.5316)  Time: 0.585s, 1749.17/s  (2.387s,  429.00/s)  LR: 2.173e-05  Data: 0.017 (1.808)
+Train: 134 [ 100/927 ( 11%)]  Loss:  4.919561 (4.6609)  Time: 1.179s,  868.55/s  (2.358s,  434.34/s)  LR: 2.173e-05  Data: 0.463 (1.773)
+Train: 134 [ 150/927 ( 16%)]  Loss:  4.950287 (4.7332)  Time: 2.596s,  394.38/s  (2.338s,  437.93/s)  LR: 2.173e-05  Data: 2.031 (1.750)
+Train: 134 [ 200/927 ( 22%)]  Loss:  4.783939 (4.7434)  Time: 0.585s, 1750.17/s  (2.333s,  438.84/s)  LR: 2.173e-05  Data: 0.018 (1.738)
+Train: 134 [ 250/927 ( 27%)]  Loss:  3.974935 (4.6153)  Time: 3.033s,  337.66/s  (2.311s,  443.11/s)  LR: 2.173e-05  Data: 2.351 (1.714)
+Train: 134 [ 300/927 ( 32%)]  Loss:  5.100733 (4.6847)  Time: 3.039s,  336.98/s  (2.299s,  445.38/s)  LR: 2.173e-05  Data: 2.181 (1.702)
+Train: 134 [ 350/927 ( 38%)]  Loss:  4.121762 (4.6143)  Time: 2.812s,  364.15/s  (2.279s,  449.38/s)  LR: 2.173e-05  Data: 2.243 (1.679)
+Train: 134 [ 400/927 ( 43%)]  Loss:  5.379473 (4.6993)  Time: 5.200s,  196.93/s  (2.322s,  441.03/s)  LR: 2.173e-05  Data: 4.636 (1.721)
+Train: 134 [ 450/927 ( 49%)]  Loss:  5.298745 (4.7593)  Time: 1.072s,  954.97/s  (2.309s,  443.44/s)  LR: 2.173e-05  Data: 0.353 (1.707)
+Train: 134 [ 500/927 ( 54%)]  Loss:  5.702128 (4.8450)  Time: 5.167s,  198.18/s  (2.313s,  442.78/s)  LR: 2.173e-05  Data: 4.506 (1.711)
+Train: 134 [ 550/927 ( 59%)]  Loss:  4.564160 (4.8216)  Time: 0.584s, 1753.96/s  (2.317s,  441.96/s)  LR: 2.173e-05  Data: 0.019 (1.715)
+Train: 134 [ 600/927 ( 65%)]  Loss:  4.300407 (4.7815)  Time: 3.380s,  302.95/s  (2.330s,  439.45/s)  LR: 2.173e-05  Data: 2.798 (1.728)
+Train: 134 [ 650/927 ( 70%)]  Loss:  4.442002 (4.7572)  Time: 0.586s, 1746.05/s  (2.325s,  440.47/s)  LR: 2.173e-05  Data: 0.020 (1.723)
+Train: 134 [ 700/927 ( 76%)]  Loss:  4.464943 (4.7377)  Time: 0.588s, 1741.55/s  (2.323s,  440.77/s)  LR: 2.173e-05  Data: 0.022 (1.721)
+Train: 134 [ 750/927 ( 81%)]  Loss:  4.987648 (4.7534)  Time: 0.804s, 1273.01/s  (2.329s,  439.59/s)  LR: 2.173e-05  Data: 0.164 (1.727)
+Train: 134 [ 800/927 ( 86%)]  Loss:  4.649635 (4.7473)  Time: 0.589s, 1738.16/s  (2.333s,  438.93/s)  LR: 2.173e-05  Data: 0.021 (1.732)
+Train: 134 [ 850/927 ( 92%)]  Loss:  5.394832 (4.7832)  Time: 0.586s, 1747.20/s  (2.337s,  438.11/s)  LR: 2.173e-05  Data: 0.021 (1.737)
+Train: 134 [ 900/927 ( 97%)]  Loss:  5.433779 (4.8175)  Time: 0.584s, 1753.00/s  (2.340s,  437.70/s)  LR: 2.173e-05  Data: 0.018 (1.740)
+Train: 134 [ 926/927 (100%)]  Loss:  4.189437 (4.7861)  Time: 0.565s, 1812.88/s  (2.337s,  438.22/s)  LR: 2.173e-05  Data: 0.000 (1.738)
+Test: [   0/48]  Time: 12.859 (12.859)  Loss:  0.8414 (0.8414)  Acc@1: 85.4492 (85.4492)  Acc@5: 95.6055 (95.6055)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.152 (3.225)  Loss:  0.7338 (0.8434)  Acc@1: 87.9717 (86.0480)  Acc@5: 96.4623 (96.3020)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-126.pth.tar', 84.54799994628907)
+
+Train: 135 [   0/927 (  0%)]  Loss:  4.117271 (4.1173)  Time: 10.383s,   98.63/s  (10.383s,   98.63/s)  LR: 1.951e-05  Data: 9.279 (9.279)
+Train: 135 [  50/927 (  5%)]  Loss:  4.732078 (4.4247)  Time: 0.586s, 1746.94/s  (2.296s,  445.91/s)  LR: 1.951e-05  Data: 0.022 (1.709)
+Train: 135 [ 100/927 ( 11%)]  Loss:  5.310058 (4.7198)  Time: 0.585s, 1749.17/s  (2.251s,  454.98/s)  LR: 1.951e-05  Data: 0.020 (1.670)
+Train: 135 [ 150/927 ( 16%)]  Loss:  4.752342 (4.7279)  Time: 0.590s, 1735.53/s  (2.344s,  436.77/s)  LR: 1.951e-05  Data: 0.021 (1.762)
+Train: 135 [ 200/927 ( 22%)]  Loss:  5.411518 (4.8647)  Time: 0.584s, 1752.88/s  (2.304s,  444.49/s)  LR: 1.951e-05  Data: 0.019 (1.720)
+Train: 135 [ 250/927 ( 27%)]  Loss:  5.204389 (4.9213)  Time: 4.658s,  219.81/s  (2.328s,  439.91/s)  LR: 1.951e-05  Data: 3.980 (1.736)
+Train: 135 [ 300/927 ( 32%)]  Loss:  4.957788 (4.9265)  Time: 0.585s, 1751.11/s  (2.317s,  441.90/s)  LR: 1.951e-05  Data: 0.019 (1.721)
+Train: 135 [ 350/927 ( 38%)]  Loss:  5.025092 (4.9388)  Time: 3.548s,  288.65/s  (2.315s,  442.33/s)  LR: 1.951e-05  Data: 2.982 (1.716)
+Train: 135 [ 400/927 ( 43%)]  Loss:  5.081864 (4.9547)  Time: 0.584s, 1752.53/s  (2.307s,  443.86/s)  LR: 1.951e-05  Data: 0.019 (1.707)
+Train: 135 [ 450/927 ( 49%)]  Loss:  4.723806 (4.9316)  Time: 0.589s, 1739.06/s  (2.291s,  446.93/s)  LR: 1.951e-05  Data: 0.020 (1.690)
+Train: 135 [ 500/927 ( 54%)]  Loss:  4.469524 (4.8896)  Time: 0.589s, 1739.19/s  (2.288s,  447.63/s)  LR: 1.951e-05  Data: 0.024 (1.687)
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+Train: 135 [ 550/927 ( 59%)]  Loss:  4.976455 (4.8968)  Time: 2.843s,  360.16/s  (2.316s,  442.14/s)  LR: 1.951e-05  Data: 2.273 (1.707)
+Train: 135 [ 600/927 ( 65%)]  Loss:  4.889597 (4.8963)  Time: 3.561s,  287.53/s  (2.336s,  438.42/s)  LR: 1.951e-05  Data: 2.891 (1.725)
+Train: 135 [ 650/927 ( 70%)]  Loss:  5.356132 (4.9291)  Time: 6.788s,  150.86/s  (2.337s,  438.16/s)  LR: 1.951e-05  Data: 6.223 (1.728)
+Train: 135 [ 700/927 ( 76%)]  Loss:  5.275715 (4.9522)  Time: 0.584s, 1751.98/s  (2.332s,  439.19/s)  LR: 1.951e-05  Data: 0.018 (1.723)
+Train: 135 [ 750/927 ( 81%)]  Loss:  5.215702 (4.9687)  Time: 6.936s,  147.64/s  (2.332s,  439.08/s)  LR: 1.951e-05  Data: 6.267 (1.725)
+Train: 135 [ 800/927 ( 86%)]  Loss:  5.656128 (5.0091)  Time: 0.589s, 1738.45/s  (2.325s,  440.48/s)  LR: 1.951e-05  Data: 0.025 (1.718)
+Train: 135 [ 850/927 ( 92%)]  Loss:  4.475686 (4.9795)  Time: 7.245s,  141.35/s  (2.321s,  441.13/s)  LR: 1.951e-05  Data: 6.629 (1.716)
+Train: 135 [ 900/927 ( 97%)]  Loss:  4.932658 (4.9770)  Time: 0.586s, 1748.63/s  (2.313s,  442.68/s)  LR: 1.951e-05  Data: 0.021 (1.709)
+Train: 135 [ 926/927 (100%)]  Loss:  4.922855 (4.9743)  Time: 0.565s, 1813.90/s  (2.329s,  439.69/s)  LR: 1.951e-05  Data: 0.000 (1.724)
+Test: [   0/48]  Time: 14.179 (14.179)  Loss:  0.8362 (0.8362)  Acc@1: 86.2305 (86.2305)  Acc@5: 95.8984 (95.8984)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.149 (3.310)  Loss:  0.7226 (0.8313)  Acc@1: 89.1509 (86.5540)  Acc@5: 96.5802 (96.3740)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-127.pth.tar', 84.76200005126952)
+
+Train: 136 [   0/927 (  0%)]  Loss:  5.070817 (5.0708)  Time: 9.197s,  111.34/s  (9.197s,  111.34/s)  LR: 1.752e-05  Data: 8.589 (8.589)
+Train: 136 [  50/927 (  5%)]  Loss:  4.656006 (4.8634)  Time: 0.588s, 1740.88/s  (2.313s,  442.67/s)  LR: 1.752e-05  Data: 0.024 (1.733)
+Train: 136 [ 100/927 ( 11%)]  Loss:  4.530580 (4.7525)  Time: 0.586s, 1746.23/s  (2.294s,  446.32/s)  LR: 1.752e-05  Data: 0.022 (1.713)
+Train: 136 [ 150/927 ( 16%)]  Loss:  4.226404 (4.6210)  Time: 0.583s, 1755.46/s  (2.245s,  456.17/s)  LR: 1.752e-05  Data: 0.019 (1.658)
+Train: 136 [ 200/927 ( 22%)]  Loss:  5.007394 (4.6982)  Time: 0.586s, 1747.07/s  (2.235s,  458.19/s)  LR: 1.752e-05  Data: 0.021 (1.649)
+Train: 136 [ 250/927 ( 27%)]  Loss:  4.888323 (4.7299)  Time: 0.584s, 1752.46/s  (2.211s,  463.15/s)  LR: 1.752e-05  Data: 0.018 (1.623)
+Train: 136 [ 300/927 ( 32%)]  Loss:  4.877933 (4.7511)  Time: 0.587s, 1743.12/s  (2.199s,  465.63/s)  LR: 1.752e-05  Data: 0.022 (1.610)
+Train: 136 [ 350/927 ( 38%)]  Loss:  5.381613 (4.8299)  Time: 0.584s, 1752.01/s  (2.241s,  456.97/s)  LR: 1.752e-05  Data: 0.019 (1.646)
+Train: 136 [ 400/927 ( 43%)]  Loss:  4.562076 (4.8001)  Time: 0.592s, 1730.61/s  (2.264s,  452.20/s)  LR: 1.752e-05  Data: 0.025 (1.669)
+Train: 136 [ 450/927 ( 49%)]  Loss:  4.275782 (4.7477)  Time: 0.589s, 1739.02/s  (2.270s,  451.15/s)  LR: 1.752e-05  Data: 0.018 (1.675)
+Train: 136 [ 500/927 ( 54%)]  Loss:  4.695068 (4.7429)  Time: 0.587s, 1744.36/s  (2.273s,  450.55/s)  LR: 1.752e-05  Data: 0.022 (1.678)
+Train: 136 [ 550/927 ( 59%)]  Loss:  4.529836 (4.7252)  Time: 0.587s, 1744.33/s  (2.263s,  452.53/s)  LR: 1.752e-05  Data: 0.019 (1.668)
+Train: 136 [ 600/927 ( 65%)]  Loss:  4.620393 (4.7171)  Time: 0.589s, 1739.24/s  (2.265s,  452.01/s)  LR: 1.752e-05  Data: 0.018 (1.670)
+Train: 136 [ 650/927 ( 70%)]  Loss:  4.911754 (4.7310)  Time: 0.588s, 1742.25/s  (2.254s,  454.34/s)  LR: 1.752e-05  Data: 0.023 (1.659)
+Train: 136 [ 700/927 ( 76%)]  Loss:  4.555315 (4.7193)  Time: 1.964s,  521.36/s  (2.249s,  455.38/s)  LR: 1.752e-05  Data: 1.256 (1.652)
+Train: 136 [ 750/927 ( 81%)]  Loss:  4.676712 (4.7166)  Time: 0.586s, 1748.19/s  (2.275s,  450.15/s)  LR: 1.752e-05  Data: 0.020 (1.674)
+Train: 136 [ 800/927 ( 86%)]  Loss:  4.897407 (4.7273)  Time: 0.587s, 1743.40/s  (2.296s,  446.01/s)  LR: 1.752e-05  Data: 0.020 (1.688)
+Train: 136 [ 850/927 ( 92%)]  Loss:  5.115061 (4.7488)  Time: 0.588s, 1740.08/s  (2.297s,  445.79/s)  LR: 1.752e-05  Data: 0.021 (1.677)
+Train: 136 [ 900/927 ( 97%)]  Loss:  4.654935 (4.7439)  Time: 1.304s,  785.42/s  (2.310s,  443.34/s)  LR: 1.752e-05  Data: 0.612 (1.688)
+Train: 136 [ 926/927 (100%)]  Loss:  5.100655 (4.7617)  Time: 0.567s, 1806.55/s  (2.313s,  442.79/s)  LR: 1.752e-05  Data: 0.000 (1.693)
+Test: [   0/48]  Time: 12.280 (12.280)  Loss:  0.8180 (0.8180)  Acc@1: 85.5469 (85.5469)  Acc@5: 95.8984 (95.8984)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.151 (4.339)  Loss:  0.7371 (0.8354)  Acc@1: 87.9717 (86.3740)  Acc@5: 96.6981 (96.3580)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-125.pth.tar', 84.8199999243164)
+
+Train: 137 [   0/927 (  0%)]  Loss:  5.090200 (5.0902)  Time: 11.675s,   87.71/s  (11.675s,   87.71/s)  LR: 1.576e-05  Data: 10.924 (10.924)
+Train: 137 [  50/927 (  5%)]  Loss:  4.071608 (4.5809)  Time: 0.589s, 1737.35/s  (2.704s,  378.64/s)  LR: 1.576e-05  Data: 0.018 (1.974)
+Train: 137 [ 100/927 ( 11%)]  Loss:  5.520410 (4.8941)  Time: 0.595s, 1720.04/s  (2.602s,  393.52/s)  LR: 1.576e-05  Data: 0.022 (1.937)
+Train: 137 [ 150/927 ( 16%)]  Loss:  4.213482 (4.7239)  Time: 0.584s, 1752.60/s  (2.514s,  407.35/s)  LR: 1.576e-05  Data: 0.018 (1.869)
+Train: 137 [ 200/927 ( 22%)]  Loss:  5.187778 (4.8167)  Time: 3.422s,  299.28/s  (2.470s,  414.58/s)  LR: 1.576e-05  Data: 2.857 (1.812)
+Train: 137 [ 250/927 ( 27%)]  Loss:  5.374697 (4.9097)  Time: 0.585s, 1749.84/s  (2.446s,  418.62/s)  LR: 1.576e-05  Data: 0.021 (1.769)
+Train: 137 [ 300/927 ( 32%)]  Loss:  4.214237 (4.8103)  Time: 6.171s,  165.93/s  (2.415s,  424.04/s)  LR: 1.576e-05  Data: 5.600 (1.740)
+Train: 137 [ 350/927 ( 38%)]  Loss:  5.027402 (4.8375)  Time: 0.585s, 1750.79/s  (2.371s,  431.86/s)  LR: 1.576e-05  Data: 0.019 (1.691)
+Train: 137 [ 400/927 ( 43%)]  Loss:  4.726826 (4.8252)  Time: 6.389s,  160.28/s  (2.338s,  437.97/s)  LR: 1.576e-05  Data: 5.736 (1.657)
+Train: 137 [ 450/927 ( 49%)]  Loss:  5.089979 (4.8517)  Time: 0.586s, 1748.36/s  (2.329s,  439.59/s)  LR: 1.576e-05  Data: 0.020 (1.648)
+Train: 137 [ 500/927 ( 54%)]  Loss:  4.226964 (4.7949)  Time: 3.357s,  305.03/s  (2.358s,  434.29/s)  LR: 1.576e-05  Data: 2.775 (1.679)
+Train: 137 [ 550/927 ( 59%)]  Loss:  4.780153 (4.7936)  Time: 0.586s, 1746.31/s  (2.375s,  431.07/s)  LR: 1.576e-05  Data: 0.019 (1.695)
+Train: 137 [ 600/927 ( 65%)]  Loss:  5.341832 (4.8358)  Time: 7.771s,  131.77/s  (2.388s,  428.77/s)  LR: 1.576e-05  Data: 7.100 (1.702)
+Train: 137 [ 650/927 ( 70%)]  Loss:  5.376906 (4.8745)  Time: 0.585s, 1750.48/s  (2.385s,  429.34/s)  LR: 1.576e-05  Data: 0.019 (1.707)
+Train: 137 [ 700/927 ( 76%)]  Loss:  5.329693 (4.9048)  Time: 6.270s,  163.32/s  (2.401s,  426.41/s)  LR: 1.576e-05  Data: 5.579 (1.722)
+Train: 137 [ 750/927 ( 81%)]  Loss:  4.691058 (4.8915)  Time: 0.590s, 1734.29/s  (2.396s,  427.43/s)  LR: 1.576e-05  Data: 0.020 (1.720)
+Train: 137 [ 800/927 ( 86%)]  Loss:  5.127602 (4.9053)  Time: 6.046s,  169.36/s  (2.386s,  429.22/s)  LR: 1.576e-05  Data: 5.482 (1.716)
+Train: 137 [ 850/927 ( 92%)]  Loss:  4.862529 (4.9030)  Time: 0.586s, 1747.10/s  (2.436s,  420.33/s)  LR: 1.576e-05  Data: 0.022 (1.772)
+Train: 137 [ 900/927 ( 97%)]  Loss:  5.262280 (4.9219)  Time: 0.588s, 1740.26/s  (2.449s,  418.16/s)  LR: 1.576e-05  Data: 0.019 (1.788)
+Train: 137 [ 926/927 (100%)]  Loss:  4.058957 (4.8787)  Time: 0.568s, 1803.75/s  (2.445s,  418.87/s)  LR: 1.576e-05  Data: 0.000 (1.782)
+Test: [   0/48]  Time: 20.637 (20.637)  Loss:  0.8156 (0.8156)  Acc@1: 86.1328 (86.1328)  Acc@5: 96.2891 (96.2891)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (5.120)  Loss:  0.7085 (0.8201)  Acc@1: 88.7972 (86.6680)  Acc@5: 96.8160 (96.5420)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-129.pth.tar', 85.38400002441406)
+
+Train: 138 [   0/927 (  0%)]  Loss:  5.339532 (5.3395)  Time: 10.786s,   94.93/s  (10.786s,   94.93/s)  LR: 1.423e-05  Data: 9.624 (9.624)
+Train: 138 [  50/927 (  5%)]  Loss:  4.779272 (5.0594)  Time: 0.588s, 1742.15/s  (2.300s,  445.27/s)  LR: 1.423e-05  Data: 0.018 (1.645)
+Train: 138 [ 100/927 ( 11%)]  Loss:  5.177607 (5.0988)  Time: 0.587s, 1744.36/s  (2.393s,  427.96/s)  LR: 1.423e-05  Data: 0.019 (1.707)
+Train: 138 [ 150/927 ( 16%)]  Loss:  5.099653 (5.0990)  Time: 0.590s, 1735.43/s  (2.607s,  392.81/s)  LR: 1.423e-05  Data: 0.025 (1.929)
+Train: 138 [ 200/927 ( 22%)]  Loss:  4.988997 (5.0770)  Time: 0.584s, 1752.76/s  (2.590s,  395.38/s)  LR: 1.423e-05  Data: 0.019 (1.924)
+Train: 138 [ 250/927 ( 27%)]  Loss:  4.145831 (4.9218)  Time: 0.587s, 1743.76/s  (2.548s,  401.86/s)  LR: 1.423e-05  Data: 0.019 (1.894)
+Train: 138 [ 300/927 ( 32%)]  Loss:  4.581322 (4.8732)  Time: 0.587s, 1743.79/s  (2.540s,  403.13/s)  LR: 1.423e-05  Data: 0.021 (1.897)
+Train: 138 [ 350/927 ( 38%)]  Loss:  4.988328 (4.8876)  Time: 0.586s, 1747.55/s  (2.499s,  409.82/s)  LR: 1.423e-05  Data: 0.018 (1.863)
+Train: 138 [ 400/927 ( 43%)]  Loss:  5.454919 (4.9506)  Time: 0.587s, 1744.51/s  (2.491s,  411.05/s)  LR: 1.423e-05  Data: 0.019 (1.857)
+Train: 138 [ 450/927 ( 49%)]  Loss:  3.891416 (4.8447)  Time: 0.587s, 1745.87/s  (2.481s,  412.66/s)  LR: 1.423e-05  Data: 0.022 (1.852)
+Train: 138 [ 500/927 ( 54%)]  Loss:  4.414797 (4.8056)  Time: 0.585s, 1749.91/s  (2.527s,  405.22/s)  LR: 1.423e-05  Data: 0.019 (1.893)
+Train: 138 [ 550/927 ( 59%)]  Loss:  4.759993 (4.8018)  Time: 0.588s, 1741.15/s  (2.499s,  409.83/s)  LR: 1.423e-05  Data: 0.020 (1.867)
+Train: 138 [ 600/927 ( 65%)]  Loss:  4.408330 (4.7715)  Time: 0.587s, 1744.73/s  (2.498s,  409.86/s)  LR: 1.423e-05  Data: 0.018 (1.870)
+Train: 138 [ 650/927 ( 70%)]  Loss:  3.992375 (4.7159)  Time: 0.585s, 1751.85/s  (2.501s,  409.45/s)  LR: 1.423e-05  Data: 0.019 (1.876)
+Train: 138 [ 700/927 ( 76%)]  Loss:  4.644191 (4.7111)  Time: 0.586s, 1745.97/s  (2.503s,  409.05/s)  LR: 1.423e-05  Data: 0.020 (1.878)
+Train: 138 [ 750/927 ( 81%)]  Loss:  4.717040 (4.7115)  Time: 0.587s, 1743.66/s  (2.487s,  411.80/s)  LR: 1.423e-05  Data: 0.020 (1.865)
+Train: 138 [ 800/927 ( 86%)]  Loss:  5.094802 (4.7340)  Time: 0.584s, 1752.43/s  (2.472s,  414.21/s)  LR: 1.423e-05  Data: 0.019 (1.848)
+Train: 138 [ 850/927 ( 92%)]  Loss:  4.413687 (4.7162)  Time: 0.591s, 1731.73/s  (2.483s,  412.40/s)  LR: 1.423e-05  Data: 0.025 (1.850)
+Train: 138 [ 900/927 ( 97%)]  Loss:  4.299659 (4.6943)  Time: 1.212s,  844.60/s  (2.484s,  412.28/s)  LR: 1.423e-05  Data: 0.648 (1.845)
+Train: 138 [ 926/927 (100%)]  Loss:  4.912449 (4.7052)  Time: 0.568s, 1803.55/s  (2.476s,  413.58/s)  LR: 1.423e-05  Data: 0.000 (1.837)
+Test: [   0/48]  Time: 26.413 (26.413)  Loss:  0.8223 (0.8223)  Acc@1: 86.1328 (86.1328)  Acc@5: 95.8008 (95.8008)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (4.217)  Loss:  0.7234 (0.8409)  Acc@1: 88.5613 (86.1500)  Acc@5: 96.4623 (96.2880)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-138.pth.tar', 86.15000007324218)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-130.pth.tar', 85.63199989746094)
+
+Train: 139 [   0/927 (  0%)]  Loss:  5.101341 (5.1013)  Time: 9.400s,  108.94/s  (9.400s,  108.94/s)  LR: 1.294e-05  Data: 8.801 (8.801)
+Train: 139 [  50/927 (  5%)]  Loss:  5.304427 (5.2029)  Time: 0.588s, 1741.00/s  (2.243s,  456.57/s)  LR: 1.294e-05  Data: 0.021 (1.667)
+Train: 139 [ 100/927 ( 11%)]  Loss:  4.624217 (5.0100)  Time: 0.589s, 1739.90/s  (2.179s,  469.97/s)  LR: 1.294e-05  Data: 0.021 (1.596)
+Train: 139 [ 150/927 ( 16%)]  Loss:  4.291866 (4.8305)  Time: 0.585s, 1749.73/s  (2.126s,  481.64/s)  LR: 1.294e-05  Data: 0.021 (1.533)
+Train: 139 [ 200/927 ( 22%)]  Loss:  5.343430 (4.9331)  Time: 3.406s,  300.63/s  (2.123s,  482.27/s)  LR: 1.294e-05  Data: 2.838 (1.526)
+Train: 139 [ 250/927 ( 27%)]  Loss:  4.009745 (4.7792)  Time: 0.592s, 1729.06/s  (2.189s,  467.74/s)  LR: 1.294e-05  Data: 0.025 (1.590)
+Train: 139 [ 300/927 ( 32%)]  Loss:  4.341928 (4.7167)  Time: 5.561s,  184.15/s  (2.190s,  467.66/s)  LR: 1.294e-05  Data: 4.997 (1.590)
+Train: 139 [ 350/927 ( 38%)]  Loss:  4.998105 (4.7519)  Time: 0.586s, 1747.27/s  (2.219s,  461.40/s)  LR: 1.294e-05  Data: 0.022 (1.611)
+Train: 139 [ 400/927 ( 43%)]  Loss:  5.317059 (4.8147)  Time: 6.253s,  163.77/s  (2.238s,  457.64/s)  LR: 1.294e-05  Data: 5.646 (1.630)
+Train: 139 [ 450/927 ( 49%)]  Loss:  4.837538 (4.8170)  Time: 0.586s, 1747.37/s  (2.229s,  459.41/s)  LR: 1.294e-05  Data: 0.022 (1.623)
+Train: 139 [ 500/927 ( 54%)]  Loss:  4.845097 (4.8195)  Time: 2.583s,  396.49/s  (2.239s,  457.39/s)  LR: 1.294e-05  Data: 2.017 (1.631)
+Train: 139 [ 550/927 ( 59%)]  Loss:  4.933829 (4.8290)  Time: 0.590s, 1736.69/s  (2.236s,  457.95/s)  LR: 1.294e-05  Data: 0.020 (1.630)
+Train: 139 [ 600/927 ( 65%)]  Loss:  5.345421 (4.8688)  Time: 0.588s, 1741.08/s  (2.254s,  454.27/s)  LR: 1.294e-05  Data: 0.020 (1.649)
+Train: 139 [ 650/927 ( 70%)]  Loss:  4.633323 (4.8520)  Time: 0.590s, 1735.51/s  (2.288s,  447.56/s)  LR: 1.294e-05  Data: 0.022 (1.684)
+Train: 139 [ 700/927 ( 76%)]  Loss:  4.471689 (4.8266)  Time: 0.588s, 1740.88/s  (2.304s,  444.53/s)  LR: 1.294e-05  Data: 0.019 (1.701)
+Train: 139 [ 750/927 ( 81%)]  Loss:  4.537968 (4.8086)  Time: 0.586s, 1748.38/s  (2.305s,  444.22/s)  LR: 1.294e-05  Data: 0.018 (1.704)
+Train: 139 [ 800/927 ( 86%)]  Loss:  4.506200 (4.7908)  Time: 0.586s, 1747.95/s  (2.323s,  440.90/s)  LR: 1.294e-05  Data: 0.018 (1.722)
+Train: 139 [ 850/927 ( 92%)]  Loss:  4.654269 (4.7832)  Time: 0.588s, 1740.87/s  (2.319s,  441.58/s)  LR: 1.294e-05  Data: 0.018 (1.719)
+Train: 139 [ 900/927 ( 97%)]  Loss:  4.881620 (4.7884)  Time: 0.586s, 1747.11/s  (2.323s,  440.75/s)  LR: 1.294e-05  Data: 0.020 (1.724)
+Train: 139 [ 926/927 (100%)]  Loss:  4.807961 (4.7894)  Time: 0.567s, 1805.15/s  (2.319s,  441.50/s)  LR: 1.294e-05  Data: 0.000 (1.720)
+Test: [   0/48]  Time: 13.694 (13.694)  Loss:  0.7958 (0.7958)  Acc@1: 86.7188 (86.7188)  Acc@5: 96.3867 (96.3867)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.151 (3.466)  Loss:  0.6782 (0.8113)  Acc@1: 89.6227 (86.7480)  Acc@5: 97.4057 (96.5300)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-139.pth.tar', 86.74800014648437)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-138.pth.tar', 86.15000007324218)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-128.pth.tar', 85.75200007080078)
+
+Train: 140 [   0/927 (  0%)]  Loss:  4.879378 (4.8794)  Time: 14.007s,   73.10/s  (14.007s,   73.10/s)  LR: 1.188e-05  Data: 13.424 (13.424)
+Train: 140 [  50/927 (  5%)]  Loss:  5.604130 (5.2418)  Time: 0.585s, 1750.87/s  (2.465s,  415.47/s)  LR: 1.188e-05  Data: 0.019 (1.869)
+Train: 140 [ 100/927 ( 11%)]  Loss:  5.056563 (5.1800)  Time: 4.124s,  248.31/s  (2.499s,  409.77/s)  LR: 1.188e-05  Data: 3.512 (1.899)
+Train: 140 [ 150/927 ( 16%)]  Loss:  4.410241 (4.9876)  Time: 0.587s, 1745.07/s  (2.410s,  424.82/s)  LR: 1.188e-05  Data: 0.022 (1.810)
+Train: 140 [ 200/927 ( 22%)]  Loss:  4.494993 (4.8891)  Time: 3.780s,  270.92/s  (2.396s,  427.30/s)  LR: 1.188e-05  Data: 3.216 (1.795)
+Train: 140 [ 250/927 ( 27%)]  Loss:  4.570977 (4.8360)  Time: 4.128s,  248.06/s  (2.387s,  429.01/s)  LR: 1.188e-05  Data: 3.410 (1.783)
+Train: 140 [ 300/927 ( 32%)]  Loss:  5.332515 (4.9070)  Time: 4.172s,  245.47/s  (2.386s,  429.10/s)  LR: 1.188e-05  Data: 3.580 (1.783)
+Train: 140 [ 350/927 ( 38%)]  Loss:  4.729680 (4.8848)  Time: 5.569s,  183.89/s  (2.374s,  431.43/s)  LR: 1.188e-05  Data: 4.995 (1.771)
+Train: 140 [ 400/927 ( 43%)]  Loss:  4.667513 (4.8607)  Time: 1.209s,  847.01/s  (2.396s,  427.34/s)  LR: 1.188e-05  Data: 0.644 (1.794)
+Train: 140 [ 450/927 ( 49%)]  Loss:  5.284328 (4.9030)  Time: 7.603s,  134.68/s  (2.393s,  427.95/s)  LR: 1.188e-05  Data: 7.038 (1.790)
+Train: 140 [ 500/927 ( 54%)]  Loss:  5.122309 (4.9230)  Time: 0.677s, 1511.87/s  (2.376s,  430.98/s)  LR: 1.188e-05  Data: 0.030 (1.773)
+Train: 140 [ 550/927 ( 59%)]  Loss:  4.213641 (4.8639)  Time: 5.449s,  187.93/s  (2.381s,  430.02/s)  LR: 1.188e-05  Data: 4.834 (1.778)
+Train: 140 [ 600/927 ( 65%)]  Loss:  5.245776 (4.8932)  Time: 0.585s, 1749.14/s  (2.384s,  429.54/s)  LR: 1.188e-05  Data: 0.020 (1.780)
+Train: 140 [ 650/927 ( 70%)]  Loss:  4.242045 (4.8467)  Time: 5.249s,  195.09/s  (2.378s,  430.60/s)  LR: 1.188e-05  Data: 4.584 (1.775)
+Train: 140 [ 700/927 ( 76%)]  Loss:  4.714384 (4.8379)  Time: 3.408s,  300.51/s  (2.365s,  432.98/s)  LR: 1.188e-05  Data: 2.332 (1.762)
+Train: 140 [ 750/927 ( 81%)]  Loss:  4.705646 (4.8296)  Time: 3.571s,  286.78/s  (2.349s,  435.91/s)  LR: 1.188e-05  Data: 2.998 (1.744)
+Train: 140 [ 800/927 ( 86%)]  Loss:  4.751581 (4.8250)  Time: 2.844s,  360.02/s  (2.367s,  432.54/s)  LR: 1.188e-05  Data: 2.194 (1.762)
+Train: 140 [ 850/927 ( 92%)]  Loss:  4.613112 (4.8133)  Time: 4.240s,  241.52/s  (2.367s,  432.53/s)  LR: 1.188e-05  Data: 3.532 (1.763)
+Train: 140 [ 900/927 ( 97%)]  Loss:  4.417028 (4.7924)  Time: 5.816s,  176.05/s  (2.362s,  433.51/s)  LR: 1.188e-05  Data: 5.161 (1.758)
+Train: 140 [ 926/927 (100%)]  Loss:  5.088957 (4.8072)  Time: 0.566s, 1810.21/s  (2.361s,  433.76/s)  LR: 1.188e-05  Data: 0.000 (1.756)
+Test: [   0/48]  Time: 13.562 (13.562)  Loss:  0.8119 (0.8119)  Acc@1: 86.5234 (86.5234)  Acc@5: 96.3867 (96.3867)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.149 (3.159)  Loss:  0.7098 (0.8241)  Acc@1: 89.1509 (86.6020)  Acc@5: 97.1698 (96.4700)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-139.pth.tar', 86.74800014648437)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-140.pth.tar', 86.60200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-138.pth.tar', 86.15000007324218)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-133.pth.tar', 85.98800012451171)
+
+Train: 141 [   0/927 (  0%)]  Loss:  5.009434 (5.0094)  Time: 9.164s,  111.74/s  (9.164s,  111.74/s)  LR: 1.106e-05  Data: 8.495 (8.495)
+Train: 141 [  50/927 (  5%)]  Loss:  4.012721 (4.5111)  Time: 0.589s, 1738.84/s  (2.244s,  456.24/s)  LR: 1.106e-05  Data: 0.019 (1.660)
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+WARNING: Skipped sample (index 126350, file 133/n01440764_133.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/train/133/n01440764_133.png'>
+Train: 141 [ 100/927 ( 11%)]  Loss:  4.847871 (4.6233)  Time: 0.809s, 1265.79/s  (2.250s,  455.14/s)  LR: 1.106e-05  Data: 0.091 (1.662)
+Train: 141 [ 150/927 ( 16%)]  Loss:  4.719777 (4.6475)  Time: 0.587s, 1745.17/s  (2.216s,  462.09/s)  LR: 1.106e-05  Data: 0.019 (1.632)
+Train: 141 [ 200/927 ( 22%)]  Loss:  5.147977 (4.7476)  Time: 0.588s, 1741.20/s  (2.321s,  441.24/s)  LR: 1.106e-05  Data: 0.023 (1.731)
+Train: 141 [ 250/927 ( 27%)]  Loss:  4.338336 (4.6794)  Time: 0.588s, 1742.43/s  (2.335s,  438.58/s)  LR: 1.106e-05  Data: 0.018 (1.748)
+Train: 141 [ 300/927 ( 32%)]  Loss:  5.311669 (4.7697)  Time: 0.587s, 1744.34/s  (2.344s,  436.87/s)  LR: 1.106e-05  Data: 0.022 (1.756)
+Train: 141 [ 350/927 ( 38%)]  Loss:  3.883011 (4.6588)  Time: 0.587s, 1744.95/s  (2.332s,  439.07/s)  LR: 1.106e-05  Data: 0.018 (1.746)
+Train: 141 [ 400/927 ( 43%)]  Loss:  4.886065 (4.6841)  Time: 0.589s, 1737.55/s  (2.337s,  438.16/s)  LR: 1.106e-05  Data: 0.024 (1.748)
+Train: 141 [ 450/927 ( 49%)]  Loss:  4.345237 (4.6502)  Time: 0.588s, 1741.62/s  (2.322s,  441.06/s)  LR: 1.106e-05  Data: 0.018 (1.733)
+Train: 141 [ 500/927 ( 54%)]  Loss:  4.558890 (4.6419)  Time: 0.589s, 1739.66/s  (2.361s,  433.78/s)  LR: 1.106e-05  Data: 0.021 (1.772)
+Train: 141 [ 550/927 ( 59%)]  Loss:  4.959976 (4.6684)  Time: 1.051s,  974.46/s  (2.388s,  428.81/s)  LR: 1.106e-05  Data: 0.452 (1.800)
+Train: 141 [ 600/927 ( 65%)]  Loss:  5.088564 (4.7007)  Time: 0.587s, 1744.75/s  (2.408s,  425.31/s)  LR: 1.106e-05  Data: 0.019 (1.818)
+Train: 141 [ 650/927 ( 70%)]  Loss:  4.086247 (4.6568)  Time: 2.969s,  344.95/s  (2.416s,  423.81/s)  LR: 1.106e-05  Data: 2.404 (1.826)
+Train: 141 [ 700/927 ( 76%)]  Loss:  5.094386 (4.6860)  Time: 0.587s, 1744.21/s  (2.420s,  423.23/s)  LR: 1.106e-05  Data: 0.020 (1.829)
+Train: 141 [ 750/927 ( 81%)]  Loss:  4.941298 (4.7020)  Time: 2.126s,  481.68/s  (2.414s,  424.15/s)  LR: 1.106e-05  Data: 1.511 (1.823)
+Train: 141 [ 800/927 ( 86%)]  Loss:  4.319808 (4.6795)  Time: 0.589s, 1737.91/s  (2.409s,  425.05/s)  LR: 1.106e-05  Data: 0.020 (1.818)
+Train: 141 [ 850/927 ( 92%)]  Loss:  5.146475 (4.7054)  Time: 2.127s,  481.45/s  (2.397s,  427.20/s)  LR: 1.106e-05  Data: 1.543 (1.806)
+Train: 141 [ 900/927 ( 97%)]  Loss:  4.752766 (4.7079)  Time: 0.591s, 1733.11/s  (2.412s,  424.50/s)  LR: 1.106e-05  Data: 0.017 (1.820)
+Train: 141 [ 926/927 (100%)]  Loss:  4.736590 (4.7094)  Time: 0.565s, 1811.79/s  (2.407s,  425.43/s)  LR: 1.106e-05  Data: 0.000 (1.815)
+Test: [   0/48]  Time: 12.935 (12.935)  Loss:  0.8017 (0.8017)  Acc@1: 86.1328 (86.1328)  Acc@5: 96.5820 (96.5820)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.151 (3.384)  Loss:  0.7078 (0.8209)  Acc@1: 88.6792 (86.5940)  Acc@5: 97.2877 (96.5320)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-139.pth.tar', 86.74800014648437)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-140.pth.tar', 86.60200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-141.pth.tar', 86.59399999511719)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-138.pth.tar', 86.15000007324218)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-132.pth.tar', 85.99600002441406)
+
+Train: 142 [   0/927 (  0%)]  Loss:  4.736620 (4.7366)  Time: 11.422s,   89.65/s  (11.422s,   89.65/s)  LR: 1.047e-05  Data: 10.794 (10.794)
+Train: 142 [  50/927 (  5%)]  Loss:  5.303540 (5.0201)  Time: 0.588s, 1740.82/s  (2.490s,  411.31/s)  LR: 1.047e-05  Data: 0.021 (1.895)
+Train: 142 [ 100/927 ( 11%)]  Loss:  4.573263 (4.8711)  Time: 1.702s,  601.75/s  (2.375s,  431.11/s)  LR: 1.047e-05  Data: 1.006 (1.779)
+Train: 142 [ 150/927 ( 16%)]  Loss:  4.991308 (4.9012)  Time: 0.588s, 1741.61/s  (2.310s,  443.37/s)  LR: 1.047e-05  Data: 0.022 (1.706)
+Train: 142 [ 200/927 ( 22%)]  Loss:  5.039967 (4.9289)  Time: 4.205s,  243.51/s  (2.280s,  449.05/s)  LR: 1.047e-05  Data: 3.209 (1.674)
+Train: 142 [ 250/927 ( 27%)]  Loss:  5.203615 (4.9747)  Time: 0.590s, 1734.82/s  (2.228s,  459.66/s)  LR: 1.047e-05  Data: 0.024 (1.620)
+Train: 142 [ 300/927 ( 32%)]  Loss:  3.867182 (4.8165)  Time: 3.807s,  268.96/s  (2.309s,  443.55/s)  LR: 1.047e-05  Data: 3.223 (1.703)
+Train: 142 [ 350/927 ( 38%)]  Loss:  4.663352 (4.7974)  Time: 0.585s, 1750.37/s  (2.300s,  445.28/s)  LR: 1.047e-05  Data: 0.020 (1.693)
+Train: 142 [ 400/927 ( 43%)]  Loss:  5.426407 (4.8673)  Time: 5.277s,  194.05/s  (2.380s,  430.25/s)  LR: 1.047e-05  Data: 4.663 (1.772)
+Train: 142 [ 450/927 ( 49%)]  Loss:  5.305227 (4.9110)  Time: 0.586s, 1748.48/s  (2.371s,  431.95/s)  LR: 1.047e-05  Data: 0.021 (1.762)
+Train: 142 [ 500/927 ( 54%)]  Loss:  4.004313 (4.8286)  Time: 0.587s, 1743.50/s  (2.369s,  432.22/s)  LR: 1.047e-05  Data: 0.022 (1.761)
+Train: 142 [ 550/927 ( 59%)]  Loss:  5.557603 (4.8894)  Time: 0.587s, 1744.71/s  (2.366s,  432.75/s)  LR: 1.047e-05  Data: 0.021 (1.759)
+Train: 142 [ 600/927 ( 65%)]  Loss:  4.953113 (4.8943)  Time: 0.946s, 1082.20/s  (2.371s,  431.89/s)  LR: 1.047e-05  Data: 0.366 (1.765)
+Train: 142 [ 650/927 ( 70%)]  Loss:  4.090014 (4.8368)  Time: 0.587s, 1745.39/s  (2.397s,  427.19/s)  LR: 1.047e-05  Data: 0.022 (1.791)
+Train: 142 [ 700/927 ( 76%)]  Loss:  4.331308 (4.8031)  Time: 0.584s, 1752.68/s  (2.393s,  427.87/s)  LR: 1.047e-05  Data: 0.019 (1.788)
+Train: 142 [ 750/927 ( 81%)]  Loss:  5.095104 (4.8214)  Time: 0.590s, 1735.74/s  (2.402s,  426.40/s)  LR: 1.047e-05  Data: 0.021 (1.797)
+Train: 142 [ 800/927 ( 86%)]  Loss:  4.754931 (4.8175)  Time: 0.586s, 1746.86/s  (2.400s,  426.69/s)  LR: 1.047e-05  Data: 0.020 (1.795)
+Train: 142 [ 850/927 ( 92%)]  Loss:  5.012128 (4.8283)  Time: 0.586s, 1747.63/s  (2.396s,  427.40/s)  LR: 1.047e-05  Data: 0.021 (1.791)
+Train: 142 [ 900/927 ( 97%)]  Loss:  4.630580 (4.8179)  Time: 0.588s, 1742.86/s  (2.400s,  426.65/s)  LR: 1.047e-05  Data: 0.021 (1.796)
+Train: 142 [ 926/927 (100%)]  Loss:  4.574163 (4.8057)  Time: 0.564s, 1815.19/s  (2.394s,  427.66/s)  LR: 1.047e-05  Data: 0.000 (1.791)
+Test: [   0/48]  Time: 14.289 (14.289)  Loss:  0.8057 (0.8057)  Acc@1: 85.8398 (85.8398)  Acc@5: 96.2891 (96.2891)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.286)  Loss:  0.6860 (0.8063)  Acc@1: 89.2689 (86.8500)  Acc@5: 97.2877 (96.5640)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-142.pth.tar', 86.84999999267578)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-139.pth.tar', 86.74800014648437)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-140.pth.tar', 86.60200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-141.pth.tar', 86.59399999511719)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-138.pth.tar', 86.15000007324218)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-131.pth.tar', 86.01799997070313)
+
+Train: 143 [   0/927 (  0%)]  Loss:  4.575070 (4.5751)  Time: 9.766s,  104.85/s  (9.766s,  104.85/s)  LR: 1.012e-05  Data: 8.996 (8.996)
+Train: 143 [  50/927 (  5%)]  Loss:  4.503570 (4.5393)  Time: 0.585s, 1750.44/s  (2.685s,  381.36/s)  LR: 1.012e-05  Data: 0.019 (2.078)
+Train: 143 [ 100/927 ( 11%)]  Loss:  4.602850 (4.5605)  Time: 0.586s, 1747.78/s  (2.542s,  402.89/s)  LR: 1.012e-05  Data: 0.020 (1.936)
+Train: 143 [ 150/927 ( 16%)]  Loss:  4.819139 (4.6252)  Time: 0.583s, 1756.12/s  (2.449s,  418.20/s)  LR: 1.012e-05  Data: 0.018 (1.844)
+Train: 143 [ 200/927 ( 22%)]  Loss:  4.797880 (4.6597)  Time: 0.590s, 1736.61/s  (2.435s,  420.50/s)  LR: 1.012e-05  Data: 0.024 (1.832)
+Train: 143 [ 250/927 ( 27%)]  Loss:  4.474965 (4.6289)  Time: 0.600s, 1707.58/s  (2.406s,  425.62/s)  LR: 1.012e-05  Data: 0.035 (1.805)
+Train: 143 [ 300/927 ( 32%)]  Loss:  5.153193 (4.7038)  Time: 0.587s, 1743.58/s  (2.467s,  415.15/s)  LR: 1.012e-05  Data: 0.021 (1.869)
+Train: 143 [ 350/927 ( 38%)]  Loss:  5.119302 (4.7557)  Time: 0.587s, 1745.00/s  (2.426s,  422.07/s)  LR: 1.012e-05  Data: 0.022 (1.831)
+Train: 143 [ 400/927 ( 43%)]  Loss:  4.645132 (4.7435)  Time: 0.586s, 1748.56/s  (2.442s,  419.33/s)  LR: 1.012e-05  Data: 0.019 (1.845)
+Train: 143 [ 450/927 ( 49%)]  Loss:  5.256489 (4.7948)  Time: 0.588s, 1742.41/s  (2.416s,  423.91/s)  LR: 1.012e-05  Data: 0.023 (1.820)
+Train: 143 [ 500/927 ( 54%)]  Loss:  4.543963 (4.7720)  Time: 0.585s, 1751.40/s  (2.409s,  425.06/s)  LR: 1.012e-05  Data: 0.019 (1.814)
+Train: 143 [ 550/927 ( 59%)]  Loss:  3.794362 (4.6905)  Time: 1.942s,  527.25/s  (2.399s,  426.76/s)  LR: 1.012e-05  Data: 1.192 (1.803)
+Train: 143 [ 600/927 ( 65%)]  Loss:  4.226990 (4.6548)  Time: 0.587s, 1744.02/s  (2.409s,  425.02/s)  LR: 1.012e-05  Data: 0.019 (1.812)
+Train: 143 [ 650/927 ( 70%)]  Loss:  5.072172 (4.6846)  Time: 5.451s,  187.86/s  (2.409s,  425.10/s)  LR: 1.012e-05  Data: 4.867 (1.812)
+Train: 143 [ 700/927 ( 76%)]  Loss:  4.971772 (4.7038)  Time: 0.589s, 1737.95/s  (2.399s,  426.86/s)  LR: 1.012e-05  Data: 0.025 (1.802)
+Train: 143 [ 750/927 ( 81%)]  Loss:  4.325403 (4.6801)  Time: 5.004s,  204.64/s  (2.395s,  427.64/s)  LR: 1.012e-05  Data: 4.426 (1.797)
+Train: 143 [ 800/927 ( 86%)]  Loss:  4.589008 (4.6748)  Time: 0.588s, 1741.58/s  (2.419s,  423.25/s)  LR: 1.012e-05  Data: 0.021 (1.821)
+Train: 143 [ 850/927 ( 92%)]  Loss:  5.093849 (4.6981)  Time: 3.033s,  337.66/s  (2.414s,  424.25/s)  LR: 1.012e-05  Data: 2.389 (1.815)
+Train: 143 [ 900/927 ( 97%)]  Loss:  5.151977 (4.7220)  Time: 0.590s, 1734.40/s  (2.417s,  423.69/s)  LR: 1.012e-05  Data: 0.020 (1.816)
+Train: 143 [ 926/927 (100%)]  Loss:  4.754362 (4.7236)  Time: 0.565s, 1812.80/s  (2.414s,  424.14/s)  LR: 1.012e-05  Data: 0.000 (1.814)
+Test: [   0/48]  Time: 14.630 (14.630)  Loss:  0.8123 (0.8123)  Acc@1: 86.1328 (86.1328)  Acc@5: 96.1914 (96.1914)
+WARNING: Skipped sample (index 43371, file 867/n02939185_867.png). cannot identify image file <_io.BufferedReader name='/gs/hs0/tga-i/sugiyama.y.al/datasets/ILSVRC2012/fakeimages_v2/validation/867/n02939185_867.png'>
+Test: [  48/48]  Time: 0.150 (3.358)  Loss:  0.6927 (0.8166)  Acc@1: 88.6792 (86.7520)  Acc@5: 97.0519 (96.5700)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-142.pth.tar', 86.84999999267578)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-143.pth.tar', 86.75199999511719)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-139.pth.tar', 86.74800014648437)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-137.pth.tar', 86.66800004638672)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-140.pth.tar', 86.60200007080078)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-141.pth.tar', 86.59399999511719)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-135.pth.tar', 86.55399994140625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-136.pth.tar', 86.37399994628906)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-138.pth.tar', 86.15000007324218)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-134.pth.tar', 86.04799994628907)
+
+*** Best metric: 86.84999999267578 (epoch 142)
+
+wandb: Waiting for W&B process to finish, PID 37321
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.01MB uploaded (0.00MB deduped)wandb: | 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: / 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: - 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: \ 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: | 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: / 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210601_223424-PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/logs/debug.log
+wandb: Find internal logs for this run at: /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210601_223424-PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/logs/debug-internal.log
+wandb: Run summary:
+wandb:    eval_top1 86.752
+wandb:    eval_top5 96.57
+wandb:   _timestamp 1622606060
+wandb:   train_loss 4.72357
+wandb:        _step 143
+wandb:        epoch 143
+wandb:     _runtime 357152
+wandb:    eval_loss 0.81663
+wandb: Run history:
+wandb:        epoch ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb:   train_loss ▄▄█▄▅▆▃▃▅▁▄▄▃▇▂▅▁▃▃▁▃▁
+wandb:    eval_loss ██▇▆▇▆▃▄▄▃▃▃▃▂▂▂▃▁▂▂▁▂
+wandb:    eval_top1 ▁▁▂▃▃▃▅▅▅▆▆▆▆▇▇█▆█▇▇██
+wandb:    eval_top5 ▁▁▁▃▃▃▅▄▅▆▆▆▆▇▇█▆█▇███
+wandb:     _runtime ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb:   _timestamp ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb:        _step ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k: https://wandb.ai/gyama_x/pytorch-image-models/runs/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+--End--
+Wed Jun 2 12:54:31 JST 2021
