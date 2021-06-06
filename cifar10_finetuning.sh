@@ -1,24 +1,26 @@
 #!/bin/bash
-#YBATCH -r am_8
-#SBATCH -N 1
-#SBATCH -J vit_finetuning_224_fake_1k_to_CIFAR10
-#SBATCH --output output/%j.out
+#$ -cwd
+#$ -l f_node=1
+#$ -l h_rt=24:00:00
+#$ -j y
+#$ -o output/finetuning/o.$JOB_ID
 
+source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh
-module load openmpi/3.1.6 cuda/11.1 cudnn/cuda-11.1/8.0
+module load cuda/11.0.194 cudnn/8.1
 
-echo 'Hello World'
+echo '--Start--'
+echo `date`
 
-export NUM_PROC=8
+export NUM_PROC=4
 python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py ./ \
     --pretrained \
-    --pretrained-path ./train_result/PreTraining_vit_deit_base_patch16_224_fake_1k/model_best.pth.tar \
     --dataset CIFAR10 \
     --num-classes 10 \
-    --model vit_deit_base_patch16_224 \
+    --model vit_deit_tiny_patch16_224 \
     --input-size 3 224 224 \
     --opt sgd \
-    --batch-size 96 \
+    --batch-size 192 \
     --epochs 1000 \
     --cooldown-epochs 0 \
     --lr 0.01 \
@@ -32,7 +34,9 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py ./ \
     --cutmix 1.0 \
     --log-wandb \
     --output train_result \
-    --experiment finetuning_vit_deit_base_patch16_224_fake_1k_to_CIFAR10 \
-    -j 8
+    --experiment Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10 \
+    --id_wandb Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10 \
+    -j 4
 
-echo 'Hello World'
+echo '--End--'
+echo `date`

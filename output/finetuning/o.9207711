@@ -1,0 +1,125 @@
+--Start--
+Sun Jun 6 17:08:50 JST 2021
+Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 3
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 1
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+wandb: Currently logged in as: gyama_x (use `wandb login --relogin` to force relogin)
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+wandb: wandb version 0.10.31 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.10.27
+wandb: Syncing run Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10
+wandb: ⭐️ View project at https://wandb.ai/gyama_x/pytorch-image-models
+wandb: 🚀 View run at https://wandb.ai/gyama_x/pytorch-image-models/runs/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10
+wandb: Run data is saved locally in /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210606_170946-Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10
+wandb: Run `wandb offline` to turn off syncing.
+
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+Model vit_deit_tiny_patch16_224 created, param count:5526346
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.485, 0.456, 0.406)
+	std: (0.229, 0.224, 0.225)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 1000
+Files already downloaded and verifiedFiles already downloaded and verified
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verifiedFiles already downloaded and verified
+
+Files already downloaded and verified
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Train: 0 [   0/65 (  0%)]  Loss:  2.381827 (2.3818)  Time: 2.406s,  319.19/s  (2.406s,  319.19/s)  LR: 1.000e-04  Data: 1.230 (1.230)
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Train: 0 [  50/65 ( 78%)]  Loss:  2.254833 (2.3183)  Time: 0.425s, 1806.77/s  (0.464s, 1655.08/s)  LR: 1.000e-04  Data: 0.010 (0.035)
+Train: 0 [  64/65 (100%)]  Loss:  2.230488 (2.2890)  Time: 0.410s, 1873.01/s  (0.455s, 1687.96/s)  LR: 1.000e-04  Data: 0.000 (0.030)
+Test: [   0/13]  Time: 0.805 (0.805)  Loss:  2.0834 (2.0834)  Acc@1: 27.2135 (27.2135)  Acc@5: 77.3438 (77.3438)
+Test: [  13/13]  Time: 0.134 (0.193)  Loss:  2.2205 (2.0856)  Acc@1: 12.5000 (25.7300)  Acc@5: 62.5000 (78.5600)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-0.pth.tar', 25.730001171875)
+
+Train: 1 [   0/65 (  0%)]  Loss:  2.214059 (2.2141)  Time: 1.008s,  762.24/s  (1.008s,  762.24/s)  LR: 2.080e-03  Data: 0.596 (0.596)
+Train: 1 [  50/65 ( 78%)]  Loss:  1.553321 (1.8837)  Time: 0.425s, 1807.59/s  (0.436s, 1760.82/s)  LR: 2.080e-03  Data: 0.010 (0.024)
+Train: 1 [  64/65 (100%)]  Loss:  1.682048 (1.8165)  Time: 0.410s, 1874.87/s  (0.433s, 1772.68/s)  LR: 2.080e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.444 (0.444)  Loss:  0.6090 (0.6090)  Acc@1: 88.6719 (88.6719)  Acc@5: 99.7396 (99.7396)
+Test: [  13/13]  Time: 0.010 (0.159)  Loss:  0.5749 (0.6044)  Acc@1: 87.5000 (88.5700)  Acc@5: 100.0000 (99.6500)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-1.pth.tar', 88.5700033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-0.pth.tar', 25.730001171875)
+
+Train: 2 [   0/65 (  0%)]  Loss:  1.653035 (1.6530)  Time: 1.066s,  720.70/s  (1.066s,  720.70/s)  LR: 4.060e-03  Data: 0.655 (0.655)
+Train: 2 [  50/65 ( 78%)]  Loss:  1.488869 (1.5710)  Time: 0.427s, 1798.44/s  (0.438s, 1753.87/s)  LR: 4.060e-03  Data: 0.016 (0.026)
+Train: 2 [  64/65 (100%)]  Loss:  1.544461 (1.5621)  Time: 0.410s, 1872.72/s  (0.435s, 1766.40/s)  LR: 4.060e-03  Data: 0.000 (0.023)
+Test: [   0/13]  Time: 0.436 (0.436)  Loss:  0.4299 (0.4299)  Acc@1: 92.8385 (92.8385)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.009 (0.158)  Loss:  0.2919 (0.4271)  Acc@1: 100.0000 (92.5700)  Acc@5: 100.0000 (99.8700)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-2.pth.tar', 92.570004296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-1.pth.tar', 88.5700033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-0.pth.tar', 25.730001171875)
+
+Train: 3 [   0/65 (  0%)]  Loss:  1.557113 (1.5571)  Time: 0.980s,  783.73/s  (0.980s,  783.73/s)  LR: 6.040e-03  Data: 0.570 (0.570)
+Train: 3 [  50/65 ( 78%)]  Loss:  1.531786 (1.5444)  Time: 0.426s, 1803.05/s  (0.435s, 1763.79/s)  LR: 6.040e-03  Data: 0.015 (0.024)
+Train: 3 [  64/65 (100%)]  Loss:  1.496079 (1.5283)  Time: 0.410s, 1874.19/s  (0.433s, 1774.75/s)  LR: 6.040e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.469 (0.469)  Loss:  0.3745 (0.3745)  Acc@1: 93.3594 (93.3594)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.009 (0.160)  Loss:  0.2475 (0.3753)  Acc@1: 100.0000 (93.2700)  Acc@5: 100.0000 (99.8400)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-3.pth.tar', 93.27000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-2.pth.tar', 92.570004296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-1.pth.tar', 88.5700033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10/checkpoint-0.pth.tar', 25.730001171875)
+
+Train: 4 [   0/65 (  0%)]  Loss:  1.549107 (1.5491)  Time: 1.087s,  706.67/s  (1.087s,  706.67/s)  LR: 8.020e-03  Data: 0.677 (0.677)
