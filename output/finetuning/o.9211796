@@ -1,0 +1,420 @@
+--Start--
+Mon Jun 7 00:52:26 JST 2021
+Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 3
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 1
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+wandb: Currently logged in as: gyama_x (use `wandb login --relogin` to force relogin)
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+wandb: wandb version 0.10.31 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_1k/checkpoint-160.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_1k/checkpoint-160.pth.tar'
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_1k/checkpoint-160.pth.tar'
+wandb: Tracking run with wandb version 0.10.27
+wandb: Syncing run Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10
+wandb: ⭐️ View project at https://wandb.ai/gyama_x/pytorch-image-models
+wandb: 🚀 View run at https://wandb.ai/gyama_x/pytorch-image-models/runs/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10
+wandb: Run data is saved locally in /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210607_005339-Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10
+wandb: Run `wandb offline` to turn off syncing.
+
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth)
+Loaded state_dict from checkpoint '/gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_fake_1k/checkpoint-160.pth.tar'
+Model vit_deit_tiny_patch16_224 created, param count:5526346
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.485, 0.456, 0.406)
+	std: (0.229, 0.224, 0.225)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 1000
+Files already downloaded and verifiedFiles already downloaded and verifiedFiles already downloaded and verified
+
+
+Files already downloaded and verified
+Files already downloaded and verifiedFiles already downloaded and verified
+
+Files already downloaded and verified
+Files already downloaded and verified
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/lib/python3.8/site-packages/torchvision/transforms/functional.py:364: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Train: 0 [   0/65 (  0%)]  Loss:  2.360446 (2.3604)  Time: 2.620s,  293.08/s  (2.620s,  293.08/s)  LR: 1.000e-04  Data: 1.206 (1.206)
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Train: 0 [  50/65 ( 78%)]  Loss:  2.269196 (2.3148)  Time: 0.423s, 1814.38/s  (0.468s, 1642.28/s)  LR: 1.000e-04  Data: 0.011 (0.036)
+Train: 0 [  64/65 (100%)]  Loss:  2.257434 (2.2957)  Time: 0.411s, 1870.67/s  (0.458s, 1677.23/s)  LR: 1.000e-04  Data: 0.000 (0.030)
+Test: [   0/13]  Time: 1.969 (1.969)  Loss:  2.1728 (2.1728)  Acc@1: 19.9219 (19.9219)  Acc@5: 69.0104 (69.0104)
+Test: [  13/13]  Time: 0.136 (0.277)  Loss:  2.2090 (2.1823)  Acc@1:  0.0000 (18.7700)  Acc@5: 62.5000 (69.4100)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 1 [   0/65 (  0%)]  Loss:  2.259156 (2.2592)  Time: 0.992s,  774.01/s  (0.992s,  774.01/s)  LR: 2.080e-03  Data: 0.581 (0.581)
+Train: 1 [  50/65 ( 78%)]  Loss:  1.904278 (2.0817)  Time: 0.424s, 1811.94/s  (0.435s, 1766.01/s)  LR: 2.080e-03  Data: 0.011 (0.022)
+Train: 1 [  64/65 (100%)]  Loss:  1.944880 (2.0361)  Time: 0.411s, 1870.67/s  (0.432s, 1776.97/s)  LR: 2.080e-03  Data: 0.000 (0.020)
+Test: [   0/13]  Time: 0.483 (0.483)  Loss:  1.2977 (1.2977)  Acc@1: 59.8958 (59.8958)  Acc@5: 96.8750 (96.8750)
+Test: [  13/13]  Time: 0.009 (0.165)  Loss:  1.5241 (1.3104)  Acc@1: 50.0000 (59.4600)  Acc@5: 87.5000 (95.7100)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 2 [   0/65 (  0%)]  Loss:  1.941544 (1.9415)  Time: 1.045s,  734.86/s  (1.045s,  734.86/s)  LR: 4.060e-03  Data: 0.635 (0.635)
+Train: 2 [  50/65 ( 78%)]  Loss:  1.765578 (1.8536)  Time: 0.423s, 1815.64/s  (0.436s, 1761.30/s)  LR: 4.060e-03  Data: 0.010 (0.024)
+Train: 2 [  64/65 (100%)]  Loss:  1.786831 (1.8313)  Time: 0.410s, 1872.06/s  (0.433s, 1773.47/s)  LR: 4.060e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.441 (0.441)  Loss:  0.9128 (0.9128)  Acc@1: 73.0469 (73.0469)  Acc@5: 98.4375 (98.4375)
+Test: [  13/13]  Time: 0.009 (0.158)  Loss:  0.9482 (0.9207)  Acc@1: 81.2500 (74.0100)  Acc@5: 100.0000 (98.2900)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 3 [   0/65 (  0%)]  Loss:  1.822191 (1.8222)  Time: 0.990s,  775.40/s  (0.990s,  775.40/s)  LR: 6.040e-03  Data: 0.580 (0.580)
+Train: 3 [  50/65 ( 78%)]  Loss:  1.700515 (1.7614)  Time: 0.423s, 1814.89/s  (0.435s, 1764.00/s)  LR: 6.040e-03  Data: 0.010 (0.023)
+Train: 3 [  64/65 (100%)]  Loss:  1.742201 (1.7550)  Time: 0.410s, 1871.69/s  (0.433s, 1774.79/s)  LR: 6.040e-03  Data: 0.000 (0.020)
+Test: [   0/13]  Time: 0.465 (0.465)  Loss:  0.7913 (0.7913)  Acc@1: 79.5573 (79.5573)  Acc@5: 99.4792 (99.4792)
+Test: [  13/13]  Time: 0.012 (0.160)  Loss:  0.8166 (0.8085)  Acc@1: 81.2500 (78.2700)  Acc@5: 100.0000 (98.8000)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 4 [   0/65 (  0%)]  Loss:  1.741906 (1.7419)  Time: 1.050s,  731.47/s  (1.050s,  731.47/s)  LR: 8.020e-03  Data: 0.639 (0.639)
+Train: 4 [  50/65 ( 78%)]  Loss:  1.770265 (1.7561)  Time: 0.425s, 1808.97/s  (0.437s, 1759.15/s)  LR: 8.020e-03  Data: 0.012 (0.024)
+Train: 4 [  64/65 (100%)]  Loss:  1.770118 (1.7608)  Time: 0.411s, 1868.83/s  (0.434s, 1771.07/s)  LR: 8.020e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.475 (0.475)  Loss:  0.6913 (0.6913)  Acc@1: 81.2500 (81.2500)  Acc@5: 98.9583 (98.9583)
+Test: [  13/13]  Time: 0.012 (0.164)  Loss:  0.5827 (0.6924)  Acc@1: 93.7500 (81.5700)  Acc@5: 100.0000 (99.0300)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 5 [   0/65 (  0%)]  Loss:  1.736378 (1.7364)  Time: 1.089s,  705.09/s  (1.089s,  705.09/s)  LR: 9.999e-03  Data: 0.679 (0.679)
+Train: 5 [  50/65 ( 78%)]  Loss:  1.747480 (1.7419)  Time: 0.425s, 1808.05/s  (0.437s, 1755.61/s)  LR: 9.999e-03  Data: 0.012 (0.025)
+Train: 5 [  64/65 (100%)]  Loss:  1.723096 (1.7357)  Time: 0.410s, 1872.52/s  (0.434s, 1767.96/s)  LR: 9.999e-03  Data: 0.000 (0.022)
+Test: [   0/13]  Time: 0.474 (0.474)  Loss:  0.6208 (0.6208)  Acc@1: 84.6354 (84.6354)  Acc@5: 99.6094 (99.6094)
+Test: [  13/13]  Time: 0.010 (0.164)  Loss:  0.6331 (0.6280)  Acc@1: 75.0000 (83.9300)  Acc@5: 100.0000 (99.2700)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 6 [   0/65 (  0%)]  Loss:  1.660897 (1.6609)  Time: 1.063s,  722.54/s  (1.063s,  722.54/s)  LR: 9.999e-03  Data: 0.652 (0.652)
+Train: 6 [  50/65 ( 78%)]  Loss:  1.666777 (1.6638)  Time: 0.427s, 1798.32/s  (0.438s, 1753.69/s)  LR: 9.999e-03  Data: 0.012 (0.025)
+Train: 6 [  64/65 (100%)]  Loss:  1.536328 (1.6213)  Time: 0.410s, 1871.07/s  (0.435s, 1766.52/s)  LR: 9.999e-03  Data: 0.000 (0.022)
+Test: [   0/13]  Time: 0.483 (0.483)  Loss:  0.5902 (0.5902)  Acc@1: 82.9427 (82.9427)  Acc@5: 99.6094 (99.6094)
+Test: [  13/13]  Time: 0.009 (0.164)  Loss:  0.5351 (0.5932)  Acc@1: 75.0000 (84.2600)  Acc@5: 100.0000 (99.3800)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 7 [   0/65 (  0%)]  Loss:  1.558657 (1.5587)  Time: 0.977s,  785.81/s  (0.977s,  785.81/s)  LR: 9.999e-03  Data: 0.567 (0.567)
+Train: 7 [  50/65 ( 78%)]  Loss:  1.726727 (1.6427)  Time: 0.424s, 1809.87/s  (0.435s, 1764.32/s)  LR: 9.999e-03  Data: 0.011 (0.022)
+Train: 7 [  64/65 (100%)]  Loss:  1.723390 (1.6696)  Time: 0.411s, 1869.68/s  (0.433s, 1775.55/s)  LR: 9.999e-03  Data: 0.000 (0.020)
+Test: [   0/13]  Time: 0.442 (0.442)  Loss:  0.6188 (0.6188)  Acc@1: 82.6823 (82.6823)  Acc@5: 99.6094 (99.6094)
+Test: [  13/13]  Time: 0.009 (0.158)  Loss:  0.5310 (0.6132)  Acc@1: 93.7500 (84.0800)  Acc@5: 100.0000 (99.3400)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 8 [   0/65 (  0%)]  Loss:  1.752796 (1.7528)  Time: 1.024s,  749.96/s  (1.024s,  749.96/s)  LR: 9.998e-03  Data: 0.556 (0.556)
+Train: 8 [  50/65 ( 78%)]  Loss:  1.615291 (1.6840)  Time: 0.425s, 1808.02/s  (0.436s, 1760.83/s)  LR: 9.998e-03  Data: 0.011 (0.023)
+Train: 8 [  64/65 (100%)]  Loss:  1.753008 (1.7070)  Time: 0.411s, 1870.71/s  (0.433s, 1772.11/s)  LR: 9.998e-03  Data: 0.000 (0.020)
+Test: [   0/13]  Time: 0.466 (0.466)  Loss:  0.5653 (0.5653)  Acc@1: 85.6771 (85.6771)  Acc@5: 99.0885 (99.0885)
+Test: [  13/13]  Time: 0.009 (0.161)  Loss:  0.5257 (0.5666)  Acc@1: 87.5000 (85.1200)  Acc@5: 100.0000 (99.3700)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 9 [   0/65 (  0%)]  Loss:  1.761652 (1.7617)  Time: 0.984s,  780.55/s  (0.984s,  780.55/s)  LR: 9.998e-03  Data: 0.573 (0.573)
+Train: 9 [  50/65 ( 78%)]  Loss:  1.559300 (1.6605)  Time: 0.424s, 1810.26/s  (0.435s, 1763.93/s)  LR: 9.998e-03  Data: 0.011 (0.023)
+Train: 9 [  64/65 (100%)]  Loss:  1.636692 (1.6525)  Time: 0.410s, 1871.44/s  (0.433s, 1774.18/s)  LR: 9.998e-03  Data: 0.000 (0.020)
+Test: [   0/13]  Time: 0.478 (0.478)  Loss:  0.5253 (0.5253)  Acc@1: 86.7188 (86.7188)  Acc@5: 99.7396 (99.7396)
+Test: [  13/13]  Time: 0.009 (0.165)  Loss:  0.4268 (0.5340)  Acc@1: 93.7500 (86.5600)  Acc@5: 100.0000 (99.4900)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-0.pth.tar', 18.770000537109375)
+
+Train: 10 [   0/65 (  0%)]  Loss:  1.565994 (1.5660)  Time: 1.078s,  712.65/s  (1.078s,  712.65/s)  LR: 9.998e-03  Data: 0.667 (0.667)
+Train: 10 [  50/65 ( 78%)]  Loss:  1.530841 (1.5484)  Time: 0.427s, 1798.70/s  (0.438s, 1755.26/s)  LR: 9.998e-03  Data: 0.010 (0.024)
+Train: 10 [  64/65 (100%)]  Loss:  1.684844 (1.5939)  Time: 0.410s, 1871.65/s  (0.435s, 1767.34/s)  LR: 9.998e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.465 (0.465)  Loss:  0.5762 (0.5762)  Acc@1: 85.2865 (85.2865)  Acc@5: 99.7396 (99.7396)
+Test: [  13/13]  Time: 0.025 (0.172)  Loss:  0.5794 (0.5774)  Acc@1: 81.2500 (86.3000)  Acc@5: 100.0000 (99.5300)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-1.pth.tar', 59.460001953125)
+
+Train: 11 [   0/65 (  0%)]  Loss:  1.748741 (1.7487)  Time: 1.405s,  546.52/s  (1.405s,  546.52/s)  LR: 9.997e-03  Data: 0.778 (0.778)
+Train: 11 [  50/65 ( 78%)]  Loss:  1.682039 (1.7154)  Time: 0.425s, 1807.19/s  (0.444s, 1729.46/s)  LR: 9.997e-03  Data: 0.010 (0.026)
+Train: 11 [  64/65 (100%)]  Loss:  1.359036 (1.5966)  Time: 0.410s, 1872.58/s  (0.440s, 1746.86/s)  LR: 9.997e-03  Data: 0.000 (0.023)
+Test: [   0/13]  Time: 0.463 (0.463)  Loss:  0.4935 (0.4935)  Acc@1: 86.8490 (86.8490)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.009 (0.159)  Loss:  0.3090 (0.4918)  Acc@1: 93.7500 (87.1300)  Acc@5: 100.0000 (99.5500)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-2.pth.tar', 74.0100033203125)
+
+Train: 12 [   0/65 (  0%)]  Loss:  1.501674 (1.5017)  Time: 1.058s,  725.75/s  (1.058s,  725.75/s)  LR: 9.996e-03  Data: 0.647 (0.647)
+Train: 12 [  50/65 ( 78%)]  Loss:  1.561660 (1.5317)  Time: 0.424s, 1812.95/s  (0.437s, 1757.39/s)  LR: 9.996e-03  Data: 0.011 (0.024)
+Train: 12 [  64/65 (100%)]  Loss:  1.630960 (1.5648)  Time: 0.410s, 1871.64/s  (0.434s, 1769.89/s)  LR: 9.996e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.477 (0.477)  Loss:  0.5644 (0.5644)  Acc@1: 85.4167 (85.4167)  Acc@5: 99.7396 (99.7396)
+Test: [  13/13]  Time: 0.009 (0.164)  Loss:  0.4694 (0.5616)  Acc@1: 87.5000 (86.6500)  Acc@5: 100.0000 (99.4700)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-3.pth.tar', 78.270002734375)
+
+Train: 13 [   0/65 (  0%)]  Loss:  1.629945 (1.6299)  Time: 1.052s,  730.06/s  (1.052s,  730.06/s)  LR: 9.996e-03  Data: 0.641 (0.641)
+Train: 13 [  50/65 ( 78%)]  Loss:  1.490244 (1.5601)  Time: 0.427s, 1798.22/s  (0.437s, 1759.13/s)  LR: 9.996e-03  Data: 0.016 (0.024)
+Train: 13 [  64/65 (100%)]  Loss:  1.532789 (1.5510)  Time: 0.410s, 1872.23/s  (0.434s, 1771.12/s)  LR: 9.996e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.470 (0.470)  Loss:  0.5244 (0.5244)  Acc@1: 87.3698 (87.3698)  Acc@5: 99.8698 (99.8698)
+Test: [  13/13]  Time: 0.009 (0.162)  Loss:  0.4037 (0.5287)  Acc@1: 87.5000 (87.2000)  Acc@5: 100.0000 (99.4800)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-4.pth.tar', 81.5700029296875)
+
+Train: 14 [   0/65 (  0%)]  Loss:  1.593517 (1.5935)  Time: 1.110s,  691.99/s  (1.110s,  691.99/s)  LR: 9.995e-03  Data: 0.699 (0.699)
+Train: 14 [  50/65 ( 78%)]  Loss:  1.516692 (1.5551)  Time: 0.424s, 1810.02/s  (0.438s, 1752.43/s)  LR: 9.995e-03  Data: 0.011 (0.026)
+Train: 14 [  64/65 (100%)]  Loss:  1.622367 (1.5775)  Time: 0.411s, 1869.50/s  (0.435s, 1765.37/s)  LR: 9.995e-03  Data: 0.000 (0.023)
+Test: [   0/13]  Time: 0.475 (0.475)  Loss:  0.4932 (0.4932)  Acc@1: 86.5885 (86.5885)  Acc@5: 99.7396 (99.7396)
+Test: [  13/13]  Time: 0.009 (0.162)  Loss:  0.3762 (0.4843)  Acc@1: 87.5000 (88.2200)  Acc@5: 100.0000 (99.6200)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-5.pth.tar', 83.9300033203125)
+
+Train: 15 [   0/65 (  0%)]  Loss:  1.630232 (1.6302)  Time: 1.020s,  753.13/s  (1.020s,  753.13/s)  LR: 9.994e-03  Data: 0.608 (0.608)
+Train: 15 [  50/65 ( 78%)]  Loss:  1.841903 (1.7361)  Time: 0.427s, 1798.11/s  (0.437s, 1759.23/s)  LR: 9.994e-03  Data: 0.015 (0.024)
+Train: 15 [  64/65 (100%)]  Loss:  1.618406 (1.6968)  Time: 0.411s, 1868.54/s  (0.434s, 1770.40/s)  LR: 9.994e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.481 (0.481)  Loss:  0.5123 (0.5123)  Acc@1: 86.3281 (86.3281)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.012 (0.162)  Loss:  0.4246 (0.5129)  Acc@1: 87.5000 (87.4400)  Acc@5: 100.0000 (99.5700)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-7.pth.tar', 84.08000390625)
+
+Train: 16 [   0/65 (  0%)]  Loss:  1.535666 (1.5357)  Time: 1.082s,  709.81/s  (1.082s,  709.81/s)  LR: 9.994e-03  Data: 0.670 (0.670)
+Train: 16 [  50/65 ( 78%)]  Loss:  1.576857 (1.5563)  Time: 0.425s, 1806.25/s  (0.437s, 1757.13/s)  LR: 9.994e-03  Data: 0.012 (0.024)
+Train: 16 [  64/65 (100%)]  Loss:  1.489862 (1.5341)  Time: 0.411s, 1869.84/s  (0.434s, 1769.87/s)  LR: 9.994e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.454 (0.454)  Loss:  0.4544 (0.4544)  Acc@1: 88.4115 (88.4115)  Acc@5: 99.8698 (99.8698)
+Test: [  13/13]  Time: 0.009 (0.159)  Loss:  0.2748 (0.4564)  Acc@1: 93.7500 (88.7000)  Acc@5: 100.0000 (99.6000)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-16.pth.tar', 88.7000056640625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-6.pth.tar', 84.260002734375)
+
+Train: 17 [   0/65 (  0%)]  Loss:  1.416225 (1.4162)  Time: 1.068s,  718.81/s  (1.068s,  718.81/s)  LR: 9.993e-03  Data: 0.657 (0.657)
+Train: 17 [  50/65 ( 78%)]  Loss:  1.634215 (1.5252)  Time: 0.424s, 1812.35/s  (0.437s, 1758.48/s)  LR: 9.993e-03  Data: 0.011 (0.024)
+Train: 17 [  64/65 (100%)]  Loss:  1.533374 (1.5279)  Time: 0.410s, 1871.09/s  (0.434s, 1770.67/s)  LR: 9.993e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.480 (0.480)  Loss:  0.4522 (0.4522)  Acc@1: 88.8021 (88.8021)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.009 (0.163)  Loss:  0.2642 (0.4495)  Acc@1: 93.7500 (89.2000)  Acc@5: 100.0000 (99.6400)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-17.pth.tar', 89.200001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-16.pth.tar', 88.7000056640625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-8.pth.tar', 85.1200044921875)
+
+Train: 18 [   0/65 (  0%)]  Loss:  1.423298 (1.4233)  Time: 1.039s,  739.09/s  (1.039s,  739.09/s)  LR: 9.992e-03  Data: 0.628 (0.628)
+Train: 18 [  50/65 ( 78%)]  Loss:  1.690380 (1.5568)  Time: 0.425s, 1808.18/s  (0.436s, 1759.62/s)  LR: 9.992e-03  Data: 0.012 (0.024)
+Train: 18 [  64/65 (100%)]  Loss:  1.555700 (1.5565)  Time: 0.410s, 1874.70/s  (0.434s, 1771.36/s)  LR: 9.992e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.479 (0.479)  Loss:  0.4850 (0.4850)  Acc@1: 86.5885 (86.5885)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.009 (0.162)  Loss:  0.2899 (0.4720)  Acc@1: 93.7500 (88.3600)  Acc@5: 100.0000 (99.6400)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-17.pth.tar', 89.200001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-16.pth.tar', 88.7000056640625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-18.pth.tar', 88.360001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-10.pth.tar', 86.300003125)
+
+Train: 19 [   0/65 (  0%)]  Loss:  1.586739 (1.5867)  Time: 1.065s,  721.34/s  (1.065s,  721.34/s)  LR: 9.991e-03  Data: 0.654 (0.654)
+Train: 19 [  50/65 ( 78%)]  Loss:  1.748871 (1.6678)  Time: 0.424s, 1810.18/s  (0.437s, 1758.06/s)  LR: 9.991e-03  Data: 0.013 (0.024)
+Train: 19 [  64/65 (100%)]  Loss:  1.687294 (1.6743)  Time: 0.411s, 1870.02/s  (0.434s, 1769.75/s)  LR: 9.991e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.494 (0.494)  Loss:  0.5137 (0.5137)  Acc@1: 87.2396 (87.2396)  Acc@5: 99.6094 (99.6094)
+Test: [  13/13]  Time: 0.012 (0.164)  Loss:  0.3694 (0.5130)  Acc@1: 93.7500 (88.4900)  Acc@5: 100.0000 (99.6000)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-17.pth.tar', 89.200001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-16.pth.tar', 88.7000056640625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-19.pth.tar', 88.49000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-18.pth.tar', 88.360001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-9.pth.tar', 86.5600037109375)
+
+Train: 20 [   0/65 (  0%)]  Loss:  1.710772 (1.7108)  Time: 1.031s,  745.21/s  (1.031s,  745.21/s)  LR: 9.990e-03  Data: 0.619 (0.619)
+Train: 20 [  50/65 ( 78%)]  Loss:  1.627691 (1.6692)  Time: 0.425s, 1808.38/s  (0.436s, 1760.36/s)  LR: 9.990e-03  Data: 0.011 (0.023)
+Train: 20 [  64/65 (100%)]  Loss:  1.717207 (1.6852)  Time: 0.411s, 1869.85/s  (0.433s, 1772.12/s)  LR: 9.990e-03  Data: 0.000 (0.021)
+Test: [   0/13]  Time: 0.620 (0.620)  Loss:  0.4591 (0.4591)  Acc@1: 89.0625 (89.0625)  Acc@5: 100.0000 (100.0000)
+Test: [  13/13]  Time: 0.015 (0.174)  Loss:  0.2884 (0.4604)  Acc@1: 87.5000 (89.2800)  Acc@5: 100.0000 (99.6300)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-20.pth.tar', 89.280003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-17.pth.tar', 89.200001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-16.pth.tar', 88.7000056640625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-19.pth.tar', 88.49000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-18.pth.tar', 88.360001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-12.pth.tar', 86.6500033203125)
+
+Train: 21 [   0/65 (  0%)]  Loss:  1.742900 (1.7429)  Time: 1.401s,  548.08/s  (1.401s,  548.08/s)  LR: 9.989e-03  Data: 0.758 (0.758)
+Train: 21 [  50/65 ( 78%)]  Loss:  1.583298 (1.6631)  Time: 0.422s, 1818.53/s  (0.444s, 1731.34/s)  LR: 9.989e-03  Data: 0.010 (0.026)
+Train: 21 [  64/65 (100%)]  Loss:  1.638435 (1.6549)  Time: 0.411s, 1869.88/s  (0.439s, 1748.78/s)  LR: 9.989e-03  Data: 0.000 (0.023)
+Test: [   0/13]  Time: 0.466 (0.466)  Loss:  0.4742 (0.4742)  Acc@1: 87.7604 (87.7604)  Acc@5: 99.7396 (99.7396)
+Test: [  13/13]  Time: 0.009 (0.165)  Loss:  0.3107 (0.4685)  Acc@1: 93.7500 (89.1900)  Acc@5: 100.0000 (99.5900)
+Current checkpoints:
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-20.pth.tar', 89.280003125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-17.pth.tar', 89.200001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-21.pth.tar', 89.1900041015625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-16.pth.tar', 88.7000056640625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-19.pth.tar', 88.49000390625)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-18.pth.tar', 88.360001953125)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-14.pth.tar', 88.2200046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-15.pth.tar', 87.4400046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-13.pth.tar', 87.2000046875)
+ ('train_result/Finetuning_vit_deit_tiny_patch16_224_fake_v1_1k_to_CIFAR10/checkpoint-11.pth.tar', 87.1300037109375)
+
+Train: 22 [   0/65 (  0%)]  Loss:  1.695764 (1.6958)  Time: 1.018s,  754.12/s  (1.018s,  754.12/s)  LR: 9.988e-03  Data: 0.607 (0.607)
