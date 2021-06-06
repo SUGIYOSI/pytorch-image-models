@@ -3,7 +3,7 @@
 #$ -l f_node=1
 #$ -l h_rt=24:00:00
 #$ -j y
-#$ -o output/o.$JOB_ID
+#$ -o output/finetuning/o.$JOB_ID
 
 source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh
@@ -15,13 +15,14 @@ echo `date`
 export NUM_PROC=4
 python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py ./ \
     --pretrained \
+    --pretrained-path /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/checkpoint-160.pth.tar \
     --dataset CIFAR10 \
     --num-classes 10 \
     --model vit_deit_tiny_patch16_224 \
     --input-size 3 224 224 \
     --opt sgd \
     --batch-size 192 \
-    --epochs 150 \
+    --epochs 1000 \
     --cooldown-epochs 0 \
     --lr 0.01 \
     --sched cosine \
@@ -34,8 +35,8 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py ./ \
     --cutmix 1.0 \
     --log-wandb \
     --output train_result \
-    --experiment Test_Finetuning_vit_deit_tiny_patch16_224_default-imnet1k_to_CIFAR10 \
-    --id_wandb Test_Finetuning_vit_deit_tiny_patch16_224_default-imnet1k_to_CIFAR10 \
+    --experiment Finetuning_vit_deit_tiny_patch16_224_imnet1k_to_CIFAR10 \
+    --id_wandb Finetuning_vit_deit_tiny_patch16_224_imnet1k_to_CIFAR10_v1 \
     -j 4
 
 echo '--End--'
