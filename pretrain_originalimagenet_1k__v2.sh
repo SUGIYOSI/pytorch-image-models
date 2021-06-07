@@ -3,7 +3,7 @@
 #$ -l f_node=1
 #$ -l h_rt=167:00:00
 #$ -j y
-#$ -o output/o.originalimagenet_1k__v2
+#$ -o output/pretrain/o.originalimagenet_1k__v2
 
 source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh

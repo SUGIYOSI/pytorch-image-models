@@ -3,7 +3,7 @@
 #$ -l f_node=1
 #$ -l h_rt=24:00:00
 #$ -j y
-#$ -o output/o.$JOB_ID
+#$ -o output/pretrain/o.$JOB_ID
 
 source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh
@@ -19,7 +19,7 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py /gs/hs0/t
     --initial-checkpoint /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/train_result/PreTraining_vit_deit_tiny_patch16_224_1k/last.pth.tar \
     --opt adamw \
     --batch-size 256 \
-    --epochs 210 \
+    --epochs 232 \
     --cooldown-epochs 0 \
     --lr 0.001 \
     --sched cosine \
