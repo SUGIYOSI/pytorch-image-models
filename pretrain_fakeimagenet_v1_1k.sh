@@ -3,7 +3,7 @@
 #$ -l f_node=1
 #$ -l h_rt=24:00:00
 #$ -j y
-#$ -o output/o.$JOB_ID
+#$ -o output/pretrain/o.$JOB_ID
 
 source /gs/hs0/tga-i/sugiyama.y.al/TIMM/TIMM_386/bin/activate
 . /etc/profile.d/modules.sh

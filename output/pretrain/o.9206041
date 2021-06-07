@@ -621,3 +621,198 @@ Train: 205 [ 250/927 ( 27%)]  Loss:  3.837725 (4.6658)  Time: 0.593s, 1727.50/s 
 Train: 205 [ 300/927 ( 32%)]  Loss:  4.237085 (4.6046)  Time: 1.437s,  712.70/s  (2.511s,  407.80/s)  LR: 1.138e-05  Data: 0.870 (1.904)
 Train: 205 [ 350/927 ( 38%)]  Loss:  5.003679 (4.6545)  Time: 0.592s, 1730.94/s  (2.549s,  401.71/s)  LR: 1.138e-05  Data: 0.026 (1.944)
 Train: 205 [ 400/927 ( 43%)]  Loss:  5.290284 (4.7251)  Time: 1.490s,  687.36/s  (2.544s,  402.47/s)  LR: 1.138e-05  Data: 0.918 (1.939)
+Train: 205 [ 450/927 ( 49%)]  Loss:  4.784923 (4.7311)  Time: 0.589s, 1737.68/s  (2.537s,  403.57/s)  LR: 1.138e-05  Data: 0.019 (1.932)
+Train: 205 [ 500/927 ( 54%)]  Loss:  4.809349 (4.7382)  Time: 3.456s,  296.28/s  (2.518s,  406.72/s)  LR: 1.138e-05  Data: 2.885 (1.912)
+Train: 205 [ 550/927 ( 59%)]  Loss:  4.741390 (4.7385)  Time: 0.585s, 1751.36/s  (2.494s,  410.54/s)  LR: 1.138e-05  Data: 0.020 (1.889)
+Train: 205 [ 600/927 ( 65%)]  Loss:  5.254368 (4.7782)  Time: 5.194s,  197.16/s  (2.490s,  411.32/s)  LR: 1.138e-05  Data: 4.535 (1.884)
+Train: 205 [ 650/927 ( 70%)]  Loss:  4.607330 (4.7660)  Time: 0.586s, 1748.41/s  (2.472s,  414.30/s)  LR: 1.138e-05  Data: 0.022 (1.867)
+Train: 205 [ 700/927 ( 76%)]  Loss:  4.364418 (4.7392)  Time: 4.803s,  213.20/s  (2.486s,  411.87/s)  LR: 1.138e-05  Data: 4.239 (1.880)
+Train: 205 [ 750/927 ( 81%)]  Loss:  4.489432 (4.7236)  Time: 2.073s,  493.99/s  (2.467s,  415.08/s)  LR: 1.138e-05  Data: 1.406 (1.859)
+Train: 205 [ 800/927 ( 86%)]  Loss:  4.506237 (4.7108)  Time: 4.123s,  248.37/s  (2.466s,  415.22/s)  LR: 1.138e-05  Data: 3.559 (1.857)
+Train: 205 [ 850/927 ( 92%)]  Loss:  4.607423 (4.7051)  Time: 0.586s, 1747.16/s  (2.456s,  416.96/s)  LR: 1.138e-05  Data: 0.022 (1.847)
+Train: 205 [ 900/927 ( 97%)]  Loss:  4.729201 (4.7063)  Time: 6.714s,  152.53/s  (2.450s,  417.90/s)  LR: 1.138e-05  Data: 6.106 (1.842)
+Train: 205 [ 926/927 (100%)]  Loss:  4.789919 (4.7105)  Time: 0.566s, 1808.94/s  (2.443s,  419.22/s)  LR: 1.138e-05  Data: 0.000 (1.834)
+Test: [   0/48]  Time: 13.136 (13.136)  Loss:  0.6983 (0.6983)  Acc@1: 89.0625 (89.0625)  Acc@5: 96.6797 (96.6797)
+Test: [  48/48]  Time: 0.150 (3.230)  Loss:  0.5995 (0.7057)  Acc@1: 91.5094 (89.1140)  Acc@5: 97.6415 (97.3180)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-205.pth.tar', 89.11400006103516)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-203.pth.tar', 89.0540000341797)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-201.pth.tar', 88.91400000976563)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-200.pth.tar', 88.80200009277344)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-204.pth.tar', 88.7440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-198.pth.tar', 88.7199999609375)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-202.pth.tar', 88.71000009033203)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-199.pth.tar', 88.5440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-193.pth.tar', 88.44600001464843)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-194.pth.tar', 88.40800006835937)
+
+Train: 206 [   0/927 (  0%)]  Loss:  4.784579 (4.7846)  Time: 9.249s,  110.71/s  (9.249s,  110.71/s)  LR: 1.089e-05  Data: 8.613 (8.613)
+Train: 206 [  50/927 (  5%)]  Loss:  5.573897 (5.1792)  Time: 0.589s, 1738.06/s  (2.179s,  469.95/s)  LR: 1.089e-05  Data: 0.021 (1.593)
+Train: 206 [ 100/927 ( 11%)]  Loss:  4.876825 (5.0784)  Time: 0.589s, 1738.26/s  (2.632s,  388.99/s)  LR: 1.089e-05  Data: 0.020 (2.033)
+Train: 206 [ 150/927 ( 16%)]  Loss:  4.425050 (4.9151)  Time: 0.587s, 1743.03/s  (2.787s,  367.37/s)  LR: 1.089e-05  Data: 0.018 (2.173)
+Train: 206 [ 200/927 ( 22%)]  Loss:  4.397072 (4.8115)  Time: 7.545s,  135.73/s  (2.697s,  379.64/s)  LR: 1.089e-05  Data: 6.952 (2.085)
+Train: 206 [ 250/927 ( 27%)]  Loss:  4.366360 (4.7373)  Time: 0.585s, 1750.62/s  (2.606s,  393.00/s)  LR: 1.089e-05  Data: 0.020 (2.000)
+Train: 206 [ 300/927 ( 32%)]  Loss:  5.234558 (4.8083)  Time: 7.875s,  130.04/s  (2.558s,  400.35/s)  LR: 1.089e-05  Data: 7.284 (1.955)
+Train: 206 [ 350/927 ( 38%)]  Loss:  4.655389 (4.7892)  Time: 0.589s, 1739.40/s  (2.493s,  410.69/s)  LR: 1.089e-05  Data: 0.025 (1.894)
+Train: 206 [ 400/927 ( 43%)]  Loss:  4.598707 (4.7680)  Time: 6.978s,  146.75/s  (2.468s,  414.92/s)  LR: 1.089e-05  Data: 6.414 (1.869)
+Train: 206 [ 450/927 ( 49%)]  Loss:  5.219989 (4.8132)  Time: 0.587s, 1743.87/s  (2.474s,  413.86/s)  LR: 1.089e-05  Data: 0.022 (1.875)
+Train: 206 [ 500/927 ( 54%)]  Loss:  5.149797 (4.8438)  Time: 7.487s,  136.78/s  (2.449s,  418.08/s)  LR: 1.089e-05  Data: 6.846 (1.849)
+Train: 206 [ 550/927 ( 59%)]  Loss:  4.151680 (4.7862)  Time: 0.698s, 1466.19/s  (2.434s,  420.75/s)  LR: 1.089e-05  Data: 0.112 (1.834)
+Train: 206 [ 600/927 ( 65%)]  Loss:  5.119009 (4.8118)  Time: 7.498s,  136.57/s  (2.438s,  420.05/s)  LR: 1.089e-05  Data: 6.934 (1.837)
+Train: 206 [ 650/927 ( 70%)]  Loss:  4.043811 (4.7569)  Time: 0.586s, 1746.82/s  (2.432s,  421.03/s)  LR: 1.089e-05  Data: 0.021 (1.833)
+Train: 206 [ 700/927 ( 76%)]  Loss:  4.625095 (4.7481)  Time: 7.526s,  136.05/s  (2.430s,  421.42/s)  LR: 1.089e-05  Data: 6.864 (1.832)
+Train: 206 [ 750/927 ( 81%)]  Loss:  4.709366 (4.7457)  Time: 0.590s, 1735.99/s  (2.410s,  424.96/s)  LR: 1.089e-05  Data: 0.026 (1.812)
+Train: 206 [ 800/927 ( 86%)]  Loss:  4.676153 (4.7416)  Time: 6.824s,  150.05/s  (2.400s,  426.59/s)  LR: 1.089e-05  Data: 6.149 (1.803)
+Train: 206 [ 850/927 ( 92%)]  Loss:  4.486583 (4.7274)  Time: 0.589s, 1739.44/s  (2.414s,  424.25/s)  LR: 1.089e-05  Data: 0.024 (1.817)
+Train: 206 [ 900/927 ( 97%)]  Loss:  4.179948 (4.6986)  Time: 7.760s,  131.96/s  (2.415s,  423.98/s)  LR: 1.089e-05  Data: 7.074 (1.819)
+Train: 206 [ 926/927 (100%)]  Loss:  5.001042 (4.7137)  Time: 0.566s, 1809.62/s  (2.410s,  424.91/s)  LR: 1.089e-05  Data: 0.000 (1.814)
+Test: [   0/48]  Time: 12.914 (12.914)  Loss:  0.7132 (0.7132)  Acc@1: 88.7695 (88.7695)  Acc@5: 96.8750 (96.8750)
+Test: [  48/48]  Time: 0.149 (3.814)  Loss:  0.6095 (0.7156)  Acc@1: 91.3915 (88.8680)  Acc@5: 97.8774 (97.2820)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-205.pth.tar', 89.11400006103516)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-203.pth.tar', 89.0540000341797)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-201.pth.tar', 88.91400000976563)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-206.pth.tar', 88.86799988037109)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-200.pth.tar', 88.80200009277344)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-204.pth.tar', 88.7440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-198.pth.tar', 88.7199999609375)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-202.pth.tar', 88.71000009033203)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-199.pth.tar', 88.5440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-193.pth.tar', 88.44600001464843)
+
+Train: 207 [   0/927 (  0%)]  Loss:  5.016794 (5.0168)  Time: 10.055s,  101.84/s  (10.055s,  101.84/s)  LR: 1.050e-05  Data: 9.005 (9.005)
+Train: 207 [  50/927 (  5%)]  Loss:  3.925051 (4.4709)  Time: 0.584s, 1753.00/s  (2.981s,  343.51/s)  LR: 1.050e-05  Data: 0.018 (2.378)
+Train: 207 [ 100/927 ( 11%)]  Loss:  4.633442 (4.5251)  Time: 0.587s, 1744.72/s  (2.601s,  393.62/s)  LR: 1.050e-05  Data: 0.021 (2.007)
+Train: 207 [ 150/927 ( 16%)]  Loss:  4.636437 (4.5529)  Time: 0.584s, 1754.68/s  (2.450s,  417.96/s)  LR: 1.050e-05  Data: 0.020 (1.864)
+Train: 207 [ 200/927 ( 22%)]  Loss:  5.025868 (4.6475)  Time: 0.587s, 1745.25/s  (2.497s,  410.01/s)  LR: 1.050e-05  Data: 0.019 (1.909)
+Train: 207 [ 250/927 ( 27%)]  Loss:  4.182564 (4.5700)  Time: 0.586s, 1746.71/s  (2.431s,  421.29/s)  LR: 1.050e-05  Data: 0.019 (1.843)
+Train: 207 [ 300/927 ( 32%)]  Loss:  5.251290 (4.6673)  Time: 0.584s, 1752.06/s  (2.440s,  419.63/s)  LR: 1.050e-05  Data: 0.019 (1.853)
+Train: 207 [ 350/927 ( 38%)]  Loss:  3.845381 (4.5646)  Time: 0.586s, 1746.61/s  (2.413s,  424.43/s)  LR: 1.050e-05  Data: 0.020 (1.826)
+Train: 207 [ 400/927 ( 43%)]  Loss:  4.853217 (4.5967)  Time: 0.588s, 1742.23/s  (2.407s,  425.35/s)  LR: 1.050e-05  Data: 0.021 (1.822)
+Train: 207 [ 450/927 ( 49%)]  Loss:  4.246540 (4.5617)  Time: 0.587s, 1744.43/s  (2.391s,  428.24/s)  LR: 1.050e-05  Data: 0.022 (1.803)
+Train: 207 [ 500/927 ( 54%)]  Loss:  4.505136 (4.5565)  Time: 0.588s, 1742.79/s  (2.389s,  428.60/s)  LR: 1.050e-05  Data: 0.021 (1.802)
+Train: 207 [ 550/927 ( 59%)]  Loss:  4.769160 (4.5742)  Time: 0.588s, 1740.99/s  (2.368s,  432.45/s)  LR: 1.050e-05  Data: 0.020 (1.781)
+Train: 207 [ 600/927 ( 65%)]  Loss:  4.887699 (4.5984)  Time: 0.591s, 1733.40/s  (2.402s,  426.37/s)  LR: 1.050e-05  Data: 0.025 (1.815)
+Train: 207 [ 650/927 ( 70%)]  Loss:  3.951073 (4.5521)  Time: 1.414s,  724.16/s  (2.408s,  425.18/s)  LR: 1.050e-05  Data: 0.848 (1.819)
+Train: 207 [ 700/927 ( 76%)]  Loss:  4.989110 (4.5813)  Time: 0.589s, 1737.91/s  (2.412s,  424.57/s)  LR: 1.050e-05  Data: 0.025 (1.822)
+Train: 207 [ 750/927 ( 81%)]  Loss:  4.815809 (4.5959)  Time: 0.591s, 1731.55/s  (2.405s,  425.81/s)  LR: 1.050e-05  Data: 0.024 (1.815)
+Train: 207 [ 800/927 ( 86%)]  Loss:  4.188342 (4.5719)  Time: 0.588s, 1740.66/s  (2.409s,  425.10/s)  LR: 1.050e-05  Data: 0.024 (1.819)
+Train: 207 [ 850/927 ( 92%)]  Loss:  4.953353 (4.5931)  Time: 0.587s, 1744.26/s  (2.413s,  424.38/s)  LR: 1.050e-05  Data: 0.019 (1.824)
+Train: 207 [ 900/927 ( 97%)]  Loss:  4.682752 (4.5978)  Time: 0.584s, 1753.31/s  (2.462s,  415.98/s)  LR: 1.050e-05  Data: 0.019 (1.873)
+Train: 207 [ 926/927 (100%)]  Loss:  4.474060 (4.5917)  Time: 0.564s, 1815.35/s  (2.475s,  413.81/s)  LR: 1.050e-05  Data: 0.000 (1.886)
+Test: [   0/48]  Time: 13.551 (13.551)  Loss:  0.7091 (0.7091)  Acc@1: 88.6719 (88.6719)  Acc@5: 96.7773 (96.7773)
+Test: [  48/48]  Time: 0.149 (3.574)  Loss:  0.6223 (0.7083)  Acc@1: 90.9198 (88.9840)  Acc@5: 97.6415 (97.3160)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-205.pth.tar', 89.11400006103516)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-203.pth.tar', 89.0540000341797)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-207.pth.tar', 88.98400006347656)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-201.pth.tar', 88.91400000976563)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-206.pth.tar', 88.86799988037109)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-200.pth.tar', 88.80200009277344)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-204.pth.tar', 88.7440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-198.pth.tar', 88.7199999609375)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-202.pth.tar', 88.71000009033203)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-199.pth.tar', 88.5440000390625)
+
+Train: 208 [   0/927 (  0%)]  Loss:  4.599829 (4.5998)  Time: 11.190s,   91.51/s  (11.190s,   91.51/s)  LR: 1.022e-05  Data: 10.085 (10.085)
+Train: 208 [  50/927 (  5%)]  Loss:  5.254207 (4.9270)  Time: 0.588s, 1741.74/s  (2.486s,  411.96/s)  LR: 1.022e-05  Data: 0.024 (1.893)
+Train: 208 [ 100/927 ( 11%)]  Loss:  4.438712 (4.7642)  Time: 1.275s,  803.30/s  (2.411s,  424.69/s)  LR: 1.022e-05  Data: 0.584 (1.818)
+Train: 208 [ 150/927 ( 16%)]  Loss:  4.927147 (4.8050)  Time: 0.585s, 1750.02/s  (2.336s,  438.40/s)  LR: 1.022e-05  Data: 0.021 (1.737)
+Train: 208 [ 200/927 ( 22%)]  Loss:  5.011136 (4.8462)  Time: 2.288s,  447.47/s  (2.325s,  440.40/s)  LR: 1.022e-05  Data: 1.706 (1.729)
+Train: 208 [ 250/927 ( 27%)]  Loss:  5.128325 (4.8932)  Time: 0.589s, 1737.32/s  (2.281s,  448.99/s)  LR: 1.022e-05  Data: 0.019 (1.681)
+Train: 208 [ 300/927 ( 32%)]  Loss:  3.769296 (4.7327)  Time: 3.436s,  297.98/s  (2.345s,  436.74/s)  LR: 1.022e-05  Data: 2.853 (1.746)
+Train: 208 [ 350/927 ( 38%)]  Loss:  4.629942 (4.7198)  Time: 0.585s, 1749.33/s  (2.325s,  440.35/s)  LR: 1.022e-05  Data: 0.019 (1.726)
+Train: 208 [ 400/927 ( 43%)]  Loss:  5.362650 (4.7912)  Time: 0.592s, 1728.39/s  (2.341s,  437.43/s)  LR: 1.022e-05  Data: 0.024 (1.744)
+Train: 208 [ 450/927 ( 49%)]  Loss:  5.297154 (4.8418)  Time: 0.584s, 1754.16/s  (2.331s,  439.25/s)  LR: 1.022e-05  Data: 0.019 (1.735)
+Train: 208 [ 500/927 ( 54%)]  Loss:  3.869704 (4.7535)  Time: 0.586s, 1747.51/s  (2.333s,  438.85/s)  LR: 1.022e-05  Data: 0.020 (1.738)
+Train: 208 [ 550/927 ( 59%)]  Loss:  5.440361 (4.8107)  Time: 0.587s, 1744.16/s  (2.322s,  441.01/s)  LR: 1.022e-05  Data: 0.018 (1.727)
+Train: 208 [ 600/927 ( 65%)]  Loss:  4.786253 (4.8088)  Time: 3.260s,  314.14/s  (2.330s,  439.40/s)  LR: 1.022e-05  Data: 2.693 (1.736)
+Train: 208 [ 650/927 ( 70%)]  Loss:  4.016801 (4.7523)  Time: 0.589s, 1739.89/s  (2.327s,  440.14/s)  LR: 1.022e-05  Data: 0.022 (1.732)
+Train: 208 [ 700/927 ( 76%)]  Loss:  4.320881 (4.7235)  Time: 4.862s,  210.61/s  (2.353s,  435.21/s)  LR: 1.022e-05  Data: 4.298 (1.756)
+Train: 208 [ 750/927 ( 81%)]  Loss:  5.013186 (4.7416)  Time: 0.586s, 1747.88/s  (2.376s,  430.89/s)  LR: 1.022e-05  Data: 0.022 (1.780)
+Train: 208 [ 800/927 ( 86%)]  Loss:  4.572733 (4.7317)  Time: 4.809s,  212.93/s  (2.432s,  421.01/s)  LR: 1.022e-05  Data: 4.220 (1.834)
+Train: 208 [ 850/927 ( 92%)]  Loss:  4.870492 (4.7394)  Time: 0.587s, 1744.04/s  (2.418s,  423.50/s)  LR: 1.022e-05  Data: 0.021 (1.819)
+Train: 208 [ 900/927 ( 97%)]  Loss:  4.583800 (4.7312)  Time: 1.837s,  557.56/s  (2.415s,  423.97/s)  LR: 1.022e-05  Data: 1.184 (1.816)
+Train: 208 [ 926/927 (100%)]  Loss:  4.490915 (4.7192)  Time: 0.565s, 1811.05/s  (2.409s,  425.01/s)  LR: 1.022e-05  Data: 0.000 (1.810)
+Test: [   0/48]  Time: 13.445 (13.445)  Loss:  0.7086 (0.7086)  Acc@1: 88.8672 (88.8672)  Acc@5: 96.9727 (96.9727)
+Test: [  48/48]  Time: 0.149 (3.136)  Loss:  0.5986 (0.6988)  Acc@1: 91.2736 (89.2720)  Acc@5: 97.6415 (97.4000)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-208.pth.tar', 89.27200008789063)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-205.pth.tar', 89.11400006103516)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-203.pth.tar', 89.0540000341797)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-207.pth.tar', 88.98400006347656)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-201.pth.tar', 88.91400000976563)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-206.pth.tar', 88.86799988037109)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-200.pth.tar', 88.80200009277344)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-204.pth.tar', 88.7440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-198.pth.tar', 88.7199999609375)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-202.pth.tar', 88.71000009033203)
+
+Train: 209 [   0/927 (  0%)]  Loss:  4.485658 (4.4857)  Time: 8.940s,  114.55/s  (8.940s,  114.55/s)  LR: 1.006e-05  Data: 8.294 (8.294)
+Train: 209 [  50/927 (  5%)]  Loss:  4.407446 (4.4466)  Time: 0.650s, 1574.20/s  (2.597s,  394.25/s)  LR: 1.006e-05  Data: 0.020 (1.996)
+Train: 209 [ 100/927 ( 11%)]  Loss:  4.585007 (4.4927)  Time: 1.060s,  966.13/s  (2.429s,  421.54/s)  LR: 1.006e-05  Data: 0.329 (1.833)
+Train: 209 [ 150/927 ( 16%)]  Loss:  4.676396 (4.5386)  Time: 0.587s, 1743.75/s  (2.357s,  434.51/s)  LR: 1.006e-05  Data: 0.021 (1.761)
+Train: 209 [ 200/927 ( 22%)]  Loss:  4.718727 (4.5746)  Time: 0.589s, 1737.58/s  (2.360s,  433.83/s)  LR: 1.006e-05  Data: 0.022 (1.767)
+Train: 209 [ 250/927 ( 27%)]  Loss:  4.433568 (4.5511)  Time: 0.587s, 1745.27/s  (2.316s,  442.12/s)  LR: 1.006e-05  Data: 0.023 (1.722)
+Train: 209 [ 300/927 ( 32%)]  Loss:  5.103455 (4.6300)  Time: 2.594s,  394.69/s  (2.313s,  442.69/s)  LR: 1.006e-05  Data: 1.359 (1.716)
+Train: 209 [ 350/927 ( 38%)]  Loss:  5.009256 (4.6774)  Time: 0.591s, 1731.96/s  (2.286s,  447.94/s)  LR: 1.006e-05  Data: 0.023 (1.690)
+Train: 209 [ 400/927 ( 43%)]  Loss:  4.461614 (4.6535)  Time: 0.589s, 1739.76/s  (2.274s,  450.40/s)  LR: 1.006e-05  Data: 0.023 (1.678)
+Train: 209 [ 450/927 ( 49%)]  Loss:  5.149549 (4.7031)  Time: 1.070s,  957.40/s  (2.296s,  445.94/s)  LR: 1.006e-05  Data: 0.506 (1.700)
+Train: 209 [ 500/927 ( 54%)]  Loss:  4.418432 (4.6772)  Time: 0.587s, 1744.62/s  (2.290s,  447.15/s)  LR: 1.006e-05  Data: 0.020 (1.695)
+Train: 209 [ 550/927 ( 59%)]  Loss:  3.632187 (4.5901)  Time: 0.587s, 1745.04/s  (2.288s,  447.61/s)  LR: 1.006e-05  Data: 0.023 (1.693)
+Train: 209 [ 600/927 ( 65%)]  Loss:  4.178322 (4.5584)  Time: 0.589s, 1738.15/s  (2.296s,  445.95/s)  LR: 1.006e-05  Data: 0.023 (1.703)
+Train: 209 [ 650/927 ( 70%)]  Loss:  4.940904 (4.5858)  Time: 1.096s,  934.67/s  (2.294s,  446.43/s)  LR: 1.006e-05  Data: 0.532 (1.701)
+Train: 209 [ 700/927 ( 76%)]  Loss:  4.814181 (4.6010)  Time: 0.591s, 1733.77/s  (2.368s,  432.37/s)  LR: 1.006e-05  Data: 0.025 (1.776)
+Train: 209 [ 750/927 ( 81%)]  Loss:  4.316547 (4.5832)  Time: 0.590s, 1736.26/s  (2.349s,  436.01/s)  LR: 1.006e-05  Data: 0.021 (1.756)
+Train: 209 [ 800/927 ( 86%)]  Loss:  4.401939 (4.5725)  Time: 0.592s, 1728.44/s  (2.357s,  434.40/s)  LR: 1.006e-05  Data: 0.023 (1.764)
+Train: 209 [ 850/927 ( 92%)]  Loss:  5.058975 (4.5996)  Time: 0.586s, 1748.39/s  (2.352s,  435.32/s)  LR: 1.006e-05  Data: 0.020 (1.759)
+Train: 209 [ 900/927 ( 97%)]  Loss:  5.024321 (4.6219)  Time: 0.589s, 1739.28/s  (2.359s,  434.14/s)  LR: 1.006e-05  Data: 0.023 (1.766)
+Train: 209 [ 926/927 (100%)]  Loss:  4.646414 (4.6231)  Time: 0.567s, 1806.89/s  (2.351s,  435.61/s)  LR: 1.006e-05  Data: 0.000 (1.759)
+Test: [   0/48]  Time: 12.598 (12.598)  Loss:  0.7088 (0.7088)  Acc@1: 88.8672 (88.8672)  Acc@5: 96.7773 (96.7773)
+Test: [  48/48]  Time: 0.149 (3.248)  Loss:  0.6136 (0.7063)  Acc@1: 90.8019 (88.9860)  Acc@5: 97.7594 (97.3380)
+Current checkpoints:
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-208.pth.tar', 89.27200008789063)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-205.pth.tar', 89.11400006103516)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-203.pth.tar', 89.0540000341797)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-209.pth.tar', 88.98600001220703)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-207.pth.tar', 88.98400006347656)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-201.pth.tar', 88.91400000976563)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-206.pth.tar', 88.86799988037109)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-200.pth.tar', 88.80200009277344)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-204.pth.tar', 88.7440000390625)
+ ('train_result/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/checkpoint-198.pth.tar', 88.7199999609375)
+
+*** Best metric: 89.27200008789063 (epoch 208)
+
+wandb: Waiting for W&B process to finish, PID 52330
+wandb: Program ended successfully.
+wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: | 0.00MB of 0.01MB uploaded (0.00MB deduped)wandb: / 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: - 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: \ 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: | 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: / 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: - 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210606_134658-PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/logs/debug.log
+wandb: Find internal logs for this run at: /gs/hs0/tga-i/sugiyama.y.al/TIMM/pytorch-image-models/wandb/run-20210606_134658-PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k/logs/debug-internal.log
+wandb: Run summary:
+wandb:        epoch 209
+wandb:     _runtime 505033
+wandb:    eval_loss 0.70628
+wandb:    eval_top1 88.986
+wandb:    eval_top5 97.338
+wandb:   _timestamp 1623006479
+wandb:   train_loss 4.62314
+wandb:        _step 209
+wandb: Run history:
+wandb:        epoch ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb:   train_loss ▄▃█▅▅▆▃▃▆▁▄▄▄█▃▆▁▄▄▁▄▂
+wandb:    eval_loss █▇▆▆▅▄▄▅▅▄▃▄▃▃▄▂▃▂▂▂▁▂
+wandb:    eval_top1 ▁▂▂▃▄▅▅▃▄▄▆▅▆▇▆▇▆▇▆▇█▇
+wandb:    eval_top5 ▁▁▂▂▃▄▄▄▃▄▅▅▆▆▆▇▇▇▇▇█▇
+wandb:     _runtime ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb:   _timestamp ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb:        _step ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇▇██
+wandb: 
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: 
+wandb: Synced PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k: https://wandb.ai/gyama_x/pytorch-image-models/runs/PreTraining_vit_deit_tiny_patch16_224_fake_v2_1k
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+--End--
+Mon Jun 7 04:08:09 JST 2021
