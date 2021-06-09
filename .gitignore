@@ -112,3 +112,6 @@ cifar10_data/*
 cifar100_data/*
 train_result/*
 wandb/*
+output/finetuning/*
+output/pretrain/*
+output/other/*
