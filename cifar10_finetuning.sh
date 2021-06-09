@@ -14,7 +14,6 @@ echo `date`
 
 export NUM_PROC=4
 python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py ./ \
-    --pretrained \
     --dataset CIFAR10 \
     --num-classes 10 \
     --model vit_deit_tiny_patch16_224 \
@@ -34,8 +33,8 @@ python -m torch.distributed.launch --nproc_per_node=$NUM_PROC train.py ./ \
     --cutmix 1.0 \
     --log-wandb \
     --output train_result \
-    --experiment Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10 \
-    --id_wandb Finetuning_vit_deit_tiny_patch16_224_default_to_CIFAR10 \
+    --experiment Vit_deit_tiny_patch16_224_CIFAR10 \
+    --id_wandb Vit_deit_tiny_patch16_224_CIFAR10 \
     -j 4
 
 echo '--End--'
